@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
-		8CF97AF91BE3C5E3009C5591 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* FirstViewController.swift */; };
-		8CF97AFB1BE3C5E3009C5591 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* SecondViewController.swift */; };
+		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
+		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
 		8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */; };
 		8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */; };
 		8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */; };
@@ -37,8 +37,8 @@
 /* Begin PBXFileReference section */
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeads Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaHeads Apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CF97AF81BE3C5E3009C5591 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8CF97AFA1BE3C5E3009C5591 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8CF97AFD1BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF97B021BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */,
-				8CF97AF81BE3C5E3009C5591 /* FirstViewController.swift */,
-				8CF97AFA1BE3C5E3009C5591 /* SecondViewController.swift */,
+				8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */,
+				8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */,
 				8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */,
 				8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */,
 				8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */,
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF97AFB1BE3C5E3009C5591 /* SecondViewController.swift in Sources */,
+				8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
-				8CF97AF91BE3C5E3009C5591 /* FirstViewController.swift in Sources */,
+				8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +488,7 @@
 				8CF97B1F1BE3C5E4009C5591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CF97B201BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				8CF97B221BE3C5E4009C5591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CF97B231BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				8CF97B251BE3C5E4009C5591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

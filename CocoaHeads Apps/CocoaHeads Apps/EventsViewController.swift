@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  EventsViewController.swift
 //  CocoaHeads Apps
 //
 //  Created by Antoine Barrault on 30/10/2015.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class EventsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

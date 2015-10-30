@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  AboutViewController.swift
 //  CocoaHeads Apps
 //
 //  Created by Antoine Barrault on 30/10/2015.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
