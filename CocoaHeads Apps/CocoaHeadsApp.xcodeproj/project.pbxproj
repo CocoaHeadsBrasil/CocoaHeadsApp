@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8CF97AF31BE3C5E3009C5591 /* CocoaHeads Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaHeads Apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF97B021BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF97B041BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CF97B091BE3C5E3009C5591 /* CocoaHeads AppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaHeads AppsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97B0D1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeads_AppsTests.swift; sourceTree = "<group>"; };
 		8CF97B0F1BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CF97B141BE3C5E4009C5591 /* CocoaHeads AppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaHeads AppsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97B181BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeads_AppsUITests.swift; sourceTree = "<group>"; };
 		8CF97B1A1BE3C5E4009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,9 +89,9 @@
 		8CF97AF41BE3C5E3009C5591 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CF97AF31BE3C5E3009C5591 /* CocoaHeads Apps.app */,
-				8CF97B091BE3C5E3009C5591 /* CocoaHeads AppsTests.xctest */,
-				8CF97B141BE3C5E4009C5591 /* CocoaHeads AppsUITests.xctest */,
+				8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */,
+				8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */,
+				8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CF97AF21BE3C5E3009C5591 /* CocoaHeads Apps */ = {
+		8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads Apps" */;
+			buildConfigurationList = 8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsApp" */;
 			buildPhases = (
 				8CF97AEF1BE3C5E3009C5591 /* Sources */,
 				8CF97AF01BE3C5E3009C5591 /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = "CocoaHeads Apps";
+			name = CocoaHeadsApp;
 			productName = "CocoaHeads Apps";
-			productReference = 8CF97AF31BE3C5E3009C5591 /* CocoaHeads Apps.app */;
+			productReference = 8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CF97B081BE3C5E3009C5591 /* CocoaHeads AppsTests */ = {
+		8CF97B081BE3C5E3009C5591 /* CocoaHeadsAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF97B201BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsTests" */;
+			buildConfigurationList = 8CF97B201BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsAppTests" */;
 			buildPhases = (
 				8CF97B051BE3C5E3009C5591 /* Sources */,
 				8CF97B061BE3C5E3009C5591 /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				8CF97B0B1BE3C5E3009C5591 /* PBXTargetDependency */,
 			);
-			name = "CocoaHeads AppsTests";
+			name = CocoaHeadsAppTests;
 			productName = "CocoaHeads AppsTests";
-			productReference = 8CF97B091BE3C5E3009C5591 /* CocoaHeads AppsTests.xctest */;
+			productReference = 8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8CF97B131BE3C5E4009C5591 /* CocoaHeads AppsUITests */ = {
+		8CF97B131BE3C5E4009C5591 /* CocoaHeadsAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF97B231BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsUITests" */;
+			buildConfigurationList = 8CF97B231BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsAppUITests" */;
 			buildPhases = (
 				8CF97B101BE3C5E4009C5591 /* Sources */,
 				8CF97B111BE3C5E4009C5591 /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				8CF97B161BE3C5E4009C5591 /* PBXTargetDependency */,
 			);
-			name = "CocoaHeads AppsUITests";
+			name = CocoaHeadsAppUITests;
 			productName = "CocoaHeads AppsUITests";
-			productReference = 8CF97B141BE3C5E4009C5591 /* CocoaHeads AppsUITests.xctest */;
+			productReference = 8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CF97AEE1BE3C5E3009C5591 /* Build configuration list for PBXProject "CocoaHeads Apps" */;
+			buildConfigurationList = 8CF97AEE1BE3C5E3009C5591 /* Build configuration list for PBXProject "CocoaHeadsApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +220,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CF97AF21BE3C5E3009C5591 /* CocoaHeads Apps */,
-				8CF97B081BE3C5E3009C5591 /* CocoaHeads AppsTests */,
-				8CF97B131BE3C5E4009C5591 /* CocoaHeads AppsUITests */,
+				8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */,
+				8CF97B081BE3C5E3009C5591 /* CocoaHeadsAppTests */,
+				8CF97B131BE3C5E4009C5591 /* CocoaHeadsAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		8CF97B0B1BE3C5E3009C5591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeads Apps */;
+			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */;
 			targetProxy = 8CF97B0A1BE3C5E3009C5591 /* PBXContainerItemProxy */;
 		};
 		8CF97B161BE3C5E4009C5591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeads Apps */;
+			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */;
 			targetProxy = 8CF97B151BE3C5E4009C5591 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,7 +406,7 @@
 				INFOPLIST_FILE = "CocoaHeads Apps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CocoaHeadsApp;
 			};
 			name = Debug;
 		};
@@ -417,7 +417,7 @@
 				INFOPLIST_FILE = "CocoaHeads Apps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CocoaHeadsApp;
 			};
 			name = Release;
 		};
@@ -428,8 +428,8 @@
 				INFOPLIST_FILE = "CocoaHeads AppsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeads Apps.app/CocoaHeads Apps";
+				PRODUCT_NAME = CocoaHeadsApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsApp.app/CocoaHeadsApp";
 			};
 			name = Debug;
 		};
@@ -440,8 +440,8 @@
 				INFOPLIST_FILE = "CocoaHeads AppsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeads Apps.app/CocoaHeads Apps";
+				PRODUCT_NAME = CocoaHeadsApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsApp.app/CocoaHeadsApp";
 			};
 			name = Release;
 		};
@@ -451,7 +451,7 @@
 				INFOPLIST_FILE = "CocoaHeads AppsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CocoaHeadsApp;
 				TEST_TARGET_NAME = "CocoaHeads Apps";
 				USES_XCTRUNNER = YES;
 			};
@@ -463,7 +463,7 @@
 				INFOPLIST_FILE = "CocoaHeads AppsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CocoaHeadsApp;
 				TEST_TARGET_NAME = "CocoaHeads Apps";
 				USES_XCTRUNNER = YES;
 			};
@@ -472,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CF97AEE1BE3C5E3009C5591 /* Build configuration list for PBXProject "CocoaHeads Apps" */ = {
+		8CF97AEE1BE3C5E3009C5591 /* Build configuration list for PBXProject "CocoaHeadsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF97B1B1BE3C5E4009C5591 /* Debug */,
@@ -481,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads Apps" */ = {
+		8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF97B1E1BE3C5E4009C5591 /* Debug */,
@@ -490,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF97B201BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsTests" */ = {
+		8CF97B201BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF97B211BE3C5E4009C5591 /* Debug */,
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF97B231BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeads AppsUITests" */ = {
+		8CF97B231BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF97B241BE3C5E4009C5591 /* Debug */,
