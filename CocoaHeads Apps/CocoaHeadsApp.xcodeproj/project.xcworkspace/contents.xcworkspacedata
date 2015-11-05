@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CocoaHeads Apps.xcodeproj">
+      location = "self:/Users/gustavo/Developer/CocoaHeadsApp/CocoaHeads Apps/CocoaHeadsApp.xcodeproj">
    </FileRef>
 </Workspace>
