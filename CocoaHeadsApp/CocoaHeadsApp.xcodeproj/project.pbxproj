@@ -13,8 +13,8 @@
 		8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */; };
 		8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */; };
 		8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */; };
-		8CF97B0E1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B0D1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift */; };
-		8CF97B191BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift */; };
+		8CF97B0E1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B0D1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift */; };
+		8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,14 +23,14 @@
 			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CF97AF21BE3C5E3009C5591;
-			remoteInfo = "CocoaHeads Apps";
+			remoteInfo = "CocoaHeadsApp";
 		};
 		8CF97B151BE3C5E4009C5591 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CF97AF21BE3C5E3009C5591;
-			remoteInfo = "CocoaHeads Apps";
+			remoteInfo = "CocoaHeadsApp";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,10 +44,10 @@
 		8CF97B021BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF97B041BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CF97B0D1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeads_AppsTests.swift; sourceTree = "<group>"; };
+		8CF97B0D1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppTests.swift; sourceTree = "<group>"; };
 		8CF97B0F1BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CF97B181BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeads_AppsUITests.swift; sourceTree = "<group>"; };
+		8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppUITests.swift; sourceTree = "<group>"; };
 		8CF97B1A1BE3C5E4009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,9 +79,9 @@
 		8CF97AEA1BE3C5E3009C5591 = {
 			isa = PBXGroup;
 			children = (
-				8CF97AF51BE3C5E3009C5591 /* CocoaHeads Apps */,
-				8CF97B0C1BE3C5E3009C5591 /* CocoaHeads AppsTests */,
-				8CF97B171BE3C5E4009C5591 /* CocoaHeads AppsUITests */,
+				8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */,
+				8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */,
+				8CF97B171BE3C5E4009C5591 /* CocoaHeadsAppUITests */,
 				8CF97AF41BE3C5E3009C5591 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8CF97AF51BE3C5E3009C5591 /* CocoaHeads Apps */ = {
+		8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXGroup;
 			children = (
 				8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */,
@@ -107,25 +107,25 @@
 				8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */,
 				8CF97B041BE3C5E3009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeads Apps";
+			path = "CocoaHeadsApp";
 			sourceTree = "<group>";
 		};
-		8CF97B0C1BE3C5E3009C5591 /* CocoaHeads AppsTests */ = {
+		8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8CF97B0D1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift */,
+				8CF97B0D1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift */,
 				8CF97B0F1BE3C5E3009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeads AppsTests";
+			path = "CocoaHeadsAppTests";
 			sourceTree = "<group>";
 		};
-		8CF97B171BE3C5E4009C5591 /* CocoaHeads AppsUITests */ = {
+		8CF97B171BE3C5E4009C5591 /* CocoaHeadsAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8CF97B181BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift */,
+				8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */,
 				8CF97B1A1BE3C5E4009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeads AppsUITests";
+			path = "CocoaHeadsAppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +144,7 @@
 			dependencies = (
 			);
 			name = CocoaHeadsApp;
-			productName = "CocoaHeads Apps";
+			productName = "CocoaHeadsApp";
 			productReference = 8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -162,7 +162,7 @@
 				8CF97B0B1BE3C5E3009C5591 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsAppTests;
-			productName = "CocoaHeads AppsTests";
+			productName = "CocoaHeadsAppTests";
 			productReference = 8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -180,7 +180,7 @@
 				8CF97B161BE3C5E4009C5591 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsAppUITests;
-			productName = "CocoaHeads AppsUITests";
+			productName = "CocoaHeadsAppUITests";
 			productReference = 8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF97B0E1BE3C5E3009C5591 /* CocoaHeads_AppsTests.swift in Sources */,
+				8CF97B0E1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF97B191BE3C5E4009C5591 /* CocoaHeads_AppsUITests.swift in Sources */,
+				8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "CocoaHeads Apps/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -414,7 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "CocoaHeads Apps/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -425,7 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CocoaHeads AppsTests/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsAppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -437,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CocoaHeads AppsTests/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsAppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -448,11 +448,11 @@
 		8CF97B241BE3C5E4009C5591 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "CocoaHeads AppsUITests/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsAppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
 				PRODUCT_NAME = CocoaHeadsApp;
-				TEST_TARGET_NAME = "CocoaHeads Apps";
+				TEST_TARGET_NAME = "CocoaHeadsApp";
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -460,11 +460,11 @@
 		8CF97B251BE3C5E4009C5591 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "CocoaHeads AppsUITests/Info.plist";
+				INFOPLIST_FILE = "CocoaHeadsAppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
 				PRODUCT_NAME = CocoaHeadsApp;
-				TEST_TARGET_NAME = "CocoaHeads Apps";
+				TEST_TARGET_NAME = "CocoaHeadsApp";
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;

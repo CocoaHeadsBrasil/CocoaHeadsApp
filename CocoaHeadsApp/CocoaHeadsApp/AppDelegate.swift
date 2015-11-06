@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CocoaHeads Apps
+//  CocoaHeadsApp
 //
 //  Created by Antoine Barrault on 30/10/2015.
 //  Copyright © 2015 CocoaHeads Brasil. All rights reserved.

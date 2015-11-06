@@ -1,6 +1,6 @@
 //
-//  CocoaHeads_AppsUITests.swift
-//  CocoaHeads AppsUITests
+//  CocoaHeadsAppUITests.swift
+//  CocoaHeadsAppUITests
 //
 //  Created by Antoine Barrault on 30/10/2015.
 //  Copyright © 2015 CocoaHeads Brasil. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class CocoaHeads_AppsUITests: XCTestCase {
+class CocoaHeadsAppUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
