@@ -1,0 +1,10 @@
+PODS:
+  - R.swift (0.11.0)
+
+DEPENDENCIES:
+  - R.swift
+
+SPEC CHECKSUMS:
+  R.swift: dfd7addf1564914d92745816b76b0563d688f387
+
+COCOAPODS: 0.39.0
