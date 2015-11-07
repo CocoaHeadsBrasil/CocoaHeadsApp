@@ -15,7 +15,6 @@ class MeetupListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.nibView.viewModel.loadMoreItens()
     }
 
 }

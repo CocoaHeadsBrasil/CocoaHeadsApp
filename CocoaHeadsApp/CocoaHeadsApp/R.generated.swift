@@ -25,13 +25,14 @@ struct R {
   }
   
   struct nib {
+    static var meetupListCollectionViewCell: _R.nib._MeetupListCollectionViewCell { return _R.nib._MeetupListCollectionViewCell() }
     static var meetupListView: _R.nib._MeetupListView { return _R.nib._MeetupListView() }
     static var slideListView: _R.nib._SlideListView { return _R.nib._SlideListView() }
     static var videosListView: _R.nib._VideosListView { return _R.nib._VideosListView() }
   }
   
   struct reuseIdentifier {
-    
+    static var displayMeetupCell: ReuseIdentifier<CocoaHeadsApp.MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
   }
   
   struct segue {
@@ -70,6 +71,20 @@ struct R {
 
 struct _R {
   struct nib {
+    struct _MeetupListCollectionViewCell: NibResource, Reusable {
+      var instance: UINib { return UINib.init(nibName: "MeetupListCollectionViewCell", bundle: nil) }
+      var name: String { return "MeetupListCollectionViewCell" }
+      var reuseIdentifier: ReuseIdentifier<CocoaHeadsApp.MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
+      
+      func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> CocoaHeadsApp.MeetupListCollectionViewCell? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? CocoaHeadsApp.MeetupListCollectionViewCell
+      }
+      
+      func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject] {
+        return instance.instantiateWithOwner(ownerOrNil, options: optionsOrNil)
+      }
+    }
+    
     struct _MeetupListView: NibResource {
       var instance: UINib { return UINib.init(nibName: "MeetupListView", bundle: nil) }
       var name: String { return "MeetupListView" }

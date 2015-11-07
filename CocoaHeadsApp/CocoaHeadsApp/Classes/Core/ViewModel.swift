@@ -14,6 +14,8 @@ import UIKit
 enum ViewModelState {
     case Idle
     case Loading(percent :Float)
+    case Error(ErrorType)
+    case Success
     
     static let InfiniteLoading :ViewModelState = .Loading(percent: -1)
 }

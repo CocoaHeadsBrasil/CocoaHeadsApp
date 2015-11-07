@@ -34,6 +34,10 @@
 		15079B6A1BED7F2A00E12A68 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B691BED7F2A00E12A68 /* Tempo.swift */; };
 		15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6B1BED7F5200E12A68 /* VenueModel.swift */; };
 		15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6D1BED809E00E12A68 /* GroupModel.swift */; };
+		15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */; };
+		15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */; };
+		15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */; };
+		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
 		6AAEAD3CB9451B4019E6EC7C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA9B4817DAB54FA5AF5A8B /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
@@ -91,6 +95,10 @@
 		15079B691BED7F2A00E12A68 /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tempo.swift; sourceTree = "<group>"; };
 		15079B6B1BED7F5200E12A68 /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
 		15079B6D1BED809E00E12A68 /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionViewCell.swift; sourceTree = "<group>"; };
+		15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupListCollectionViewCell.xib; sourceTree = "<group>"; };
+		15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDataSource.swift; sourceTree = "<group>"; };
+		15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDelegate.swift; sourceTree = "<group>"; };
 		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,10 +200,13 @@
 		15079B291BED728200E12A68 /* Meetup */ = {
 			isa = PBXGroup;
 			children = (
+				15079B6F1BED8E3A00E12A68 /* CollectionViewCell */,
 				15079B351BED740800E12A68 /* MeetupListViewController.swift */,
 				15079B391BED745200E12A68 /* MeetupListView.swift */,
 				15079B3B1BED746C00E12A68 /* MeetupListViewModel.swift */,
 				15079B3D1BED748200E12A68 /* MeetupListView.xib */,
+				15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */,
+				15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */,
 			);
 			path = Meetup;
 			sourceTree = "<group>";
@@ -247,6 +258,15 @@
 				15079B611BED791900E12A68 /* MeetupAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		15079B6F1BED8E3A00E12A68 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */,
+				15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		19FE75BA9984A2F4AB4F5493 /* Frameworks */ = {
@@ -433,6 +453,7 @@
 				8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */,
 				15079B581BED765200E12A68 /* SlideListView.xib in Resources */,
 				15079B501BED761B00E12A68 /* VideosListView.xib in Resources */,
+				15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */,
 				15079B3E1BED748200E12A68 /* MeetupListView.xib in Resources */,
 				8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */,
 			);
@@ -521,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */,
 				15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */,
 				15079B4C1BED760B00E12A68 /* VideosListView.swift in Sources */,
 				8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */,
@@ -541,10 +563,12 @@
 				15079B5A1BED77B200E12A68 /* ViewModel.swift in Sources */,
 				15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */,
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
+				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
 				15079B401BED750E00E12A68 /* R.generated.swift in Sources */,
 				15079B641BED7D8E00E12A68 /* MeetupListResponse.swift in Sources */,
+				15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */,
 				15079B5E1BED78BF00E12A68 /* ObjectParser.swift in Sources */,
 				8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */,
 				15079B521BED763700E12A68 /* SlideListViewController.swift in Sources */,
