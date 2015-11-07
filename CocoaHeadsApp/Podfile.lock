@@ -1,10 +1,36 @@
 PODS:
+  - Alamofire (3.1.2)
+  - Moya (4.4.0):
+    - Moya/Core (= 4.4.0)
+  - Moya/Core (4.4.0):
+    - Alamofire (~> 3.0)
+  - Nuke (1.1.1)
   - R.swift (0.11.0)
+  - Unbox (0.0.1)
+  - XCGLogger (3.0)
 
 DEPENDENCIES:
+  - Moya
+  - Nuke
   - R.swift
+  - Unbox (from `https://github.com/JohnSundell/Unbox.git`)
+  - XCGLogger
+
+EXTERNAL SOURCES:
+  Unbox:
+    :git: https://github.com/JohnSundell/Unbox.git
+
+CHECKOUT OPTIONS:
+  Unbox:
+    :commit: dfbe41cb8a7e00bc17e02414a9ccf7df0d02c508
+    :git: https://github.com/JohnSundell/Unbox.git
 
 SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  Moya: 0ade653ca4bc83bec120493130ecc32f137e5683
+  Nuke: ec41b6486f31622acedb3ca82ebf1cb7914bd472
   R.swift: dfd7addf1564914d92745816b76b0563d688f387
+  Unbox: ff22e3cd32acb357ae82b718b28eb04f0f8c2e1a
+  XCGLogger: 5802533aff8bafc8b3b9776ab8972576f31d0a4e
 
 COCOAPODS: 0.39.0
