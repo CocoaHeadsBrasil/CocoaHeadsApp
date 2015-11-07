@@ -10,6 +10,9 @@ import UIKit
 
 extension Array {
 
+    /**
+     iterate through each element in the array
+     */
     func each(doThis: (element: Element) -> Void) {
         for e in self {
             doThis(element: e)

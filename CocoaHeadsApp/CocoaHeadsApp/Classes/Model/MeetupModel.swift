@@ -9,6 +9,9 @@
 import UIKit
 import Unbox
 
+/**
+ The Meetup response model
+*/
 class MeetupModel: Unboxable {
 
     let headCount :Int

@@ -9,6 +9,9 @@
 import UIKit
 import Unbox
 
+/**
+ The response for a group of a meetup
+*/
 class GroupModel: Unboxable {
 
     let joinMode :String

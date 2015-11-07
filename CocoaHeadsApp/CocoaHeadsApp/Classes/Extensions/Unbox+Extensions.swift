@@ -9,6 +9,9 @@
 import UIKit
 import Unbox
 
+/**
+ Allow NSDate fields inside Unboxable models
+*/
 public class UnboxNSDateTransformer: UnboxTransformer {
     public typealias RawType = String
     public typealias TransformedType = NSDate

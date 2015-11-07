@@ -16,6 +16,9 @@ enum ParseErrors :ErrorType {
     case BadResponseCode(Int)
 }
 
+/**
+ The Object Parse will try to parse a JSON to a model using the Unbox framework
+*/
 public class ObjectParser<T: Unboxable>: NSObject {
     
     let jsonData :NSData
