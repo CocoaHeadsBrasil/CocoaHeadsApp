@@ -23,7 +23,7 @@ let MeetupAPIConsumer = APIConsumer(MeetupAPIProvider)
 */
 public enum MeetupAPI {
     case None
-    case ListEvents(perPage :Int, offset :Int)
+    case ListEvents(perPage :Int, pageOffset :Int)
 }
 
 extension MeetupAPI :MoyaTarget {

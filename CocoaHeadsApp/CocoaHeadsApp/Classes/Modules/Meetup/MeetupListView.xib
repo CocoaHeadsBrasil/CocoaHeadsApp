@@ -5,13 +5,38 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeetupListView" customModule="CocoaHeadsApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeetupListView" customModule="CocoaHeadsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="listCollectionView" destination="5GZ-BS-QaJ" id="viD-sf-mNL"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5GZ-BS-QaJ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="10" id="OdU-tr-cGd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5GZ-BS-QaJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QZp-TN-bV1"/>
+                <constraint firstAttribute="bottom" secondItem="5GZ-BS-QaJ" secondAttribute="bottom" id="T5b-KW-YFR"/>
+                <constraint firstItem="5GZ-BS-QaJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pFf-FI-9gs"/>
+                <constraint firstAttribute="trailing" secondItem="5GZ-BS-QaJ" secondAttribute="trailing" id="xhr-0b-r77"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="201" y="339"/>
         </view>
     </objects>
 </document>
