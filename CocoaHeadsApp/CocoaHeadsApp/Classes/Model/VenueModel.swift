@@ -9,6 +9,10 @@
 import UIKit
 import Unbox
 
+/**
+ A venue from a Meetup.
+ We need to authenticate our request in order to receive the venue
+*/
 class VenueModel: Unboxable {
 
     let country :String

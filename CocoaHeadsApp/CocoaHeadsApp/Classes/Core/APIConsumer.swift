@@ -15,6 +15,9 @@ enum APIErrors :ErrorType {
     case UndefinedBehavior(NSData)
 }
 
+/**
+ The APIConsumer is responsable for excuting the request and parse the response to the appropriate type
+*/
 class APIConsumer<Target:MoyaTarget>: NSObject {
     
     let provider :MoyaProvider<Target>

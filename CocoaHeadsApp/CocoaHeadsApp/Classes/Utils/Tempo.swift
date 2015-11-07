@@ -9,6 +9,9 @@
 import Foundation
 import ObjectiveC
 
+/**
+ Tempo is a better way to handle dates
+*/
 class Tempo {
     private var _years: Int!
     private var _months: Int!

@@ -8,6 +8,10 @@
 
 import UIKit
 
+/**
+ A NibDesignable is a view wrapper tha loads a XIB with the same name of the class and add it to itself.
+ You should use mainly in storyboards, to avoid modifying views inside the storyboard
+*/
 @IBDesignable
 public class NibDesignable: UIView {
     

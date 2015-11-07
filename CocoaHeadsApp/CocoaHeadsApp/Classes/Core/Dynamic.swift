@@ -8,6 +8,11 @@
 
 import UIKit
 
+/**
+ A Dynamic is a wrapper around a class that allows you to react to a change for the value of the property
+ To use it you can assign to a let variable, specifying which type is the value stored inside it
+ ex. let title = Dynamic<String>("")
+*/
 class Dynamic<ValueType> {
     typealias React = ValueType -> Void
     
