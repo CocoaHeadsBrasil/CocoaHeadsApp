@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2D1BED72FC00E12A68 /* Dynamic.swift */; };
+		15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2F1BED731E00E12A68 /* Array+Extensions.swift */; };
+		15079B321BED736100E12A68 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B311BED736100E12A68 /* NibDesignable.swift */; };
+		15079B341BED739000E12A68 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B331BED739000E12A68 /* String+Extensions.swift */; };
+		15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B351BED740800E12A68 /* MeetupListViewController.swift */; };
+		15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B391BED745200E12A68 /* MeetupListView.swift */; };
+		15079B3C1BED746C00E12A68 /* MeetupListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B3B1BED746C00E12A68 /* MeetupListViewModel.swift */; };
+		15079B3E1BED748200E12A68 /* MeetupListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B3D1BED748200E12A68 /* MeetupListView.xib */; };
+		15079B401BED750E00E12A68 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B3F1BED750E00E12A68 /* R.generated.swift */; };
+		15079B4A1BED75FE00E12A68 /* VideosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B491BED75FE00E12A68 /* VideosListViewController.swift */; };
+		15079B4C1BED760B00E12A68 /* VideosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B4B1BED760B00E12A68 /* VideosListView.swift */; };
+		15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B4D1BED761400E12A68 /* VideosListViewModel.swift */; };
+		15079B501BED761B00E12A68 /* VideosListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B4F1BED761B00E12A68 /* VideosListView.xib */; };
+		15079B521BED763700E12A68 /* SlideListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B511BED763700E12A68 /* SlideListViewController.swift */; };
+		15079B541BED764300E12A68 /* SlideListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B531BED764300E12A68 /* SlideListView.swift */; };
+		15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B551BED764B00E12A68 /* SlideListViewModel.swift */; };
+		15079B581BED765200E12A68 /* SlideListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B571BED765200E12A68 /* SlideListView.xib */; };
+		15079B5A1BED77B200E12A68 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B591BED77B200E12A68 /* ViewModel.swift */; };
+		15079B5C1BED77EC00E12A68 /* APIConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B5B1BED77EC00E12A68 /* APIConsumer.swift */; };
+		15079B5E1BED78BF00E12A68 /* ObjectParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B5D1BED78BF00E12A68 /* ObjectParser.swift */; };
+		15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B611BED791900E12A68 /* MeetupAPI.swift */; };
+		15079B641BED7D8E00E12A68 /* MeetupListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B631BED7D8E00E12A68 /* MeetupListResponse.swift */; };
+		15079B661BED7DC700E12A68 /* MeetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B651BED7DC700E12A68 /* MeetupModel.swift */; };
+		15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */; };
+		15079B6A1BED7F2A00E12A68 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B691BED7F2A00E12A68 /* Tempo.swift */; };
+		15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6B1BED7F5200E12A68 /* VenueModel.swift */; };
+		15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6D1BED809E00E12A68 /* GroupModel.swift */; };
+		15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */; };
+		15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */; };
+		15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */; };
+		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
+		6AAEAD3CB9451B4019E6EC7C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA9B4817DAB54FA5AF5A8B /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
 		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
@@ -23,18 +55,51 @@
 			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CF97AF21BE3C5E3009C5591;
-			remoteInfo = "CocoaHeadsApp";
+			remoteInfo = CocoaHeadsApp;
 		};
 		8CF97B151BE3C5E4009C5591 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CF97AF21BE3C5E3009C5591;
-			remoteInfo = "CocoaHeadsApp";
+			remoteInfo = CocoaHeadsApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AA9B4817DAB54FA5AF5A8B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15079B2D1BED72FC00E12A68 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		15079B2F1BED731E00E12A68 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		15079B311BED736100E12A68 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		15079B331BED739000E12A68 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		15079B351BED740800E12A68 /* MeetupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListViewController.swift; sourceTree = "<group>"; };
+		15079B391BED745200E12A68 /* MeetupListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListView.swift; sourceTree = "<group>"; };
+		15079B3B1BED746C00E12A68 /* MeetupListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListViewModel.swift; sourceTree = "<group>"; };
+		15079B3D1BED748200E12A68 /* MeetupListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupListView.xib; sourceTree = "<group>"; };
+		15079B3F1BED750E00E12A68 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = CocoaHeadsApp/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		15079B491BED75FE00E12A68 /* VideosListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosListViewController.swift; sourceTree = "<group>"; };
+		15079B4B1BED760B00E12A68 /* VideosListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosListView.swift; sourceTree = "<group>"; };
+		15079B4D1BED761400E12A68 /* VideosListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosListViewModel.swift; sourceTree = "<group>"; };
+		15079B4F1BED761B00E12A68 /* VideosListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosListView.xib; sourceTree = "<group>"; };
+		15079B511BED763700E12A68 /* SlideListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideListViewController.swift; sourceTree = "<group>"; };
+		15079B531BED764300E12A68 /* SlideListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideListView.swift; sourceTree = "<group>"; };
+		15079B551BED764B00E12A68 /* SlideListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideListViewModel.swift; sourceTree = "<group>"; };
+		15079B571BED765200E12A68 /* SlideListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideListView.xib; sourceTree = "<group>"; };
+		15079B591BED77B200E12A68 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		15079B5B1BED77EC00E12A68 /* APIConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConsumer.swift; sourceTree = "<group>"; };
+		15079B5D1BED78BF00E12A68 /* ObjectParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectParser.swift; sourceTree = "<group>"; };
+		15079B611BED791900E12A68 /* MeetupAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupAPI.swift; sourceTree = "<group>"; };
+		15079B631BED7D8E00E12A68 /* MeetupListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListResponse.swift; sourceTree = "<group>"; };
+		15079B651BED7DC700E12A68 /* MeetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupModel.swift; sourceTree = "<group>"; };
+		15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+Extensions.swift"; sourceTree = "<group>"; };
+		15079B691BED7F2A00E12A68 /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tempo.swift; sourceTree = "<group>"; };
+		15079B6B1BED7F5200E12A68 /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		15079B6D1BED809E00E12A68 /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionViewCell.swift; sourceTree = "<group>"; };
+		15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupListCollectionViewCell.xib; sourceTree = "<group>"; };
+		15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDataSource.swift; sourceTree = "<group>"; };
+		15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDelegate.swift; sourceTree = "<group>"; };
+		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +114,7 @@
 		8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppUITests.swift; sourceTree = "<group>"; };
 		8CF97B1A1BE3C5E4009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAEAD3CB9451B4019E6EC7C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +143,149 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15079B241BED728200E12A68 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15079B5F1BED790A00E12A68 /* Model */,
+				15079B601BED790A00E12A68 /* Network */,
+				15079B251BED728200E12A68 /* App */,
+				15079B261BED728200E12A68 /* Core */,
+				15079B271BED728200E12A68 /* Extensions */,
+				15079B281BED728200E12A68 /* Modules */,
+				15079B2C1BED728200E12A68 /* Utils */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15079B251BED728200E12A68 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		15079B261BED728200E12A68 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				15079B3F1BED750E00E12A68 /* R.generated.swift */,
+				15079B2D1BED72FC00E12A68 /* Dynamic.swift */,
+				15079B311BED736100E12A68 /* NibDesignable.swift */,
+				15079B591BED77B200E12A68 /* ViewModel.swift */,
+				15079B5B1BED77EC00E12A68 /* APIConsumer.swift */,
+				15079B5D1BED78BF00E12A68 /* ObjectParser.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		15079B271BED728200E12A68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15079B2F1BED731E00E12A68 /* Array+Extensions.swift */,
+				15079B331BED739000E12A68 /* String+Extensions.swift */,
+				15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15079B281BED728200E12A68 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				15079B291BED728200E12A68 /* Meetup */,
+				15079B2A1BED728200E12A68 /* Slides */,
+				15079B2B1BED728200E12A68 /* Videos */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		15079B291BED728200E12A68 /* Meetup */ = {
+			isa = PBXGroup;
+			children = (
+				15079B6F1BED8E3A00E12A68 /* CollectionViewCell */,
+				15079B351BED740800E12A68 /* MeetupListViewController.swift */,
+				15079B391BED745200E12A68 /* MeetupListView.swift */,
+				15079B3B1BED746C00E12A68 /* MeetupListViewModel.swift */,
+				15079B3D1BED748200E12A68 /* MeetupListView.xib */,
+				15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */,
+				15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */,
+			);
+			path = Meetup;
+			sourceTree = "<group>";
+		};
+		15079B2A1BED728200E12A68 /* Slides */ = {
+			isa = PBXGroup;
+			children = (
+				15079B511BED763700E12A68 /* SlideListViewController.swift */,
+				15079B531BED764300E12A68 /* SlideListView.swift */,
+				15079B551BED764B00E12A68 /* SlideListViewModel.swift */,
+				15079B571BED765200E12A68 /* SlideListView.xib */,
+			);
+			path = Slides;
+			sourceTree = "<group>";
+		};
+		15079B2B1BED728200E12A68 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				15079B491BED75FE00E12A68 /* VideosListViewController.swift */,
+				15079B4B1BED760B00E12A68 /* VideosListView.swift */,
+				15079B4D1BED761400E12A68 /* VideosListViewModel.swift */,
+				15079B4F1BED761B00E12A68 /* VideosListView.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		15079B2C1BED728200E12A68 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				15079B691BED7F2A00E12A68 /* Tempo.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		15079B5F1BED790A00E12A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15079B631BED7D8E00E12A68 /* MeetupListResponse.swift */,
+				15079B651BED7DC700E12A68 /* MeetupModel.swift */,
+				15079B6B1BED7F5200E12A68 /* VenueModel.swift */,
+				15079B6D1BED809E00E12A68 /* GroupModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15079B601BED790A00E12A68 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				15079B611BED791900E12A68 /* MeetupAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		15079B6F1BED8E3A00E12A68 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */,
+				15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		19FE75BA9984A2F4AB4F5493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13AA9B4817DAB54FA5AF5A8B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39070EA067BD58A867EBC51D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */,
+				4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8CF97AEA1BE3C5E3009C5591 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +293,8 @@
 				8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */,
 				8CF97B171BE3C5E4009C5591 /* CocoaHeadsAppUITests */,
 				8CF97AF41BE3C5E3009C5591 /* Products */,
+				39070EA067BD58A867EBC51D /* Pods */,
+				19FE75BA9984A2F4AB4F5493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +311,7 @@
 		8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXGroup;
 			children = (
+				15079B241BED728200E12A68 /* Classes */,
 				8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */,
 				8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */,
 				8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */,
@@ -107,7 +320,7 @@
 				8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */,
 				8CF97B041BE3C5E3009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeadsApp";
+			path = CocoaHeadsApp;
 			sourceTree = "<group>";
 		};
 		8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */ = {
@@ -116,7 +329,7 @@
 				8CF97B0D1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift */,
 				8CF97B0F1BE3C5E3009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeadsAppTests";
+			path = CocoaHeadsAppTests;
 			sourceTree = "<group>";
 		};
 		8CF97B171BE3C5E4009C5591 /* CocoaHeadsAppUITests */ = {
@@ -125,7 +338,7 @@
 				8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */,
 				8CF97B1A1BE3C5E4009C5591 /* Info.plist */,
 			);
-			path = "CocoaHeadsAppUITests";
+			path = CocoaHeadsAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,16 +348,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsApp" */;
 			buildPhases = (
+				260B698C60B3A9A5CD1C0049 /* Check Pods Manifest.lock */,
+				15079B231BED71FD00E12A68 /* Generate R.Generated file */,
 				8CF97AEF1BE3C5E3009C5591 /* Sources */,
 				8CF97AF01BE3C5E3009C5591 /* Frameworks */,
 				8CF97AF11BE3C5E3009C5591 /* Resources */,
+				DFD7E45BE7DB553A7B4DD601 /* Embed Pods Frameworks */,
+				0B9A5DE5C48BE0D376C97223 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CocoaHeadsApp;
-			productName = "CocoaHeadsApp";
+			productName = CocoaHeadsApp;
 			productReference = 8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -162,7 +379,7 @@
 				8CF97B0B1BE3C5E3009C5591 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsAppTests;
-			productName = "CocoaHeadsAppTests";
+			productName = CocoaHeadsAppTests;
 			productReference = 8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -180,7 +397,7 @@
 				8CF97B161BE3C5E4009C5591 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsAppUITests;
-			productName = "CocoaHeadsAppUITests";
+			productName = CocoaHeadsAppUITests;
 			productReference = 8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -234,6 +451,10 @@
 			files = (
 				8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */,
 				8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */,
+				15079B581BED765200E12A68 /* SlideListView.xib in Resources */,
+				15079B501BED761B00E12A68 /* VideosListView.xib in Resources */,
+				15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */,
+				15079B3E1BED748200E12A68 /* MeetupListView.xib in Resources */,
 				8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +475,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B9A5DE5C48BE0D376C97223 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15079B231BED71FD00E12A68 /* Generate R.Generated file */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate R.Generated file";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/R.swift/rswift $SRCROOT/CocoaHeadsApp";
+		};
+		260B698C60B3A9A5CD1C0049 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD7E45BE7DB553A7B4DD601 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CF97AEF1BE3C5E3009C5591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */,
+				15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */,
+				15079B4C1BED760B00E12A68 /* VideosListView.swift in Sources */,
 				8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */,
+				15079B341BED739000E12A68 /* String+Extensions.swift in Sources */,
+				15079B6A1BED7F2A00E12A68 /* Tempo.swift in Sources */,
+				15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */,
+				15079B321BED736100E12A68 /* NibDesignable.swift in Sources */,
+				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
+				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
+				15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */,
+				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
+				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
+				15079B3C1BED746C00E12A68 /* MeetupListViewModel.swift in Sources */,
+				15079B5C1BED77EC00E12A68 /* APIConsumer.swift in Sources */,
+				15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */,
+				15079B4A1BED75FE00E12A68 /* VideosListViewController.swift in Sources */,
+				15079B661BED7DC700E12A68 /* MeetupModel.swift in Sources */,
+				15079B5A1BED77B200E12A68 /* ViewModel.swift in Sources */,
+				15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */,
+				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
+				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
+				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
+				15079B401BED750E00E12A68 /* R.generated.swift in Sources */,
+				15079B641BED7D8E00E12A68 /* MeetupListResponse.swift in Sources */,
+				15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */,
+				15079B5E1BED78BF00E12A68 /* ObjectParser.swift in Sources */,
 				8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */,
+				15079B521BED763700E12A68 /* SlideListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,9 +711,10 @@
 		};
 		8CF97B1E1BE3C5E4009C5591 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "CocoaHeadsApp/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -412,9 +723,10 @@
 		};
 		8CF97B1F1BE3C5E4009C5591 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "CocoaHeadsApp/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -425,7 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CocoaHeadsAppTests/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -437,7 +749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CocoaHeadsAppTests/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsTests";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -448,11 +760,11 @@
 		8CF97B241BE3C5E4009C5591 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "CocoaHeadsAppUITests/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
 				PRODUCT_NAME = CocoaHeadsApp;
-				TEST_TARGET_NAME = "CocoaHeadsApp";
+				TEST_TARGET_NAME = CocoaHeadsApp;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -460,11 +772,11 @@
 		8CF97B251BE3C5E4009C5591 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "CocoaHeadsAppUITests/Info.plist";
+				INFOPLIST_FILE = CocoaHeadsAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-AppsUITests";
 				PRODUCT_NAME = CocoaHeadsApp;
-				TEST_TARGET_NAME = "CocoaHeadsApp";
+				TEST_TARGET_NAME = CocoaHeadsApp;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
