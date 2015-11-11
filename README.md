@@ -2,6 +2,7 @@
 ## Guidelines para desenvolver novas features do app
 #### UI
 Usamos um storyboard **Main.storyboard** para definir o fluxo do app, porém o desenvolvimento da tela não é feito diretamente no storyboard. Para desenvolver uma tela você deve:
+
 1. Criar um viewController para esta tela
 2. Criar uma view que extenda de **NibDesignable**
 3. Criar um Xib com o mesmo nome da View.
@@ -14,6 +15,7 @@ Com isso, a view será renderizada corretamente no storyboard, mas sua edição 
 
 #### Interação com a View
 Devemos seguir alguns conceitos e princípios para separar a lógica de nossa funcionalidade:
+
 1. O ViewController deve apenas interagir com a view quando esta tiver que mudar de tamanho, ou apresentar outros ViewControllers
 2. Crie uma classe que extenda de **ViewModel**.
 3. Adicione uma propriedade viewModel para a classe View.
