@@ -24,21 +24,21 @@ Devemos seguir alguns conceitos e princípios para separar a lógica de nossa fu
 
 ##### Dynamics
 Para que a view consiga responder a mudanças de valores das propriedades do ViewModel, ao invés de declarar uma propriedade como:
-```
+```swift
 var enabled = true
 ```
 voce pode utilizar a classe Dynamic, e sua propriedade ficaria assim:
-```
+```swift
 let enabled = Dynamic(true)
 ```
 com isso voce pode adicionar listeners para quando esta propriedade mudar:
-```
+```swift
 viewModel.enable.bind(self) { enabled in
 	//your code here
 }
 ```
 Para acessar o valor atual de enabled, utilize a propriedade value:
-```
+```swift
 if viewModel.enable.value {
 	
 }
