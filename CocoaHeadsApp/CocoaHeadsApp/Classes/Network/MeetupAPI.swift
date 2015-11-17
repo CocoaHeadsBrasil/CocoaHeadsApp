@@ -64,6 +64,7 @@ extension MeetupAPI :MoyaTarget {
         case .ListEvents(let perPage, let offset):
             params["page"] = "\(perPage)"
             params["offset"] = "\(offset)"
+            params["fields"] = ["venue", "headcount", "photo_url"].joinWithSeparator(",")
             params["group_urlname"] = "AppsterdamBR"
         default:
             break
