@@ -15,6 +15,7 @@ class MeetupListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CocoaHeads BR"
     }
 
 }
