@@ -19,9 +19,17 @@
                         <animations/>
                     </mapView>
                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-Cl-3p9" customClass="GradientView" customModule="CocoaHeadsApp" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="292" height="183"/>
+                        <rect key="frame" x="0.0" y="0.0" width="292" height="163"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetup Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beU-1a-1Yh">
                         <rect key="frame" x="8" y="92" width="276" height="24"/>
@@ -30,7 +38,7 @@
                             <constraint firstAttribute="height" constant="24" id="vVY-xA-HWD"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-Uh-mHL">
@@ -48,7 +56,7 @@
                             <constraint firstAttribute="height" constant="21" id="geg-u2-vFo"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-5p-c8H">
@@ -59,7 +67,7 @@
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="YdZ-7K-5Kd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCx-K3-JzS">
@@ -69,7 +77,7 @@
                             <constraint firstAttribute="height" constant="21" id="Qho-s6-dzq"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -99,7 +107,7 @@
                 <constraint firstAttribute="trailing" secondItem="dLR-Uh-mHL" secondAttribute="trailing" id="gnD-UV-BLr"/>
                 <constraint firstAttribute="bottom" secondItem="PzA-jq-lex" secondAttribute="bottom" id="hkg-52-Nvx"/>
                 <constraint firstAttribute="trailing" secondItem="MCx-K3-JzS" secondAttribute="trailing" constant="4" id="kBr-FC-B3o"/>
-                <constraint firstAttribute="bottom" secondItem="QbU-Cl-3p9" secondAttribute="bottom" constant="-20" id="mn2-rF-UXf"/>
+                <constraint firstAttribute="bottom" secondItem="QbU-Cl-3p9" secondAttribute="bottom" id="mn2-rF-UXf"/>
                 <constraint firstItem="dLR-Uh-mHL" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" id="noj-Lx-dAE"/>
                 <constraint firstItem="PzA-jq-lex" firstAttribute="top" secondItem="BbE-lw-3Vp" secondAttribute="top" id="oxZ-Q2-4Qa"/>
                 <constraint firstItem="beU-1a-1Yh" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" constant="8" id="z9E-o1-C1S"/>
