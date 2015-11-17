@@ -19,12 +19,9 @@
                         <animations/>
                     </mapView>
                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-Cl-3p9" customClass="GradientView" customModule="CocoaHeadsApp" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="33" width="292" height="130"/>
+                        <rect key="frame" x="0.0" y="0.0" width="292" height="183"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="130" id="Vt1-Xa-fmK"/>
-                        </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetup Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beU-1a-1Yh">
                         <rect key="frame" x="8" y="92" width="276" height="24"/>
@@ -84,6 +81,7 @@
             <constraints>
                 <constraint firstItem="fOB-5q-y7J" firstAttribute="leading" secondItem="beU-1a-1Yh" secondAttribute="leading" id="0tx-AU-Iab"/>
                 <constraint firstItem="MCx-K3-JzS" firstAttribute="top" secondItem="beU-1a-1Yh" secondAttribute="bottom" id="0w0-uQ-wGn"/>
+                <constraint firstItem="QbU-Cl-3p9" firstAttribute="top" secondItem="BbE-lw-3Vp" secondAttribute="top" id="7Ik-VE-kgE"/>
                 <constraint firstItem="fOB-5q-y7J" firstAttribute="top" secondItem="MCx-K3-JzS" secondAttribute="bottom" id="7hL-3L-9Z2"/>
                 <constraint firstItem="dLR-Uh-mHL" firstAttribute="top" secondItem="fOB-5q-y7J" secondAttribute="bottom" constant="4" id="7zV-xQ-aHz"/>
                 <constraint firstAttribute="trailing" secondItem="PzA-jq-lex" secondAttribute="trailing" id="EeP-Sd-iAA"/>
@@ -101,7 +99,7 @@
                 <constraint firstAttribute="trailing" secondItem="dLR-Uh-mHL" secondAttribute="trailing" id="gnD-UV-BLr"/>
                 <constraint firstAttribute="bottom" secondItem="PzA-jq-lex" secondAttribute="bottom" id="hkg-52-Nvx"/>
                 <constraint firstAttribute="trailing" secondItem="MCx-K3-JzS" secondAttribute="trailing" constant="4" id="kBr-FC-B3o"/>
-                <constraint firstAttribute="bottom" secondItem="QbU-Cl-3p9" secondAttribute="bottom" id="mn2-rF-UXf"/>
+                <constraint firstAttribute="bottom" secondItem="QbU-Cl-3p9" secondAttribute="bottom" constant="-20" id="mn2-rF-UXf"/>
                 <constraint firstItem="dLR-Uh-mHL" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" id="noj-Lx-dAE"/>
                 <constraint firstItem="PzA-jq-lex" firstAttribute="top" secondItem="BbE-lw-3Vp" secondAttribute="top" id="oxZ-Q2-4Qa"/>
                 <constraint firstItem="beU-1a-1Yh" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" constant="8" id="z9E-o1-C1S"/>
