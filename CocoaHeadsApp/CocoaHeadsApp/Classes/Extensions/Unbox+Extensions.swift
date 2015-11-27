@@ -13,11 +13,12 @@ import Unbox
  Allow NSDate fields inside Unboxable models
 */
 public class UnboxNSDateTransformer: UnboxTransformer {
-    public typealias RawType = String
+    public typealias RawType = Double
     public typealias TransformedType = NSDate
     
     public static func transformUnboxedValue(unboxedValue: RawType) -> TransformedType? {
-        let tempo = Tempo(stringDate: unboxedValue)
+        let seconds = unboxedValue / 1000
+        let tempo = Tempo(unixOffset: seconds)
         return tempo.date
     }
     
