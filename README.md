@@ -1,5 +1,9 @@
 # CocoaHeads Brasil 🇧🇷
+
+[![waffle board](https://img.shields.io/badge/waffle-board-blue.svg)](https://waffle.io/CocoaHeadsBrasil/CocoaHeadsApp)
+
 ## Guidelines para desenvolver novas features do app
+
 #### UI
 Usamos um storyboard **Main.storyboard** para definir o fluxo do app, porém o desenvolvimento da tela não é feito diretamente no storyboard. Para desenvolver uma tela você deve:
 
