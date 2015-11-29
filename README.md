@@ -2,7 +2,16 @@
 
 [![waffle board](https://img.shields.io/badge/waffle-board-blue.svg)](https://waffle.io/CocoaHeadsBrasil/CocoaHeadsApp)
 
-## Guidelines para desenvolver novas features do app
+## Setup inicial
+
+### cocoapods-keys
+Usamos o **cocoapods-keys** para gerenciar as chaves de acesso. Para instalar, execute:
+```
+gem install cocoapods-keys
+```
+Ambas as chaves `ParseApplicationId` e `ParseClientKey` estão configuradas. Criamos uma conta de teste para ser compartilhada. Procure saber quem as possui. Caso prefira, você também pode criar a sua própria app no Parse e utilizar suas próprias chaves de acesso.
+
+## Guidelines de desenvolvimento
 
 #### UI
 Usamos um storyboard **Main.storyboard** para definir o fluxo do app, porém o desenvolvimento da tela não é feito diretamente no storyboard. Para desenvolver uma tela você deve:
