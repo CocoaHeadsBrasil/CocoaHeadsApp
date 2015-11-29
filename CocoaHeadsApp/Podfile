@@ -2,7 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'R.swift'
-pod 'Unbox', :git => 'https://github.com/JohnSundell/Unbox.git'
+pod 'Unbox', '1.0'
 pod 'Moya'
 pod 'XCGLogger'
 pod 'Nuke'
