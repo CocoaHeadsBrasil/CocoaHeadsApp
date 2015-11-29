@@ -20,8 +20,8 @@ struct R {
   }
   
   struct image {
-    static var first: UIImage? { return UIImage(named: "first") }
-    static var second: UIImage? { return UIImage(named: "second") }
+    static var first: UIImage? { return UIImage(named: "first", inBundle: _R.hostingBundle, compatibleWithTraitCollection: nil) }
+    static var second: UIImage? { return UIImage(named: "second", inBundle: _R.hostingBundle, compatibleWithTraitCollection: nil) }
   }
   
   struct nib {
@@ -32,7 +32,7 @@ struct R {
   }
   
   struct reuseIdentifier {
-    static var displayMeetupCell: ReuseIdentifier<CocoaHeadsApp.MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
+    static var displayMeetupCell: ReuseIdentifier<MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
   }
   
   struct segue {
@@ -42,7 +42,7 @@ struct R {
   struct storyboard {
     struct launchScreen {
       static var initialViewController: UIViewController? { return instance.instantiateInitialViewController() }
-      static var instance: UIStoryboard { return UIStoryboard(name: "LaunchScreen", bundle: nil) }
+      static var instance: UIStoryboard { return UIStoryboard(name: "LaunchScreen", bundle: _R.hostingBundle) }
       
       static func validateImages() {
         
@@ -55,7 +55,7 @@ struct R {
     
     struct main {
       static var initialViewController: UITabBarController? { return instance.instantiateInitialViewController() as? UITabBarController }
-      static var instance: UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
+      static var instance: UIStoryboard { return UIStoryboard(name: "Main", bundle: _R.hostingBundle) }
       
       static func validateImages() {
         assert(UIImage(named: "first") != nil, "[R.swift] Image named 'first' is used in storyboard 'Main', but couldn't be loaded.")
@@ -70,14 +70,16 @@ struct R {
 }
 
 struct _R {
+  static var hostingBundle: NSBundle? { return NSBundle(identifier: "br.com.cocoaheads.CocoaHeads-Apps") }
+  
   struct nib {
     struct _MeetupListCollectionViewCell: NibResource, Reusable {
-      var instance: UINib { return UINib.init(nibName: "MeetupListCollectionViewCell", bundle: nil) }
+      var instance: UINib { return UINib.init(nibName: "MeetupListCollectionViewCell", bundle: _R.hostingBundle) }
       var name: String { return "MeetupListCollectionViewCell" }
-      var reuseIdentifier: ReuseIdentifier<CocoaHeadsApp.MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
+      var reuseIdentifier: ReuseIdentifier<MeetupListCollectionViewCell> { return ReuseIdentifier(identifier: "displayMeetupCell") }
       
-      func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> CocoaHeadsApp.MeetupListCollectionViewCell? {
-        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? CocoaHeadsApp.MeetupListCollectionViewCell
+      func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> MeetupListCollectionViewCell? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? MeetupListCollectionViewCell
       }
       
       func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject] {
@@ -86,7 +88,7 @@ struct _R {
     }
     
     struct _MeetupListView: NibResource {
-      var instance: UINib { return UINib.init(nibName: "MeetupListView", bundle: nil) }
+      var instance: UINib { return UINib.init(nibName: "MeetupListView", bundle: _R.hostingBundle) }
       var name: String { return "MeetupListView" }
       
       func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView? {
@@ -99,7 +101,7 @@ struct _R {
     }
     
     struct _SlideListView: NibResource {
-      var instance: UINib { return UINib.init(nibName: "SlideListView", bundle: nil) }
+      var instance: UINib { return UINib.init(nibName: "SlideListView", bundle: _R.hostingBundle) }
       var name: String { return "SlideListView" }
       
       func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView? {
@@ -112,7 +114,7 @@ struct _R {
     }
     
     struct _VideosListView: NibResource {
-      var instance: UINib { return UINib.init(nibName: "VideosListView", bundle: nil) }
+      var instance: UINib { return UINib.init(nibName: "VideosListView", bundle: _R.hostingBundle) }
       var name: String { return "VideosListView" }
       
       func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView? {
@@ -200,6 +202,6 @@ extension UICollectionView {
 
 extension UIViewController {
   convenience init(nib: NibResource) {
-    self.init(nibName: nib.name, bundle: nil)
+    self.init(nibName: nib.name, bundle: _R.hostingBundle)
   }
 }
