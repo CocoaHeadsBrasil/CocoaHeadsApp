@@ -14,6 +14,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="292" height="163"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+<<<<<<< HEAD
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetup Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beU-1a-1Yh">
+                        <rect key="frame" x="8" y="8" width="276" height="24"/>
+=======
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzA-jq-lex">
                         <rect key="frame" x="0.0" y="0.0" width="292" height="163"/>
                         <animations/>
@@ -33,12 +37,24 @@
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetup Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beU-1a-1Yh">
                         <rect key="frame" x="8" y="92" width="276" height="24"/>
+>>>>>>> master
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="vVY-xA-HWD"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+<<<<<<< HEAD
+                        <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-UN-7gV">
+                        <rect key="frame" x="8" y="32" width="276" height="123"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" white="0.39995374177631576" alpha="1" colorSpace="calibratedWhite"/>
+=======
                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> master
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-Uh-mHL">
@@ -49,6 +65,8 @@
                             <constraint firstAttribute="height" constant="1" id="lvt-DL-c4K"/>
                         </constraints>
                     </view>
+<<<<<<< HEAD
+=======
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-5q-y7J">
                         <rect key="frame" x="8" y="137" width="216" height="21"/>
                         <animations/>
@@ -80,6 +98,7 @@
                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+>>>>>>> master
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -87,6 +106,22 @@
             <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+<<<<<<< HEAD
+                <constraint firstItem="beU-1a-1Yh" firstAttribute="top" secondItem="BbE-lw-3Vp" secondAttribute="top" constant="8" id="8YN-UC-vpQ"/>
+                <constraint firstAttribute="trailing" secondItem="beU-1a-1Yh" secondAttribute="trailing" constant="8" id="Gfy-PG-kEO"/>
+                <constraint firstAttribute="bottom" secondItem="dLR-Uh-mHL" secondAttribute="bottom" id="MWM-Se-BMf"/>
+                <constraint firstItem="WSH-UN-7gV" firstAttribute="top" secondItem="beU-1a-1Yh" secondAttribute="bottom" id="YUK-wd-TdT"/>
+                <constraint firstAttribute="trailing" secondItem="dLR-Uh-mHL" secondAttribute="trailing" id="gnD-UV-BLr"/>
+                <constraint firstItem="WSH-UN-7gV" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" constant="8" id="i5e-60-aB4"/>
+                <constraint firstItem="dLR-Uh-mHL" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" id="noj-Lx-dAE"/>
+                <constraint firstAttribute="bottom" secondItem="WSH-UN-7gV" secondAttribute="bottom" constant="8" id="p7J-eO-4Oy"/>
+                <constraint firstAttribute="trailing" secondItem="WSH-UN-7gV" secondAttribute="trailing" constant="8" id="qUl-ej-Z1L"/>
+                <constraint firstItem="beU-1a-1Yh" firstAttribute="leading" secondItem="BbE-lw-3Vp" secondAttribute="leading" constant="8" id="z9E-o1-C1S"/>
+            </constraints>
+            <size key="customSize" width="292" height="163"/>
+            <connections>
+                <outlet property="meetupDescriptionLabel" destination="WSH-UN-7gV" id="yOw-PC-V4B"/>
+=======
                 <constraint firstItem="fOB-5q-y7J" firstAttribute="leading" secondItem="beU-1a-1Yh" secondAttribute="leading" id="0tx-AU-Iab"/>
                 <constraint firstItem="MCx-K3-JzS" firstAttribute="top" secondItem="beU-1a-1Yh" secondAttribute="bottom" id="0w0-uQ-wGn"/>
                 <constraint firstItem="QbU-Cl-3p9" firstAttribute="top" secondItem="BbE-lw-3Vp" secondAttribute="top" id="7Ik-VE-kgE"/>
@@ -124,6 +159,7 @@
                 <outlet property="meetupLongDateLabel" destination="fOB-5q-y7J" id="E0o-G4-jqp"/>
                 <outlet property="meetupMapView" destination="PzA-jq-lex" id="NP4-j2-rF5"/>
                 <outlet property="meetupPlaceDescriptionLabel" destination="MCx-K3-JzS" id="naf-qR-euk"/>
+>>>>>>> master
                 <outlet property="meetupTitleLabel" destination="beU-1a-1Yh" id="G68-Im-ZBH"/>
             </connections>
             <point key="canvasLocation" x="87" y="205.5"/>
