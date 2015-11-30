@@ -8,6 +8,11 @@
 
 import UIKit
 import XCGLogger
+<<<<<<< HEAD
+=======
+import Parse
+import Keys
+>>>>>>> master
 
 let logger = XCGLogger.defaultInstance()
 
@@ -16,8 +21,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+<<<<<<< HEAD
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+=======
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let keys = CocoaheadsappKeys()
+        Parse.setApplicationId(keys.parseApplicationId(), clientKey: keys.parseClientKey())
+
+        let query = PFQuery(className: "Chapter")
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if let chapters = objects {
+                chapters.each({ (chapter) -> Void in
+                    print(chapter["city"])
+                })
+            }
+        }
+
+>>>>>>> master
         logger.setup(.Debug, showLogIdentifier: false, showFunctionName: true, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, showDate: false, writeToFile: nil, fileLogLevel: nil)
         return true
     }

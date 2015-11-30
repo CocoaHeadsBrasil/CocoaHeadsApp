@@ -27,9 +27,19 @@ class MeetupModel: Unboxable {
     let status :String
     let group :GroupModel
     let venue :VenueModel? //TODO needs authenticated request to be sent
+<<<<<<< HEAD
     
     required init(unboxer: Unboxer) {
         headCount = unboxer.unbox("headcount")
+=======
+    let eventDate :NSDate
+    let eventDateTempo :Tempo
+    
+    required init(unboxer: Unboxer) {
+        headCount = unboxer.unbox("headcount")
+        eventDate = unboxer.unbox("time")
+        eventDateTempo = Tempo(date: eventDate)
+>>>>>>> master
         visibility = unboxer.unbox("visibility")
         waitlistCount = unboxer.unbox("waitlist_count")
         meetDescription = unboxer.unbox("description")

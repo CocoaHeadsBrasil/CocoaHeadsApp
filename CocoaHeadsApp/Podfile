@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+plugin 'cocoapods-keys', {
+  :project => 'CocoaHeadsApp',
+  :keys => [
+    'ParseApplicationId',
+    'ParseClientKey'
+  ]
+}
+
+>>>>>>> master
 platform :ios, '8.0'
 use_frameworks!
 
@@ -5,4 +16,9 @@ pod 'R.swift'
 pod 'Unbox', :git => 'https://github.com/JohnSundell/Unbox.git'
 pod 'Moya'
 pod 'XCGLogger'
+<<<<<<< HEAD
 pod 'Nuke'
+=======
+pod 'Nuke'
+pod 'Parse'
+>>>>>>> master

@@ -38,6 +38,11 @@
 		15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */; };
 		15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */; };
 		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
+<<<<<<< HEAD
+=======
+		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
+		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
+>>>>>>> master
 		6AAEAD3CB9451B4019E6EC7C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA9B4817DAB54FA5AF5A8B /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
@@ -99,6 +104,11 @@
 		15079B721BED8E6400E12A68 /* MeetupListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupListCollectionViewCell.xib; sourceTree = "<group>"; };
 		15079B741BED8EE300E12A68 /* MeetupListCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDataSource.swift; sourceTree = "<group>"; };
 		15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDelegate.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		154C46C81BFAA21B00A32D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		154C46CB1BFAA5EE00A32D09 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+>>>>>>> master
 		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +132,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */,
+>>>>>>> master
 				6AAEAD3CB9451B4019E6EC7C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +174,10 @@
 		15079B251BED728200E12A68 /* App */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				154C46CA1BFAA5E500A32D09 /* Views */,
+>>>>>>> master
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -269,9 +287,24 @@
 			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		19FE75BA9984A2F4AB4F5493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+=======
+		154C46CA1BFAA5E500A32D09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				154C46CB1BFAA5EE00A32D09 /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19FE75BA9984A2F4AB4F5493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				154C46C81BFAA21B00A32D09 /* MapKit.framework */,
+>>>>>>> master
 				13AA9B4817DAB54FA5AF5A8B /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -562,6 +595,10 @@
 				15079B661BED7DC700E12A68 /* MeetupModel.swift in Sources */,
 				15079B5A1BED77B200E12A68 /* ViewModel.swift in Sources */,
 				15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */,
+<<<<<<< HEAD
+=======
+				154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */,
+>>>>>>> master
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
 				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
@@ -715,6 +752,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
+<<<<<<< HEAD
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+>>>>>>> master
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
@@ -727,6 +768,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
+<<<<<<< HEAD
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+>>>>>>> master
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
 				PRODUCT_NAME = CocoaHeadsApp;
