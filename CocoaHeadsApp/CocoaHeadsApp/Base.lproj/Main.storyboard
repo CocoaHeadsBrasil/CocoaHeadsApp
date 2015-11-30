@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meetup List View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="MeetupListViewController" customModule="CocoaHeadsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2a-sq-Zht" customClass="MeetupListView" customModule="CocoaHeadsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g2a-sq-Zht" secondAttribute="bottom" id="Dxp-4g-lZR"/>
+                            <constraint firstItem="g2a-sq-Zht" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="Xd5-yS-teI"/>
+                            <constraint firstItem="g2a-sq-Zht" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="XdB-Bv-mTn"/>
+                            <constraint firstAttribute="trailing" secondItem="g2a-sq-Zht" secondAttribute="trailing" id="YXP-Ca-3UW"/>
+                            <constraint firstItem="g2a-sq-Zht" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="nQT-Br-Jl2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XdB-Bv-mTn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wxj-Gk-OMf"/>
+                    <connections>
+                        <outlet property="nibView" destination="g2a-sq-Zht" id="zIU-NW-ZRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="-320"/>
+        </scene>
+        <!--Slide List View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SlideListViewController" customModule="CocoaHeadsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSY-oQ-EpG" customClass="SlideListView" customModule="CocoaHeadsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sSY-oQ-EpG" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Igt-is-pbH"/>
+                            <constraint firstItem="sSY-oQ-EpG" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="cav-2u-ZdZ"/>
+                            <constraint firstAttribute="bottom" secondItem="sSY-oQ-EpG" secondAttribute="bottom" id="esD-xL-W3C"/>
+                            <constraint firstAttribute="trailing" secondItem="sSY-oQ-EpG" secondAttribute="trailing" id="jLu-ff-glg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zLC-r9-G5h"/>
+                    <connections>
+                        <outlet property="nibView" destination="sSY-oQ-EpG" id="yif-Ub-7mW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="358"/>
+        </scene>
+        <!--Videos List View Controller-->
+        <scene sceneID="lnC-dq-1D8">
+            <objects>
+                <viewController id="QS9-v8-d7f" customClass="VideosListViewController" customModule="CocoaHeadsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PYm-ZW-rzX"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Wr-vc-f5O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0d-aF-jz3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-rW-Q51" customClass="VideosListView" customModule="CocoaHeadsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1sE-rW-Q51" secondAttribute="trailing" id="Dv7-jK-aqI"/>
+                            <constraint firstAttribute="bottom" secondItem="1sE-rW-Q51" secondAttribute="bottom" id="K91-jv-ZYp"/>
+                            <constraint firstItem="1sE-rW-Q51" firstAttribute="top" secondItem="PYm-ZW-rzX" secondAttribute="bottom" id="Sf5-QT-B8r"/>
+                            <constraint firstItem="1sE-rW-Q51" firstAttribute="leading" secondItem="E0d-aF-jz3" secondAttribute="leading" id="YtE-W3-B00"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T1x-3N-2zm"/>
+                    <connections>
+                        <outlet property="nibView" destination="1sE-rW-Q51" id="esb-pM-LZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHc-tb-P7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="1032"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yxe-iR-rmL" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="CpX-WO-KLj" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Z1i-bg-IGi" kind="relationship" relationship="viewControllers" id="Ryz-5x-d7d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="pSL-7G-WrC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yxe-iR-rmL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P7m-6v-OMm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="4rv-T5-JOA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJN-6J-CMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="Yez-as-BEs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CpX-WO-KLj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="662-45-ah5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="TtB-nJ-OqL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhv-kf-sur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="358"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V3B-s5-dDz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z1i-bg-IGi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="nBt-dj-SWZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UP6-yh-Y6V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QS9-v8-d7f" kind="relationship" relationship="rootViewController" id="HGj-We-MhW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbv-JT-ifc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1032"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
