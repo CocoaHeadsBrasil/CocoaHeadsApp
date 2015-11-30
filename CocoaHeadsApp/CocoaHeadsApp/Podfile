@@ -1,0 +1,17 @@
+plugin 'cocoapods-keys', {
+  :project => 'CocoaHeadsApp',
+  :keys => [
+    'ParseApplicationId',
+    'ParseClientKey'
+  ]
+}
+
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'R.swift'
+pod 'Unbox', :git => 'https://github.com/JohnSundell/Unbox.git'
+pod 'Moya'
+pod 'XCGLogger'
+pod 'Nuke'
+pod 'Parse'
