@@ -62,10 +62,10 @@ A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindA
 
 ##Contato
 Os canais para contato são:
--[Twitter](https://twitter.com/cocoaheadsbr/)
--[Facebook](https://www.facebook.com/CocoaHeadsBrasil/)
--Email: contato@cocoaheads.com.br
--Temos também um channel exclusivo do Cocoaheads no [Slack](iosdevbr.slack.com). Caso você ainda não faça parte da comunidade, [faça seu cadastro](http://iosdevbr.herokuapp.com/) e nos ajude a crescer ainda mais.
+- [Twitter](https://twitter.com/cocoaheadsbr/)
+- [Facebook](https://www.facebook.com/CocoaHeadsBrasil/)
+- Email: contato@cocoaheads.com.br
+- Temos também um channel exclusivo do Cocoaheads no [Slack](iosdevbr.slack.com). Caso você ainda não faça parte da comunidade, [faça seu cadastro](http://iosdevbr.herokuapp.com/) e nos ajude a crescer ainda mais.
 
 ##Licença
 O CocoaHeadsApp é liberado sob a licença [MIT](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/blob/master/LICENSE).
