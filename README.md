@@ -4,12 +4,29 @@
 
 ## Setup inicial
 
-### cocoapods-keys
-Usamos o **cocoapods-keys** para gerenciar as chaves de acesso. Para instalar, execute:
+### 1. cocoapods-keys
+Usamos o plugin **cocoapods-keys** para gerenciar as chaves de acesso. Para instalar, execute:
+
 ```
-gem install cocoapods-keys
+$ gem install cocoapods-keys
 ```
-Ambas as chaves `ParseApplicationId` e `ParseClientKey` estão configuradas. Criamos uma conta de teste para ser compartilhada. Procure saber quem as possui. Caso prefira, você também pode criar a sua própria app no Parse e utilizar suas próprias chaves de acesso.
+
+### 2. CocoaPods
+Instalado o plugin, baixe e instale as dependências usando o CocoaPods:
+
+```
+$ cd CocoaHeadsApp && pod install
+```
+
+Esse comando vai pedir as seguintes chaves: `ParseApplicationId` e `ParseClientKey`, que são as chaves de acesso ao projeto criado no Parse. Após ter criado seu próprio projeto lá, utilize aqui essas chaves.
+
+*OBS: Se preferir, existe também uma conta de teste compartilhada do CocoaHeads Brasil. Se quiser utilizá-la, procure saber quem possui as chaves.*
+
+### 3. Parse
+Para utilizar o mesmo schema que será utilizado no app, você pode importar os dados para seu próprio dashboard no Parse. Para isso, você pode usar esse export [aqui](http://cl.ly/0a021W3Y0D42).
+
+Depois de importados os dados, dê uma olhada no seu Parse Data e veja as colunas existentes e o que você usar quando estiver fazendo as queries.
+
 
 ## Guidelines de desenvolvimento
 
@@ -37,35 +54,34 @@ Devemos seguir alguns conceitos e princípios para separar a lógica de nossa fu
 
 ##### Dynamics
 Para que a view consiga responder a mudanças de valores das propriedades do ViewModel, ao invés de declarar uma propriedade como:
+
 ```swift
 var enabled = true
 ```
+
 voce pode utilizar a classe Dynamic, e sua propriedade ficaria assim:
+
 ```swift
 let enabled = Dynamic(true)
 ```
+
 com isso voce pode adicionar listeners para quando esta propriedade mudar:
+
 ```swift
 viewModel.enable.bind(self) { enabled in
 	//your code here
 }
 ```
+
 Para acessar o valor atual de enabled, utilize a propriedade value:
+
 ```swift
 if viewModel.enable.value {
 	
 }
 ```
+
 A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindAndFire**
+
 * **bind** vai apenas escutar por novas mudanças de valores
 * **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores 
-
-##Contato
-Os canais para contato são:
-- [Twitter](https://twitter.com/cocoaheadsbr/)
-- [Facebook](https://www.facebook.com/CocoaHeadsBrasil/)
-- Email: contato@cocoaheads.com.br
-- Temos também um channel exclusivo do Cocoaheads no [Slack](http://iosdevbr.slack.com). Caso você ainda não faça parte da comunidade, [faça seu cadastro](http://iosdevbr.herokuapp.com/) e nos ajude a crescer ainda mais.
-
-##Licença
-O CocoaHeadsApp é liberado sob a licença [MIT](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/blob/master/LICENSE).
