@@ -7,8 +7,8 @@ git:
 before_install: 
   - git submodule update --init --recursive
   - bundle install
-  - '[ "${TRAVIS_PULL_REQUEST}" != "false" ] && export ParseClientKey="-"'
-  - '[ "${TRAVIS_PULL_REQUEST}" != "false" ] && export ParseApplicationId="-"'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo "" || export ParseClientKey="-"'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo "" || ParseApplicationId="-"'
   - bundle exec pod keys set --project-directory=${TRAVIS_BUILD_DIR}/CocoaHeadsApp ParseClientKey $ParseClientKey
   - bundle exec pod keys set --project-directory=${TRAVIS_BUILD_DIR}/CocoaHeadsApp ParseApplicationId $ParseApplicationId
 podfile: CocoaHeadsApp/Podfile
