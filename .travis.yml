@@ -8,8 +8,8 @@ before_install:
   - git submodule update --init --recursive
   - bundle install
   - cd CocoaHeadsApp
-  - bundle exec pod keys set ParseClientKey $ParseClientKey
-  - bundle exec pod keys set ParseApplicationId $ParseApplicationId
+  - bundle exec pod keys set ParseClientKey [ "${TRAVIS_PULL_REQUEST}" = "false" ] && $ParseClientKey || '-'
+  - bundle exec pod keys set ParseApplicationId [ "${TRAVIS_PULL_REQUEST}" = "false" ] && $ParseApplicationId || '-'
   - cd ..
 podfile: CocoaHeadsApp/Podfile
 xcode_workspace: CocoaHeadsApp/CocoaHeadsApp.xcworkspace
