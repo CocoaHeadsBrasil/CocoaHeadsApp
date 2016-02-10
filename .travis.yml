@@ -7,8 +7,10 @@ git:
 before_install: 
   - git submodule update --init --recursive
   - bundle install
+  - cd CocoaHeadsApp
   - bundle exec pod keys set ParseApplicationId $ParseApplicationId
   - bundle exec pod keys set ParseClientKey $ParseClientKey
+  - cd ..
 podfile: CocoaHeadsApp/Podfile
 xcode_workspace: CocoaHeadsApp/CocoaHeadsApp.xcworkspace
 xcode_scheme: CocoaHeadsApp
