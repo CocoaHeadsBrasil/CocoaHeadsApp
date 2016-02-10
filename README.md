@@ -85,3 +85,6 @@ A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindA
 
 * **bind** vai apenas escutar por novas mudanças de valores
 * **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores 
+
+## Licença
+[The MIT License](https://raw.githubusercontent.com/CocoaHeadsBrasil/CocoaHeadsApp/master/LICENSE)
