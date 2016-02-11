@@ -86,5 +86,8 @@ A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindA
 * **bind** vai apenas escutar por novas mudanças de valores
 * **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores 
 
+## Motivação para o aplicativo existir
+Observa-se a necessidade de todos os Chapters do CocoaHeads de reunir as informações dos eventos em um único lugar. Assim surgiu a ideia de criar o aplicativo. Facilitar a visualização dos eventos em todas as cidades, participantes, realização de sorteios e check list de membros.
+
 ## Licença
 [The MIT License](https://raw.githubusercontent.com/CocoaHeadsBrasil/CocoaHeadsApp/master/LICENSE)
