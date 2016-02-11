@@ -87,7 +87,7 @@ A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindA
 * **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores
 
 ## Quem pode contribuir
-Todos desenvolvedores iOS estão aptos a colaborar com essa iniciativa, basta seguir os workflow de contribuição.
+Todos desenvolvedores iOS estão aptos a colaborar com essa iniciativa, basta seguir o workflow de contribuição.
 
  
 
