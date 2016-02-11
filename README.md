@@ -84,7 +84,12 @@ if viewModel.enable.value {
 A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindAndFire**
 
 * **bind** vai apenas escutar por novas mudanças de valores
-* **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores 
+* **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores
+
+## Quem pode contribuir
+Todos desenvolvedores iOS estão aptos a colaborar com essa iniciativa, basta seguid os workflow de contribuição.
+
+ 
 
 ## Licença
 [The MIT License](https://raw.githubusercontent.com/CocoaHeadsBrasil/CocoaHeadsApp/master/LICENSE)
