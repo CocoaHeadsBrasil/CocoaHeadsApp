@@ -26,12 +26,6 @@ Esse comando vai pedir as seguintes chaves: `ParseApplicationId` e `ParseClientK
 
 *OBS: Se preferir, existe também uma conta de teste compartilhada do CocoaHeads Brasil. Se quiser utilizá-la, procure saber quem possui as chaves.*
 
-### 3. Parse
-Para utilizar o mesmo schema que será utilizado no app, você pode importar os dados para seu próprio dashboard no Parse. Para isso, você pode usar esse export [aqui](http://cl.ly/0a021W3Y0D42).
-
-Depois de importados os dados, dê uma olhada no seu Parse Data e veja as colunas existentes e o que você usar quando estiver fazendo as queries.
-
-
 ## Guidelines de desenvolvimento
 
 #### UI
