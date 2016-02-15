@@ -18,7 +18,7 @@ enum APIErrors :ErrorType {
 /**
  The APIConsumer is responsable for excuting the request and parse the response to the appropriate type
 */
-class APIConsumer<Target:MoyaTarget>: NSObject {
+class APIConsumer<Target:TargetType>: NSObject {
     
     let provider :MoyaProvider<Target>
     
@@ -28,29 +28,31 @@ class APIConsumer<Target:MoyaTarget>: NSObject {
     }
     
     func consume<T :Unboxable>(target :Target, success:(T -> Void) = { _ in }, failure:(ErrorType -> Void) = { error in logger.error("\(error)") }) -> Cancellable {
-        func handleRequestResponse(data: NSData?, statusCode: Int?, response: NSURLResponse?, error: ErrorType?) {
-            if let retError = error {
-                return failure(retError)
-            }
-            guard let data = data else {
-                return failure(APIErrors.BadAPIResponse(statusCode, "No Response"))
-            }
-            guard statusCode == 200 else {
-                return failure(APIErrors.BadAPIResponse(statusCode, String(data: data, encoding: NSUTF8StringEncoding)))
-            }
-            let parser = ObjectParser<T>(jsonData: data)
-            let parsedResponse = parser.parsedResponse()
-            if let validResponse = parsedResponse.response {
-                success(validResponse)
-            }
-            else if let error = parsedResponse.error {
+        let cancellable = provider.request(target) { (result) -> () in
+            
+            switch result {
+            case .Failure(let error):
                 failure(error)
+            case .Success(let response):
+                let statusCode = response.statusCode
+                let data = response.data
+                guard statusCode == 200 else {
+                    return failure(APIErrors.BadAPIResponse(statusCode, String(data: data, encoding: NSUTF8StringEncoding)))
+                }
+                let parser = ObjectParser<T>(jsonData: data)
+                let parsedResponse = parser.parsedResponse()
+                if let validResponse = parsedResponse.response {
+                    success(validResponse)
+                }
+                else if let error = parsedResponse.error {
+                    failure(error)
+                }
+                else {
+                    failure(APIErrors.UndefinedBehavior(data))
+                }
             }
-            else {
-                failure(APIErrors.UndefinedBehavior(data))
-            }
+            
         }
-        let cancellable = provider.request(target, completion:handleRequestResponse)
         return cancellable
     }
     

@@ -65,8 +65,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods (~> 0.38.0)
-  cocoapods-keys (~> 1.6.0)
+  cocoapods
+  cocoapods-keys
 
 BUNDLED WITH
    1.11.2

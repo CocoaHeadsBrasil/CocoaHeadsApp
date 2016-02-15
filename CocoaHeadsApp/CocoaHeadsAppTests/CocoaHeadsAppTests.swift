@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import CocoaHeadsApp
 
 class CocoaHeadsAppTests: XCTestCase {
     
