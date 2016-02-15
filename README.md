@@ -8,23 +8,12 @@ CocoaHeads é um grupo formado por desenvolvedores (profissionais e iniciantes),
 
 ## Setup inicial
 
-### 1. cocoapods-keys
-Usamos o plugin **cocoapods-keys** para gerenciar as chaves de acesso. Para instalar, execute:
+### Instalação das Dependências
 
 ```
-$ gem install cocoapods-keys
+bundle install
 ```
 
-### 2. CocoaPods
-Instalado o plugin, baixe e instale as dependências usando o CocoaPods:
-
-```
-$ cd CocoaHeadsApp && pod install
-```
-
-Esse comando vai pedir as seguintes chaves: `ParseApplicationId` e `ParseClientKey`, que são as chaves de acesso ao projeto criado no Parse. Após ter criado seu próprio projeto lá, utilize aqui essas chaves.
-
-*OBS: Se preferir, existe também uma conta de teste compartilhada do CocoaHeads Brasil. Se quiser utilizá-la, procure saber quem possui as chaves.*
 
 ## Guidelines de desenvolvimento
 
