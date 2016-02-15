@@ -27,6 +27,12 @@ target :CocoaHeadsAppTests do
     common_pods
 end
 
+target :CocoaHeadsAppIntegrationTests do
+    xcodeproj 'CocoaHeadsApp.xcodeproj'
+    common_pods
+    common_test_pods
+end
+
 target :CocoaHeadsAppUITests do
     xcodeproj 'CocoaHeadsApp.xcodeproj'
     common_pods

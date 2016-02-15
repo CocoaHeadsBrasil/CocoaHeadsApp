@@ -51,6 +51,7 @@
 		8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */; };
 		8CF97B0E1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B0D1BE3C5E3009C5591 /* CocoaHeadsAppTests.swift */; };
 		8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */; };
+		AD99ADD71C728B45004BF12A /* CocoaHeadsAppIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99ADD61C728B45004BF12A /* CocoaHeadsAppIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,13 @@
 			remoteInfo = CocoaHeadsApp;
 		};
 		8CF97B151BE3C5E4009C5591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CF97AF21BE3C5E3009C5591;
+			remoteInfo = CocoaHeadsApp;
+		};
+		AD99ADD91C728B45004BF12A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CF97AEB1BE3C5E3009C5591 /* Project object */;
 			proxyType = 1;
@@ -124,6 +132,9 @@
 		8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppUITests.swift; sourceTree = "<group>"; };
 		8CF97B1A1BE3C5E4009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98C87539E365326F87AD4F5 /* Pods-CocoaHeadsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppUITests/Pods-CocoaHeadsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD99ADD41C728B45004BF12A /* CocoaHeadsAppIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsAppIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD99ADD61C728B45004BF12A /* CocoaHeadsAppIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppIntegrationTests.swift; sourceTree = "<group>"; };
+		AD99ADD81C728B45004BF12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69A81103677DA392B92C01F /* Pods-CocoaHeadsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FF3008043D3D69F6A32B80 /* Pods-CocoaHeadsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD4B3AC72BC727A4B3320BB /* Pods_CocoaHeadsAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD99ADD11C728B45004BF12A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +343,7 @@
 				8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */,
 				8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */,
 				8CF97B171BE3C5E4009C5591 /* CocoaHeadsAppUITests */,
+				AD99ADD51C728B45004BF12A /* CocoaHeadsAppIntegrationTests */,
 				8CF97AF41BE3C5E3009C5591 /* Products */,
 				39070EA067BD58A867EBC51D /* Pods */,
 				19FE75BA9984A2F4AB4F5493 /* Frameworks */,
@@ -337,6 +356,7 @@
 				8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */,
 				8CF97B091BE3C5E3009C5591 /* CocoaHeadsApp.xctest */,
 				8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */,
+				AD99ADD41C728B45004BF12A /* CocoaHeadsAppIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,6 +392,15 @@
 				8CF97B1A1BE3C5E4009C5591 /* Info.plist */,
 			);
 			path = CocoaHeadsAppUITests;
+			sourceTree = "<group>";
+		};
+		AD99ADD51C728B45004BF12A /* CocoaHeadsAppIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD99ADD61C728B45004BF12A /* CocoaHeadsAppIntegrationTests.swift */,
+				AD99ADD81C728B45004BF12A /* Info.plist */,
+			);
+			path = CocoaHeadsAppIntegrationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,13 +468,31 @@
 			productReference = 8CF97B141BE3C5E4009C5591 /* CocoaHeadsApp.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AD99ADD31C728B45004BF12A /* CocoaHeadsAppIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD99ADDD1C728B45004BF12A /* Build configuration list for PBXNativeTarget "CocoaHeadsAppIntegrationTests" */;
+			buildPhases = (
+				AD99ADD01C728B45004BF12A /* Sources */,
+				AD99ADD11C728B45004BF12A /* Frameworks */,
+				AD99ADD21C728B45004BF12A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD99ADDA1C728B45004BF12A /* PBXTargetDependency */,
+			);
+			name = CocoaHeadsAppIntegrationTests;
+			productName = CocoaHeadsAppIntegrationTests;
+			productReference = AD99ADD41C728B45004BF12A /* CocoaHeadsAppIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8CF97AEB1BE3C5E3009C5591 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "CocoaHeads Brasil";
 				TargetAttributes = {
@@ -458,6 +505,10 @@
 					};
 					8CF97B131BE3C5E4009C5591 = {
 						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8CF97AF21BE3C5E3009C5591;
+					};
+					AD99ADD31C728B45004BF12A = {
+						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 8CF97AF21BE3C5E3009C5591;
 					};
 				};
@@ -478,6 +529,7 @@
 				8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */,
 				8CF97B081BE3C5E3009C5591 /* CocoaHeadsAppTests */,
 				8CF97B131BE3C5E4009C5591 /* CocoaHeadsAppUITests */,
+				AD99ADD31C728B45004BF12A /* CocoaHeadsAppIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -505,6 +557,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8CF97B121BE3C5E4009C5591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD99ADD21C728B45004BF12A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -705,6 +764,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD99ADD01C728B45004BF12A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD99ADD71C728B45004BF12A /* CocoaHeadsAppIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -717,6 +784,11 @@
 			isa = PBXTargetDependency;
 			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */;
 			targetProxy = 8CF97B151BE3C5E4009C5591 /* PBXContainerItemProxy */;
+		};
+		AD99ADDA1C728B45004BF12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CF97AF21BE3C5E3009C5591 /* CocoaHeadsApp */;
+			targetProxy = AD99ADD91C728B45004BF12A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -901,6 +973,32 @@
 			};
 			name = Release;
 		};
+		AD99ADDB1C728B45004BF12A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocoaHeadsAppIntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.CocoaHeadsAppIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsApp.app/CocoaHeadsApp";
+			};
+			name = Debug;
+		};
+		AD99ADDC1C728B45004BF12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocoaHeadsAppIntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.CocoaHeadsAppIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsApp.app/CocoaHeadsApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -939,6 +1037,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AD99ADDD1C728B45004BF12A /* Build configuration list for PBXNativeTarget "CocoaHeadsAppIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD99ADDB1C728B45004BF12A /* Debug */,
+				AD99ADDC1C728B45004BF12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -48,6 +48,16 @@
                ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD99ADD31C728B45004BF12A"
+               BuildableName = "CocoaHeadsAppIntegrationTests.xctest"
+               BlueprintName = "CocoaHeadsAppIntegrationTests"
+               ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
