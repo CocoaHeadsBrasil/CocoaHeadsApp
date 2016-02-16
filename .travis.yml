@@ -7,10 +7,6 @@ git:
 before_install: 
   - git submodule update --init --recursive
   - bundle install
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo "" || export ParseClientKey="-"'
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo "" || ParseApplicationId="-"'
-  - bundle exec pod keys set --project-directory=${TRAVIS_BUILD_DIR}/CocoaHeadsApp ParseClientKey $ParseClientKey
-  - bundle exec pod keys set --project-directory=${TRAVIS_BUILD_DIR}/CocoaHeadsApp ParseApplicationId $ParseApplicationId
 podfile: CocoaHeadsApp/Podfile
 xcode_workspace: CocoaHeadsApp/CocoaHeadsApp.xcworkspace
 xcode_scheme: CocoaHeadsApp
@@ -19,7 +15,3 @@ osx_image: xcode7.2
 notifications:
   email: false
   slack: iosdevbr:jdozLqf7LLjEeho9PB3uRL6S
-env:
-  global:
-  - secure: "iDwtGbLkrCj+EFPAhjsRwiyyvw1i8NWOpLHKWCQoaJGThybgGROFLF3WVNDYkeDq9WNwnGBnNM81SwsxjhpsakS8f+J8tGsAzCkgDmAlIR/i4ofJlXGRoE/vuMv7uVtPjsLBPub1Q40uyhx3qXt1h4faw6sdrySoIUkNKTAb1E1X1z+5TJJcPP1mHWKbM2MTOFdLGdKu5qBzRpRbQdHkOLjX4/wHVDholCD7MD26NC5s1LAH3F942VVOOqfQpfqz5CKKQbxQW7mfYUDvidJE5vqiCJLDUIuBNG3aBmNfIxGZ6r3srUolqM3cstalr3rSd5aFPoLnRdUMXVa5ZIMgGR7hr2NHEmZ+kOtoYoXAbtMYv/bUndZ7XsLFTP1g7LOUHgzl65Fzm2+hAR6i3rcM5MewOVEyt+dmIZV8+rCiBgzQfBDbjOOUynXIF1Nsnkx+oPiuI7Jt9stlOyL7H8E0ff3u0AMrH/4a3XVYEQnnsf+soK5yMosEAH71CtT/fdRsmGM049KJyau2TMSO9HHDz29wHt3ofP3pRn3YRi2agGcW+7ziLbYywJrB5ilQx1FGZvIzj0ZUvq3lEv3wrNREDbe7UEhxB1FGEpgXlISecj+8gNzzvnfJXCME0igVmg6OhNzOf2jmqxK2MsQmASX4pt9p5xqcK+D0p8q9vVu+rk8="
-  - secure: "Qi4k0tjbtWMjuwyd4j4ZC1w32Tw2QCHZvS4ezhPsKFHQ46wR7bz5zEQ10rezjtk/Rl9r6h+TLX3DQAcM+ZuscNPoo/CwqwTyA97HLwr9yZXCv0wwk8+TtTK8Gxz5Tuf5hn9t2tEBQYGi+M6QEJ67xk1Pu5KHROxkOiLaSu2m90vvg0plTQxlSprk3HF1kvGHY4XUplbfA0HVTJQxPsFzfV99oxuIBHNth8fVm7XlqtSN6ecOJO0V5CJ0rAaSO/vn6bG6rmAOPdB4pRApHLU8/iY/2nDEio5HhTCJjf+XSBZxwyR39YrEqGHOWPYnKA8OyO3kBuTgvztOo/68IigQM2G8hZNAiy64txg1sYOrWviBFrkj6A3xbeVgIAxMFwFXOdO/3uVh/f4jomVgfTlQPcrkYrl1RHWgpGucotkL5mKC9uAATu1+h3LzDmCZamVrakbyEZoIme3QjFlOlsxhCm4jRE6OtOA167eXYYhxUXZFNMAugOveoGbleTeDHU6SMVBjBsH9dC0hdkGY3KG7RYOaUQTUlB27h6RcVOVA3zfFipsEspwsRkOxw4U+v0gKVAMhDWFzEUktqcqSehTFMxKsM+i6OP+xwz+1ghvIYy7VocAWZ5n1n03j6fHmI+DeYPrnXNeuCggl1n8kxYhpydHy+vVc2sutodHoRtlCprE="
