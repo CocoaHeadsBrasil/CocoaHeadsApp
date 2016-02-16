@@ -40,7 +40,7 @@ class APIConsumerTests: XCTestCase {
         }
         
         self.consumer.consume(self.apiTarget, success: success, failure: defaultFailureCheck(expectation))
-        self.waitForExpectationsWithTimeout(1, handler: nil)
+        self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
     func testAPIConsumerResponseParse() {
