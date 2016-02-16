@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF97B081BE3C5E3009C5591"
-               BuildableName = "CocoaHeadsApp.xctest"
+               BuildableName = "CocoaHeadsAppTests.xctest"
                BlueprintName = "CocoaHeadsAppTests"
                ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF97B131BE3C5E4009C5591"
-               BuildableName = "CocoaHeadsApp.xctest"
+               BuildableName = "CocoaHeadsAppUITests.xctest"
                BlueprintName = "CocoaHeadsAppUITests"
                ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
             </BuildableReference>
