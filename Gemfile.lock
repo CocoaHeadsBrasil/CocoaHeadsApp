@@ -1,9 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RubyInline (3.12.4)
-      ZenTest (~> 4.3)
-    ZenTest (4.11.0)
     activesupport (4.2.5.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -30,9 +27,6 @@ GEM
       fuzzy_match (~> 2.0.4)
       nap (~> 0.8.0)
     cocoapods-downloader (0.9.3)
-    cocoapods-keys (1.6.0)
-      dotenv
-      osx_keychain
     cocoapods-plugins (0.4.2)
       nap
     cocoapods-stats (0.5.3)
@@ -42,7 +36,6 @@ GEM
       netrc (= 0.7.8)
     cocoapods-try (0.4.5)
     colored (1.2)
-    dotenv (2.1.0)
     escape (0.0.4)
     fuzzy_match (2.0.4)
     i18n (0.7.0)
@@ -51,8 +44,6 @@ GEM
     molinillo (0.3.1)
     nap (0.8.0)
     netrc (0.7.8)
-    osx_keychain (1.0.1)
-      RubyInline (~> 3)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -66,7 +57,6 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods
-  cocoapods-keys
 
 BUNDLED WITH
    1.11.2
