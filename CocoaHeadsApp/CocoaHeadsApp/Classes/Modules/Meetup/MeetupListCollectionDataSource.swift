@@ -22,10 +22,15 @@ class MeetupListCollectionDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let reuseIdentifier = R.nib.meetupListCollectionViewCell.reuseIdentifier
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)!
-        cell.meetup.value = viewModel.items.value[indexPath.item]
-        return cell
+        let reuseIdentifier = R.nib.meetupListCollectionViewCell.identifier
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
+        
+        guard let meetupCell = cell as? MeetupListCollectionViewCell else {
+            return cell
+        }
+        
+        meetupCell.meetup.value = viewModel.items.value[indexPath.item]
+        return meetupCell
     }
     
 }

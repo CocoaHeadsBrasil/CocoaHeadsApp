@@ -1,0 +1,130 @@
+{
+    "results": [
+                {
+                "utc_offset": -10800000,
+                "venue": {
+                "country": "br",
+                "city": "São Paulo",
+                "address_1": "Alameda Santos, 1.054 Cerqueira Cesar",
+                "name": "Starbucks",
+                "lon": -46.653019,
+                "id": 13122732,
+                "lat": -23.565947,
+                "repinned": false
+                },
+                "headcount": 0,
+                "visibility": "public",
+                "waitlist_count": 0,
+                "created": 1400546575000,
+                "maybe_rsvp_count": 0,
+                "description": "<p>Encontros todas as quintas, a partir das 19h, no Starbucks da Al. Santos, esquina com Al. Campinas, em SP, próximo ao metrô Trinon/Masp.</p> <p>Bate papo informal sobre iOS, OS X, Cocoa, Objective-C, Swift, etc..</p>",
+                "how_to_find_us": "Basta procurar um grupo de pessoas com MacBooks abertos, falando sobre Objective-C, iOS, OS X e tecnologias relacionadas. :)",
+                "event_url": "http://www.meetup.com/AppsterdamBR/events/227619981/",
+                "yes_rsvp_count": 2,
+                "name": "NSCoder Night",
+                "id": "dnvfpjyvdbhc",
+                "time": 1456437600000,
+                "updated": 1426516031000,
+                "group": {
+                "join_mode": "open",
+                "created": 1367236577000,
+                "name": "Appsterdam BR",
+                "group_lon": -46.630001068115234,
+                "id": 8267642,
+                "urlname": "AppsterdamBR",
+                "group_lat": -23.530000686645508,
+                "who": "appsterdammers"
+                },
+                "status": "upcoming"
+                },
+                {
+                "utc_offset": -10800000,
+                "venue": {
+                "country": "br",
+                "city": "São Paulo",
+                "address_1": "Alameda Santos, 1.054 Cerqueira Cesar",
+                "name": "Starbucks",
+                "lon": -46.653019,
+                "id": 13122732,
+                "lat": -23.565947,
+                "repinned": false
+                },
+                "headcount": 0,
+                "visibility": "public",
+                "waitlist_count": 0,
+                "created": 1400546575000,
+                "maybe_rsvp_count": 0,
+                "description": "<p>Encontros todas as quintas, a partir das 19h, no Starbucks da Al. Santos, esquina com Al. Campinas, em SP, próximo ao metrô Trinon/Masp.</p> <p>Bate papo informal sobre iOS, OS X, Cocoa, Objective-C, Swift, etc..</p>",
+                "how_to_find_us": "Basta procurar um grupo de pessoas com MacBooks abertos, falando sobre Objective-C, iOS, OS X e tecnologias relacionadas. :)",
+                "event_url": "http://www.meetup.com/AppsterdamBR/events/228803980/",
+                "yes_rsvp_count": 1,
+                "name": "NSCoder Night",
+                "id": "dnvfpjyvfbfb",
+                "time": 1457042400000,
+                "updated": 1426516031000,
+                "group": {
+                "join_mode": "open",
+                "created": 1367236577000,
+                "name": "Appsterdam BR",
+                "group_lon": -46.630001068115234,
+                "id": 8267642,
+                "urlname": "AppsterdamBR",
+                "group_lat": -23.530000686645508,
+                "who": "appsterdammers"
+                },
+                "status": "upcoming"
+                },
+                {
+                "utc_offset": -10800000,
+                "venue": {
+                "country": "br",
+                "city": "São Paulo",
+                "address_1": "Alameda Santos, 1.054 Cerqueira Cesar",
+                "name": "Starbucks",
+                "lon": -46.653019,
+                "id": 13122732,
+                "lat": -23.565947,
+                "repinned": false
+                },
+                "headcount": 0,
+                "visibility": "public",
+                "waitlist_count": 0,
+                "created": 1400546575000,
+                "maybe_rsvp_count": 0,
+                "description": "<p>Encontros todas as quintas, a partir das 19h, no Starbucks da Al. Santos, esquina com Al. Campinas, em SP, próximo ao metrô Trinon/Masp.</p> <p>Bate papo informal sobre iOS, OS X, Cocoa, Objective-C, Swift, etc..</p>",
+                "how_to_find_us": "Basta procurar um grupo de pessoas com MacBooks abertos, falando sobre Objective-C, iOS, OS X e tecnologias relacionadas. :)",
+                "event_url": "http://www.meetup.com/AppsterdamBR/events/228803983/",
+                "yes_rsvp_count": 1,
+                "name": "NSCoder Night",
+                "id": "dnvfpjyvfbnb",
+                "time": 1457647200000,
+                "updated": 1426516031000,
+                "group": {
+                "join_mode": "open",
+                "created": 1367236577000,
+                "name": "Appsterdam BR",
+                "group_lon": -46.630001068115234,
+                "id": 8267642,
+                "urlname": "AppsterdamBR",
+                "group_lat": -23.530000686645508,
+                "who": "appsterdammers"
+                },
+                "status": "upcoming"
+                }
+                ],
+    "meta": {
+        "next": "https://api.meetup.com/2/events?offset=1&sign=True&format=json&limited_events=False&group_urlname=AppsterdamBR&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming",
+        "method": "Events",
+        "total_count": 49,
+        "link": "https://api.meetup.com/2/events",
+        "count": 3,
+        "description": "Access Meetup events using a group, member, or event id. Events in private groups are available only to authenticated members of those groups. To search events by topic or location, see [Open Events](/meetup_api/docs/2/open_events).",
+        "lon": "",
+        "title": "Meetup Events v2",
+        "url": "https://api.meetup.com/2/events?offset=0&sign=True&format=json&limited_events=False&group_urlname=AppsterdamBR&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming",
+        "signed_url": "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=AppsterdamBR&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&sig_id=96734602&sig=87d47486d5dd45a2f98c9e9e851bcae4e1daa856",
+        "id": "",
+        "updated": 1426516031000,
+        "lat": ""
+    }
+}

@@ -33,8 +33,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF97B081BE3C5E3009C5591"
-               BuildableName = "CocoaHeadsApp.xctest"
+               BuildableName = "CocoaHeadsAppTests.xctest"
                BlueprintName = "CocoaHeadsAppTests"
+               ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CF97B131BE3C5E4009C5591"
+               BuildableName = "CocoaHeadsAppUITests.xctest"
+               BlueprintName = "CocoaHeadsAppUITests"
                ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +52,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CF97B131BE3C5E4009C5591"
-               BuildableName = "CocoaHeadsApp.xctest"
-               BlueprintName = "CocoaHeadsAppUITests"
+               BlueprintIdentifier = "AD99ADD31C728B45004BF12A"
+               BuildableName = "CocoaHeadsAppIntegrationTests.xctest"
+               BlueprintName = "CocoaHeadsAppIntegrationTests"
                ReferencedContainer = "container:CocoaHeadsApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
