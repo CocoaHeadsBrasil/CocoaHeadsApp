@@ -26,7 +26,7 @@ public enum MeetupAPI {
     case ListEvents(perPage :Int, pageOffset :Int)
 }
 
-extension MeetupAPI :MoyaTarget {
+extension MeetupAPI :TargetType {
 
     /**
      API base url
