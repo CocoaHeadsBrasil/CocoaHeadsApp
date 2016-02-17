@@ -40,7 +40,7 @@ class APIConsumerTests: XCTestCase {
         }
         
         self.consumer.consume(self.apiTarget, success: success, failure: defaultFailureCheck(expectation))
-        self.waitForExpectationsWithTimeout(10, handler: nil)
+        self.waitForExpectationsWithTimeout(30, handler: nil)
     }
     
     func testAPIConsumerResponseParse() {
@@ -76,7 +76,7 @@ class APIConsumerTests: XCTestCase {
         }
         
         self.consumer.consume(self.apiTarget, success: success, failure: defaultFailureCheck(expectation))
-        self.waitForExpectationsWithTimeout(1, handler: nil)
+        self.waitForExpectationsWithTimeout(5, handler: nil)
         OHHTTPStubs.removeStub(stubResponse)
     }
     
@@ -106,7 +106,7 @@ class APIConsumerTests: XCTestCase {
         }
         
         self.consumer.consume(self.apiTarget, success: success, failure: failure)
-        self.waitForExpectationsWithTimeout(1, handler: nil)
+        self.waitForExpectationsWithTimeout(5, handler: nil)
         OHHTTPStubs.removeStub(stubResponse)
     }
     
