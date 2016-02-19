@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/CocoaHeadsBrasil/CocoaHeadsApp.svg?branch=master)](https://travis-ci.org/CocoaHeadsBrasil/CocoaHeadsApp)
 
 ## Quem Somos
-CocoaHeads é um grupo formado por desenvolvedores (profissionais e iniciantes), que se organizam para reunir pessoas com a mesma paixão: Programação para os iDevices da Apple (OSX e iOS). Nossos encontros são informais e servem para juntar pessoas que gostam do mesmo assunto que você [programação! :) ]. Promovemos Talks e Palestras dadas por membros do grupo local ou de convidados especiais. Estamos presentes também com mais de 700 membros no Slack, [http://iosdevbr.herokuapp.com](), onde temos diversas iniciativas como a criação do aplicativo da comunidade, podcast, área de code-help, uma sessão também para divulgação de empregos e o famigerado #Fightoftheweek, onde é discutido um assunto polêmico sobre alguma tecnologia envolvendo o mundo iOS.
+CocoaHeads é um grupo formado por desenvolvedores (profissionais e iniciantes), que se organizam para reunir pessoas com a mesma paixão: Programação para os iDevices da Apple (OSX e iOS). Nossos encontros são informais e servem para juntar pessoas que gostam do mesmo assunto que você [programação! :) ]. Promovemos Talks e Palestras dadas por membros do grupo local ou de convidados especiais. Estamos presentes no Slack também, [http://iosdevbr.herokuapp.com](http://iosdevbr.herokuapp.com), onde temos diversas iniciativas como a criação do aplicativo da comunidade, podcast da comunidade, área de #code-help, uma sessão para divulgação de empregos no canal #jobs e falamos também sobre #design e #ux de aplicações.
 
 ## Setup inicial
 
