@@ -76,7 +76,78 @@ A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindA
 ## Quem pode contribuir
 Todos desenvolvedores iOS estão aptos a colaborar com essa iniciativa, basta seguir o workflow de contribuição.
 
- 
+## Guideline de contribuição
+
+Neste projeto, estamos usando o [Github Flow](https://guides.github.com/introduction/flow/) integrado com o  [Forking Wokflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow).
+
+### Preparação
+
+1. Faça o [fork](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp#fork-destination-box) do projeto.
+2. Clone o seu projeto <br/>
+```
+$ git clone git@github.com:<github_user>/CocoaHeadsApp.git
+```
+3. Sincronize o branch master <br/>
+```
+$ git pull origin master
+```
+4. Adicione o projeto original como `upstream` remote <br/>
+```
+$ git remote add upstream git@github.com:CocoaHeadsBrasil/CocoaHeadsApp.git
+```
+5. Atualize a tabela do seu repositório <br/>
+```
+$ git fetch --all
+```
+6. Sincronize o branch master do projeto original <br/>
+```
+$ git checkout -b cocoaheads/master upstream/master
+```
+
+### Desenvolvimento
+
+1. Mude para o `master` do seu fork e crie um novo `branch` com a sua feature <br/>
+```
+$ git checkout master; git checkout -b feature_name
+```
+2. Faça todas as alterações necessárias
+
+### Publicação
+
+1. Quando a feature estiver pronta para publicação, atualize a tabela do seu repositório <br/>
+```
+$ git fetch --all
+```
+2. Atualize o branch `master` do projeto original <br/>
+```
+$ git checkout cocoaheads/master; git pull upstream master
+```
+3. `Rebase` seu branch master <br/>
+```
+$ git checkout master; git rebase cocoaheads/master
+```
+4. `Push` seu branch master para seu fork <br/>
+```
+$ git push origin master
+```<br />
+*Caso necessário (uma vez que o histório do git é remodelo no `rebase`), você pode forçar a atualização* <br/>
+```
+$ git push -f origin master
+```
+5. `Rebase` o branch da sua feature <br/>
+```
+$ git checkout feature_name; git rebase master
+```
+6. `Push` o branch da sua feature para seu fork <br/>
+```
+$ git push origin feature_name
+```
+*Caso necessário (uma vez que o histório do git é remodelo no `rebase`), você pode forçar a atualização* <br/>
+```
+$ git push -f origin feature_name
+```
+7. Crie um novo [`Pull Request`](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/pull/new/master)
+
 
 ## Motivação da criação do App
 O crescimento do número de chapters em inúmeras cidades se fez a necessidade de ter um local onde pudessemos ver e organizar tantos eventos. Assim surgiu a ideia de fazermos o aplicativo do CocoaHeads Brasil com a presença de todos os eventos. A visualização destes além das informações mais detalhadas, além de apresentar a lista de participantes por evento, sorteios e muito mais.
