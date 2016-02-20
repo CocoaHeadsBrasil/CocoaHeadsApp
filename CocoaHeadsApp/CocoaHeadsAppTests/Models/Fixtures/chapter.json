@@ -1,0 +1,17 @@
+{
+    "id": 22,
+    "estado_id: 1,
+    "cidade": "Rio Branco",
+    "organizador": "Petros Barreto",
+    "organizador_email": "petros@alivesi.com.br",
+    "website": "http://cocoaheads.com.br",
+    "github": "https://github.com/CocoaHeadsBrasil/",
+    "twitter": "https://twitter.com/cocoaheadsbr/",
+    "facebook": "https://www.facebook.com/CocoaHeadsBrasil/",
+    "published": true,
+    "created_at": "2015-10-30T02:49:12.021Z",
+    "updated_at": "2015-10-30T02:49:12.021Z",
+    "email": "riobranco@cocoaheads.com.br",
+    "descricao": "",
+    "organizador_contato": "6881090181"
+}
