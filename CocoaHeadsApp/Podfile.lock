@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (3.2.0)
-  - Bolts/Tasks (1.6.0)
   - Moya (6.1.3):
     - Moya/Core (= 6.1.3)
   - Moya/Core (6.1.3):
@@ -22,8 +21,6 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (4.7.0)
   - OHHTTPStubs/Swift (4.7.0):
     - OHHTTPStubs/Core
-  - Parse (1.12.0):
-    - Bolts/Tasks (~> 1.5)
   - R.swift (1.3.0):
     - R.swift.Library (~> 1.1.0)
   - R.swift.Library (1.1.0)
@@ -36,22 +33,19 @@ DEPENDENCIES:
   - Nuke (~> 2.0.1)
   - OHHTTPStubs (~> 4.7.0)
   - OHHTTPStubs/Swift
-  - Parse (~> 1.12.0)
   - R.swift (~> 1.3.0)
   - Unbox (= 1.0)
   - XCGLogger (~> 3.2)
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
-  Bolts: f52a250053bb517ca874523c3913776359ab3def
   Moya: 26b290a8d675c167ea6229ba08e07dce562265a5
   Nuke: 238b1d1b91fa3b7f173ef7c7e659d9bdc735c2cf
   OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
-  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
   R.swift: 43f8a833dd8cbb4a19908cbfd37fb982e9147899
   R.swift.Library: 775f3086e07313ed1a1dfddca8418317f5a87397
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   Unbox: 390bf61ea9645465a09f374533595ed6b682931b
   XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

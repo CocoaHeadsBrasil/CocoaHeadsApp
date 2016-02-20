@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FD4B3AC72BC727A4B3320BB /* Pods_CocoaHeadsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0FD4B3AC72BC727A4B3320BB /* Pods_CocoaHeadsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */; };
 		15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2D1BED72FC00E12A68 /* Dynamic.swift */; };
 		15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2F1BED731E00E12A68 /* Array+Extensions.swift */; };
 		15079B321BED736100E12A68 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B311BED736100E12A68 /* NibDesignable.swift */; };
@@ -41,9 +41,9 @@
 		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
-		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; };
+		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
+		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
 		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
@@ -55,6 +55,11 @@
 		AD99AE071C729783004BF12A /* APIConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99AE061C729783004BF12A /* APIConsumerTests.swift */; };
 		AD99AE0A1C729B03004BF12A /* MeetupResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE091C729B03004BF12A /* MeetupResponse.json */; };
 		AD99AE0C1C72A16E004BF12A /* MeetupErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE0B1C72A16E004BF12A /* MeetupErrorResponse.json */; };
+		EC0772FB1C78E87E00D4A763 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0772FA1C78E87E00D4A763 /* EventTests.swift */; };
+		EC0772FE1C78E8E000D4A763 /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0772FD1C78E8E000D4A763 /* event.json */; };
+		EC0773001C78E96A00D4A763 /* chapter.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0772FF1C78E96A00D4A763 /* chapter.json */; };
+		EC0773021C78E9FA00D4A763 /* podcast_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0773011C78E9FA00D4A763 /* podcast_episode.json */; };
+		EC0773041C78EA7100D4A763 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0773031C78EA7100D4A763 /* video.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,11 @@
 		B69A81103677DA392B92C01F /* Pods-CocoaHeadsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FF3008043D3D69F6A32B80 /* Pods-CocoaHeadsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC0772FA1C78E87E00D4A763 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		EC0772FD1C78E8E000D4A763 /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
+		EC0772FF1C78E96A00D4A763 /* chapter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chapter.json; sourceTree = "<group>"; };
+		EC0773011C78E9FA00D4A763 /* podcast_episode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_episode.json; sourceTree = "<group>"; };
+		EC0773031C78EA7100D4A763 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
 		F9B7FF93E8B471405EB896FF /* Pods_CocoaHeadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4BEE1CA988DC81F8EAEB2 /* Pods-CocoaHeadsAppIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppIntegrationTests/Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -393,6 +403,7 @@
 			children = (
 				8CF97B0F1BE3C5E3009C5591 /* Info.plist */,
 				AD99ADDE1C728C4B004BF12A /* MeetupAPITests.swift */,
+				EC0772F91C78E84600D4A763 /* Models */,
 			);
 			path = CocoaHeadsAppTests;
 			sourceTree = "<group>";
@@ -423,6 +434,26 @@
 				AD99AE0B1C72A16E004BF12A /* MeetupErrorResponse.json */,
 			);
 			name = "API Response";
+			sourceTree = "<group>";
+		};
+		EC0772F91C78E84600D4A763 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC0772FC1C78E8C300D4A763 /* Fixtures */,
+				EC0772FA1C78E87E00D4A763 /* EventTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC0772FC1C78E8C300D4A763 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				EC0772FD1C78E8E000D4A763 /* event.json */,
+				EC0772FF1C78E96A00D4A763 /* chapter.json */,
+				EC0773011C78E9FA00D4A763 /* podcast_episode.json */,
+				EC0773031C78EA7100D4A763 /* video.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +609,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0773021C78E9FA00D4A763 /* podcast_episode.json in Resources */,
+				EC0773041C78EA7100D4A763 /* video.json in Resources */,
+				EC0772FE1C78E8E000D4A763 /* event.json in Resources */,
+				EC0773001C78E96A00D4A763 /* chapter.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +859,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0772FB1C78E87E00D4A763 /* EventTests.swift in Sources */,
 				AD99ADDF1C728C4B004BF12A /* MeetupAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
