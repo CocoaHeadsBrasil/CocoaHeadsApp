@@ -82,72 +82,122 @@ Neste projeto, estamos usando o [Github Flow](https://guides.github.com/introduc
 
 ### Preparação
 
-1. Faça o [fork](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp#fork-destination-box) do projeto.
-2. Clone o seu projeto <br/>
+- Faça o [fork](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp#fork-destination-box) do projeto.
+- Clone o seu projeto <br/>
 ```
 $ git clone git@github.com:<github_user>/CocoaHeadsApp.git
 ```
-3. Sincronize o branch master <br/>
+- Sincronize o branch master <br/>
 ```
 $ git pull origin master
 ```
-4. Adicione o projeto original como `upstream` remote <br/>
+- Adicione o projeto original como `upstream` remote <br/>
 ```
 $ git remote add upstream git@github.com:CocoaHeadsBrasil/CocoaHeadsApp.git
 ```
-5. Atualize a tabela do seu repositório <br/>
+- Atualize a tabela do seu repositório <br/>
 ```
 $ git fetch --all
 ```
-6. Sincronize o branch master do projeto original <br/>
+- Sincronize o branch master do projeto original <br/>
 ```
 $ git checkout -b cocoaheads/master upstream/master
 ```
 
 ### Desenvolvimento
 
-1. Mude para o `master` do seu fork e crie um novo `branch` com a sua feature <br/>
+- Mude para o `master` do seu fork e crie um novo `branch` com a sua feature <br/>
 ```
 $ git checkout master; git checkout -b feature_name
 ```
-2. Faça todas as alterações necessárias
+- Faça todas as alterações necessárias
 
 ### Publicação
 
-1. Quando a feature estiver pronta para publicação, atualize a tabela do seu repositório <br/>
+- Quando a feature estiver pronta para publicação, atualize a tabela do seu repositório <br/>
 ```
 $ git fetch --all
 ```
-2. Atualize o branch `master` do projeto original <br/>
+- Atualize o branch `master` do projeto original <br/>
 ```
 $ git checkout cocoaheads/master; git pull upstream master
 ```
-3. `Rebase` seu branch master <br/>
+- `Rebase` seu branch master <br/>
 ```
 $ git checkout master; git rebase cocoaheads/master
 ```
-4. `Push` seu branch master para seu fork <br/>
+- `Push` seu branch master para seu fork <br/>
 ```
 $ git push origin master
-```<br />
+```
+<br />
 *Caso necessário (uma vez que o histório do git é remodelo no `rebase`), você pode forçar a atualização* <br/>
 ```
 $ git push -f origin master
 ```
-5. `Rebase` o branch da sua feature <br/>
+- `Rebase` o branch da sua feature <br/>
 ```
 $ git checkout feature_name; git rebase master
 ```
-6. `Push` o branch da sua feature para seu fork <br/>
+- `Push` o branch da sua feature para seu fork <br/>
 ```
 $ git push origin feature_name
 ```
+<br/>
 *Caso necessário (uma vez que o histório do git é remodelo no `rebase`), você pode forçar a atualização* <br/>
 ```
 $ git push -f origin feature_name
 ```
-7. Crie um novo [`Pull Request`](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/pull/new/master)
+- Crie um novo [`Pull Request`](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/pull/new/master)
 
+## Features do projeto
+
+Todo o desenvolvimento do app está concentrado no github. Portanto, para gerenciá-lo, usamos [issues](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/issues), [labels](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/labels) e [milestones](https://github.com/CocoaHeadsBrasil/CocoaHeadsApp/milestones).
+
+### Issues
+
+**Workflow**
+
+1. Quando uma nova issue é criada, ela entra `in review`. Assim, os participantes do projeto podem conversar a respeito e colaborar com a proposta.
+2. Uma prosposta pode ser negada (`Declined`) ou transformada em item do backlog do projeto (`Onboard`).
+3. As `issues` em `onboard` podem começar a serem desenvolvidas (`In progress`).
+4. Quando o desenvolvimento da feature é completado, o desenvolvedor por criar um pull request e associar à issue (`Waiting PR review`).
+5. Os demais participantes do projeto podem revisar os pull requests (`In PR review`).
+6. Quando for feito o merge, aquela issue é encerrada (`Delivered`).
+
+### Labels
+
+**Progresso**
+
+- `In review`: Propostas que estão abertas para discussão se será implementado ou não
+- `Declined`: Dado as conversas na issue, a funcionalidade/refatoração foi negada (e a issue é fechada).
+- `Onboard`: Proposta que foi "aceita" e pode entrar em uma das milestones do projeto. Nesse ponto, a conversação na issue é bloqueada
+- `In progess`: Issue que está em desenvolvimento por 1 ou mais pessoas (que devem ser associadas à issue)
+- `Waiting PR review`: Uma indicação de que o issue foi finalizada e precisa passar por review de PR.
+- `In PR review`: O PR está sendo avaliado por 1 ou mais pessoas
+- `Delivered`:  PR foi aceito (e a issue é fechada)
+
+**Informativo**
+
+- `Code base enhancement`: Propostas que visam uma melhor implementação ou estrutura de código
+- `Product enhancement`: Propostas de novas funcionalidades para o produto
+- `bug`: Informar bugs no código
+- `ci`: Propostas de novas funções ou melhorias no sistema de C.I.
+- `docs`:	Adição ou melhoria na documentação
+- `question`: Questões sobre o projeo
+- `easy`: Proposta considerada de fácil implementação
+- `medium`: Proposta com dificuldade média
+- `hard`: Proposta de implementação complexa
+
+### Milestone
+
+O projeto, hoje, possui os seguintes milestones:
+
+- `Remover Parse`: Tirar o parse do projeto e substituir por dados mockados.
+- `Integrar API`: Integrar a API rails
+- `Versão de teste`: Uma primeira versão do aplicativo, algo que pode ser disponibilizado para beta testers (não precisa ter 100% das funcionalidades)
+- `1.0`: Coisas que queremos que sejam válidas para uma versão 1.0
+- `Distribuição`: Issues relacionadas à distribuição do app (caso seje relevante)
 
 ## Motivação da criação do App
 O crescimento do número de chapters em inúmeras cidades se fez a necessidade de ter um local onde pudessemos ver e organizar tantos eventos. Assim surgiu a ideia de fazermos o aplicativo do CocoaHeads Brasil com a presença de todos os eventos. A visualização destes além das informações mais detalhadas, além de apresentar a lista de participantes por evento, sorteios e muito mais.
