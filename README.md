@@ -193,7 +193,6 @@ Todo o desenvolvimento do app está concentrado no github. Portanto, para gerenc
 
 O projeto, hoje, possui os seguintes milestones:
 
-- `Remover Parse`: Tirar o parse do projeto e substituir por dados mockados.
 - `Integrar API`: Integrar a API rails
 - `Versão de teste`: Uma primeira versão do aplicativo, algo que pode ser disponibilizado para beta testers (não precisa ter 100% das funcionalidades)
 - `1.0`: Coisas que queremos que sejam válidas para uma versão 1.0
