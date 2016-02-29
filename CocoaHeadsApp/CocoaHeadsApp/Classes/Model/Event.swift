@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-class Event {
+struct Event {
     
     var id: Int?
     var name: String?

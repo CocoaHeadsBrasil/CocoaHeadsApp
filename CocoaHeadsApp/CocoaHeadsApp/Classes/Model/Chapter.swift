@@ -1,6 +1,6 @@
 import Foundation
 
-class Chapter {
+struct Chapter {
     
     var id: Int?
     var stateId: Int?

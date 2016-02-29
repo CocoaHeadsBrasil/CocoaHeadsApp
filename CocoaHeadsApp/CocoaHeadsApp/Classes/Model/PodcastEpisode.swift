@@ -1,6 +1,6 @@
 import Foundation
 
-class PodcastEpisode {
+struct PodcastEpisode {
 
     var id: Int?
     var title: String?
