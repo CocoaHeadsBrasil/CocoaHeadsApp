@@ -8,6 +8,7 @@ class Event {
     var description: String?
     var chapter: Chapter?
     var venue: String?
+    var date: NSDate?
     var address: String?
     var location: CLLocationCoordinate2D?
     var passbook: String?
@@ -22,7 +23,11 @@ class Event {
         chapter = Chapter()
         chapter?.id = dictionary["cidade_id"] as? Int
         
-        //TODO date
+        if let date = dictionary["data"] as? String {
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            self.date = formatter.dateFromString(date)
+        }
         
         venue = dictionary["local"] as? String
         address = dictionary["endereco"] as? String
