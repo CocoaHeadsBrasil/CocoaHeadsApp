@@ -54,7 +54,12 @@ public class NibDesignable: UIView {
     public func loadNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: self.nibName(), bundle: bundle)
-        return nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        
+        guard let view = nib.instantiateWithOwner(self, options: nil).first as? UIView  else {
+            fatalError("You're trying to load a NibDesignable withou the respective nib file")
+        }
+        
+        return view
     }
     
     /**

@@ -1,10 +1,20 @@
 disabled_rules:
   - trailing_newline
   - trailing_whitespace
-  - colon
   - line_length
-  - statement_position
+  - colon
   - comma
+
+variable_name:
+  excluded:
+    - URLEscapedString
+    - MeetupAPIProvider
+    - MeetupAPIConsumer
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - CocoaHeadsApp/R.generated.swift
 
 opt_in_rules:
   - empty_counts
