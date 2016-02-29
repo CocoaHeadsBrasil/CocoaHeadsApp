@@ -1,9 +1,9 @@
 {
     "id": 22,
-    "estado_id: 1,
+    "estado_id": 1,
     "cidade": "Rio Branco",
-    "organizador": "Petros Barreto",
-    "organizador_email": "petros@alivesi.com.br",
+    "organizador": "João da Silva",
+    "organizador_email": "joao@dasilva.com",
     "website": "http://cocoaheads.com.br",
     "github": "https://github.com/CocoaHeadsBrasil/",
     "twitter": "https://twitter.com/cocoaheadsbr/",
@@ -12,6 +12,6 @@
     "created_at": "2015-10-30T02:49:12.021Z",
     "updated_at": "2015-10-30T02:49:12.021Z",
     "email": "riobranco@cocoaheads.com.br",
-    "descricao": "",
-    "organizador_contato": "6881090181"
+    "descricao": "Comunidade de desenvolvedores iOS/MacOS de Rio Branco",
+    "organizador_contato": "6881888888"
 }

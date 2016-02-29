@@ -3,7 +3,7 @@
     "palestrante_id": 8,
     "agenda_id": 76,
     "titulo": "Apresentação do 2º CocoaHeads BNU na íntegra",
-    "descricao": "<p>No dia 26 de maio &agrave;s 19h, foi a vez do 2&ordm; CocoaHeads BNU, realizado no audit&oacute;rio do SENAI Blumenau.<br /><br />Talks:<br />- \"EUREKA! E agora: Nativo ou H&iacute;brido?\" - Daniel Batiston<br />- \"Notifica&ccedil;&otilde;es com Parse Push / Liberando seu primeiro app\" - Jo&atilde;o Paulo Ros<br />- \"Simplificando Auto-Layout via c&oacute;digo\" - Al&eacute;cio Gomes<br />- \"Criando um jogo com SpriteKit\" - Rodrigo H&uuml;lsenbeck<br /><br />Agradecimentos aos patrocinadores:&nbsp;<br />* Bludata&nbsp;<br />* FIESC - SENAI&nbsp;<br />* PagueVeloz&nbsp;<br />* PremierSoft</p>",
+    "descricao": "<p>No dia 26 de maio &agrave;s 19h, foi a vez do 2&ordm; CocoaHeads BNU, realizado no audit&oacute;rio do SENAI Blumenau.</p>",
     "youtube": "K966T0HdED8",
     "published": true,
     "tags": "SpriteKit, Auto-layout, Hibrido, Nativo, Push, Parse, Notifications, Notificações, Jogos, VFL",

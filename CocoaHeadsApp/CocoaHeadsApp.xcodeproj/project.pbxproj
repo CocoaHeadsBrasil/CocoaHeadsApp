@@ -55,7 +55,7 @@
 		AD99AE071C729783004BF12A /* APIConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99AE061C729783004BF12A /* APIConsumerTests.swift */; };
 		AD99AE0A1C729B03004BF12A /* MeetupResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE091C729B03004BF12A /* MeetupResponse.json */; };
 		AD99AE0C1C72A16E004BF12A /* MeetupErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE0B1C72A16E004BF12A /* MeetupErrorResponse.json */; };
-		EC0772FB1C78E87E00D4A763 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0772FA1C78E87E00D4A763 /* EventTests.swift */; };
+		EC0772FB1C78E87E00D4A763 /* EventTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0772FA1C78E87E00D4A763 /* EventTest.swift */; };
 		EC0772FE1C78E8E000D4A763 /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0772FD1C78E8E000D4A763 /* event.json */; };
 		EC0773001C78E96A00D4A763 /* chapter.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0772FF1C78E96A00D4A763 /* chapter.json */; };
 		EC0773021C78E9FA00D4A763 /* podcast_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0773011C78E9FA00D4A763 /* podcast_episode.json */; };
@@ -63,6 +63,11 @@
 		EC21EAFB1C7C03A300C6937D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFA1C7C03A300C6937D /* Event.swift */; };
 		EC21EAFD1C7C09AE00C6937D /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFC1C7C09AE00C6937D /* Chapter.swift */; };
 		EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */; };
+		ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A51C837473003D4E17 /* ChapterTest.swift */; };
+		ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A71C83B790003D4E17 /* VideoTest.swift */; };
+		ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A91C83BA93003D4E17 /* Video.swift */; };
+		ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */; };
+		ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +158,7 @@
 		B69A81103677DA392B92C01F /* Pods-CocoaHeadsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FF3008043D3D69F6A32B80 /* Pods-CocoaHeadsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		EC0772FA1C78E87E00D4A763 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		EC0772FA1C78E87E00D4A763 /* EventTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTest.swift; sourceTree = "<group>"; };
 		EC0772FD1C78E8E000D4A763 /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
 		EC0772FF1C78E96A00D4A763 /* chapter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chapter.json; sourceTree = "<group>"; };
 		EC0773011C78E9FA00D4A763 /* podcast_episode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_episode.json; sourceTree = "<group>"; };
@@ -161,6 +166,11 @@
 		EC21EAFA1C7C03A300C6937D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EC21EAFC1C7C09AE00C6937D /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestUtils.swift; sourceTree = "<group>"; };
+		ECAA61A51C837473003D4E17 /* ChapterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
+		ECAA61A71C83B790003D4E17 /* VideoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTest.swift; sourceTree = "<group>"; };
+		ECAA61A91C83BA93003D4E17 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisode.swift; sourceTree = "<group>"; };
+		ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeTest.swift; sourceTree = "<group>"; };
 		F9B7FF93E8B471405EB896FF /* Pods_CocoaHeadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4BEE1CA988DC81F8EAEB2 /* Pods-CocoaHeadsAppIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppIntegrationTests/Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -310,6 +320,8 @@
 				15079B6D1BED809E00E12A68 /* GroupModel.swift */,
 				EC21EAFA1C7C03A300C6937D /* Event.swift */,
 				EC21EAFC1C7C09AE00C6937D /* Chapter.swift */,
+				ECAA61A91C83BA93003D4E17 /* Video.swift */,
+				ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,8 +460,11 @@
 			isa = PBXGroup;
 			children = (
 				EC0772FC1C78E8C300D4A763 /* Fixtures */,
-				EC0772FA1C78E87E00D4A763 /* EventTests.swift */,
+				EC0772FA1C78E87E00D4A763 /* EventTest.swift */,
 				EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */,
+				ECAA61A51C837473003D4E17 /* ChapterTest.swift */,
+				ECAA61A71C83B790003D4E17 /* VideoTest.swift */,
+				ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -841,9 +856,11 @@
 				EC21EAFB1C7C03A300C6937D /* Event.swift in Sources */,
 				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
+				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
 				15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
 				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
+				ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */,
 				15079B3C1BED746C00E12A68 /* MeetupListViewModel.swift in Sources */,
 				15079B5C1BED77EC00E12A68 /* APIConsumer.swift in Sources */,
 				15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */,
@@ -870,9 +887,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0772FB1C78E87E00D4A763 /* EventTests.swift in Sources */,
+				ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */,
+				EC0772FB1C78E87E00D4A763 /* EventTest.swift in Sources */,
 				AD99ADDF1C728C4B004BF12A /* MeetupAPITests.swift in Sources */,
+				ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */,
 				EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */,
+				ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
