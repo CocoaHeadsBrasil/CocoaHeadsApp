@@ -1,11 +1,3 @@
-//
-//  Event.swift
-//  CocoaHeadsApp
-//
-//  Created by Gustavo Barbosa on 2/22/16.
-//  Copyright © 2016 CocoaHeads Brasil. All rights reserved.
-//
-
 import Foundation
 import CoreLocation
 
@@ -45,6 +37,5 @@ class Event {
         if let url = dictionary["meetup"] as? String {
             meetupURL = NSURL(string: url)
         }
-        
     }
 }

@@ -1,18 +1,10 @@
-//
-//  EventTests.swift
-//  CocoaHeadsApp
-//
-//  Created by Gustavo Barbosa on 2/20/16.
-//  Copyright © 2016 CocoaHeads Brasil. All rights reserved.
-//
-
 import XCTest
 import CoreLocation
 @testable import CocoaHeadsApp
 
 class EventTest: XCTestCase {
 
-    func testJsonMapping() {
+    func testInitializerWithDictionary() {
         let event = Event(dictionary: jsonObjectWithName("event"))
         XCTAssertEqual(125, event.id)
         XCTAssertEqual("4º Cocoaheads Florianópolis", event.name)
