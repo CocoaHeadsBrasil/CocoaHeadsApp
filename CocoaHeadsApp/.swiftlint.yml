@@ -1,3 +1,10 @@
+disabled_rules:
+  - trailing_newline
+  - trailing_whitespace
+  - colon
+  - line_length
+  - statement_position
+  - comma
+
 opt_in_rules:
   - empty_counts
-  - missing_docs
