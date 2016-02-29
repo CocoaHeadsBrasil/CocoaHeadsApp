@@ -22,8 +22,7 @@ class VideoTest: XCTestCase {
     }
     
     func testYoutubeURLIfItHasAnYoutubeId() {
-        let video = Video()
-        video.youtubeId = "XPTO123456"
-        XCTAssertEqual("https://www.youtube.com/watch?v=XPTO123456", video.youtubeURL?.absoluteString)
+        let video = Video(dictionary: jsonObjectWithName("video"))
+        XCTAssertEqual("https://www.youtube.com/watch?v=K966T0HdED8", video.youtubeURL?.absoluteString)
     }
 }

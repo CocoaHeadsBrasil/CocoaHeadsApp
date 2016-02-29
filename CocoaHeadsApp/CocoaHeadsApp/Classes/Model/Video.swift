@@ -1,6 +1,6 @@
 import Foundation
 
-class Video {
+struct Video {
     
     var id: Int?
     var speakerId: Int?
