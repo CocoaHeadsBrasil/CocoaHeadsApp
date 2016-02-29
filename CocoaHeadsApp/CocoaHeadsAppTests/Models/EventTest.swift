@@ -10,7 +10,11 @@ class EventTest: XCTestCase {
         XCTAssertEqual("4º Cocoaheads Florianópolis", event.name)
         XCTAssertEqual("<p>Ol&aacute; pessoal est&aacute; na hora do primeiro CocoaHeads Floripa de 2016!</p>", event.description)
         XCTAssertEqual(21, event.chapter?.id)
-        // date
+
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        XCTAssertEqual("2016-03-03T19:00:00.000Z", formatter.stringFromDate(event.date!))
+
         XCTAssertEqual("SENAI SC 401", event.venue)
         XCTAssertEqual("Rod. SC 401, 3730", event.address)
         
