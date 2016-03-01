@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0FD4B3AC72BC727A4B3320BB /* Pods_CocoaHeadsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */; };
 		15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2D1BED72FC00E12A68 /* Dynamic.swift */; };
-		15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2F1BED731E00E12A68 /* Array+Extensions.swift */; };
 		15079B321BED736100E12A68 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B311BED736100E12A68 /* NibDesignable.swift */; };
 		15079B341BED739000E12A68 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B331BED739000E12A68 /* String+Extensions.swift */; };
 		15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B351BED740800E12A68 /* MeetupListViewController.swift */; };
@@ -100,7 +99,6 @@
 /* Begin PBXFileReference section */
 		1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15079B2D1BED72FC00E12A68 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		15079B2F1BED731E00E12A68 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		15079B311BED736100E12A68 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		15079B331BED739000E12A68 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		15079B351BED740800E12A68 /* MeetupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListViewController.swift; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 		15079B271BED728200E12A68 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15079B2F1BED731E00E12A68 /* Array+Extensions.swift */,
 				15079B331BED739000E12A68 /* String+Extensions.swift */,
 				15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */,
 			);
@@ -881,7 +878,6 @@
 				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
 				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
-				15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */,
 				ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
 				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
