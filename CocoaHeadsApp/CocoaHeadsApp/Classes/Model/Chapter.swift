@@ -11,10 +11,10 @@ struct Chapter {
     let organizer: String?
     let organizerEmail: String?
     let organizerPhone: String?
-    let website: String?
-    let githubURL: String?
-    let twitterURL: String?
-    let facebookURL: String?
+    let website: NSURL?
+    let githubURL: NSURL?
+    let twitterURL: NSURL?
+    let facebookURL: NSURL?
 
     init(
         id: Int,
@@ -26,10 +26,10 @@ struct Chapter {
         organizer: String? = nil,
         organizerEmail: String? = nil,
         organizerPhone: String? = nil,
-        website: String? = nil,
-        githubURL: String? = nil,
-        twitterURL: String? = nil,
-        facebookURL: String? = nil) {
+        website: NSURL? = nil,
+        githubURL: NSURL? = nil,
+        twitterURL: NSURL? = nil,
+        facebookURL: NSURL? = nil) {
             self.id = id;
             self.stateId = stateId
             self.city = city
@@ -68,10 +68,10 @@ extension Chapter: JSONParselable {
             organizer: string(json, key: "organizador"),
             organizerEmail: string(json, key: "organizador_email"),
             organizerPhone: string(json, key: "organizador_contato"),
-            website: string(json, key: "website"),
-            githubURL: string(json, key: "github"),
-            twitterURL: string(json, key: "twitter"),
-            facebookURL: string(json, key: "facebook")
+            website: url(json, key: "website"),
+            githubURL: url(json, key: "github"),
+            twitterURL: url(json, key: "twitter"),
+            facebookURL: url(json, key: "facebook")
         )
     }
 }

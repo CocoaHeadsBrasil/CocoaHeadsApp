@@ -15,9 +15,9 @@ class ChapterTest: XCTestCase {
         XCTAssertEqual("João da Silva", chapter.organizer)
         XCTAssertEqual("joao@dasilva.com", chapter.organizerEmail)
         XCTAssertEqual("6881888888", chapter.organizerPhone)
-        XCTAssertEqual("http://cocoaheads.com.br", chapter.website)
-        XCTAssertEqual("https://github.com/CocoaHeadsBrasil/", chapter.githubURL)
-        XCTAssertEqual("https://twitter.com/cocoaheadsbr/", chapter.twitterURL)
-        XCTAssertEqual("https://www.facebook.com/CocoaHeadsBrasil/", chapter.facebookURL)
+        XCTAssertEqual("http://cocoaheads.com.br", chapter.website?.absoluteString)
+        XCTAssertEqual("https://github.com/CocoaHeadsBrasil/", chapter.githubURL?.absoluteString)
+        XCTAssertEqual("https://twitter.com/cocoaheadsbr/", chapter.twitterURL?.absoluteString)
+        XCTAssertEqual("https://www.facebook.com/CocoaHeadsBrasil/", chapter.facebookURL?.absoluteString)
     }
 }

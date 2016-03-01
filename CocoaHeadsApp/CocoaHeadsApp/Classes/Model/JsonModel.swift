@@ -29,11 +29,15 @@ func bool(input: [String:AnyObject], key: String) -> Bool? {
 }
 
 func nsdate(input: [String:AnyObject], key: String) -> NSDate? {
-    return string(input, key: key).map {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-        return formatter.dateFromString($0)!
-    }
+    guard let dateString = string(input, key: key) else { return nil }
+    let formatter = NSDateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    return formatter.dateFromString(dateString)
+}
+
+func url(input: [String:AnyObject], key: String) -> NSURL? {
+    guard let url = string(input, key: key) else { return nil }
+    return NSURL(string: url)
 }
 
 func flatten<A>(x: A??) -> A? {

@@ -10,7 +10,7 @@ class PodcastEpisodeTest: XCTestCase {
         XCTAssertEqual("S02E03 - Entrevista: OLX", episode.title)
         XCTAssertEqual("Mais uma semana com entrevistas sobre desenvolvimento iOS no podcast da CocoaHeads!", episode.description)
         XCTAssertEqual("247347819", episode.soundcloudId)
-        XCTAssertEqual("http://soundcloud.com/cocoaheadsbr/s02e03-entrevista-olx", episode.soundcloudURL)
+        XCTAssertEqual("http://soundcloud.com/cocoaheadsbr/s02e03-entrevista-olx", episode.soundcloudURL?.absoluteString)
         XCTAssertEqual(["OLX", "iPhone", "Xcode", "Apple", "Swift", "Cocoaheads"], episode.tags)
     }
 }
