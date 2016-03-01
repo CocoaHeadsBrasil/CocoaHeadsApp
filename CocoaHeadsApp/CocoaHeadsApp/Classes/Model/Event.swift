@@ -13,7 +13,7 @@ struct Event {
     let location: CLLocationCoordinate2D?
     let passbook: String?
     let published: Bool
-    let meetupURL: String?
+    let meetupURL: NSURL?
 
     init?(
         id: Int,
@@ -26,7 +26,7 @@ struct Event {
         location: CLLocationCoordinate2D? = nil,
         passbook: String? = nil,
         published: Bool,
-        meetupURL: String?) {
+        meetupURL: NSURL?) {
 
             self.id = id
             self.name = name
@@ -56,12 +56,12 @@ extension Event: JSONParselable {
             else {
                 return nil
             }
-        
+
         var location: CLLocationCoordinate2D? = nil
         if let latitude = double(json, key: "latitude"), let longitude = double(json, key: "longitude") {
             location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         }
-        
+
         return Event(
             id: id,
             name: name,
@@ -73,7 +73,7 @@ extension Event: JSONParselable {
             location: location,
             passbook: string(json, key: "passbook"),
             published: published,
-            meetupURL: string(json, key: "meetup")
+            meetupURL: url(json, key: "meetup")
         )
     }
 }

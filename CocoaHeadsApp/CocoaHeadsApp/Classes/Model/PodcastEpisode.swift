@@ -6,7 +6,7 @@ struct PodcastEpisode {
     let title: String
     let description: String
     let soundcloudId: String?
-    let soundcloudURL: String?
+    let soundcloudURL: NSURL?
     let tags: [String]
 
     init?(
@@ -14,7 +14,7 @@ struct PodcastEpisode {
         title: String,
         description: String,
         soundcloudId: String?,
-        soundcloudURL: String?,
+        soundcloudURL: NSURL?,
         tags: [String]) {
     
             self.id = id
@@ -51,7 +51,7 @@ extension PodcastEpisode: JSONParselable {
             title: title,
             description: description,
             soundcloudId: string(json, key: "soundcloud_id"),
-            soundcloudURL: string(json, key: "soundcloud_url"),
+            soundcloudURL: url(json, key: "soundcloud_url"),
             tags: sanitizedTags(spaceSeparatedTags)
         )
     }

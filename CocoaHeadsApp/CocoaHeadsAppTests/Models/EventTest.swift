@@ -23,6 +23,6 @@ class EventTest: XCTestCase {
         XCTAssertEqual(expectedCoodinate.longitude, event.location?.longitude)
         XCTAssertEqual("", event.passbook)
         XCTAssertTrue(event.published)
-        XCTAssertEqual("http://www.meetup.com/CocoaHeads-Florianopolis/events/228917154/", event.meetupURL)
+        XCTAssertEqual("http://www.meetup.com/CocoaHeads-Florianopolis/events/228917154/", event.meetupURL?.absoluteString)
     }
 }

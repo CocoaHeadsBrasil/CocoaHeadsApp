@@ -14,4 +14,3 @@ struct Organizer {
             self.phone = phone
     }
 }
-
