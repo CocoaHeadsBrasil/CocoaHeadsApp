@@ -68,6 +68,9 @@
 		ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A91C83BA93003D4E17 /* Video.swift */; };
 		ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */; };
 		ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */; };
+		ECAA61B01C84E1DA003D4E17 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AF1C84E1DA003D4E17 /* JsonModel.swift */; };
+		ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61B11C84E687003D4E17 /* Organizer.swift */; };
+		ECAA61B41C84E6B0003D4E17 /* OrganizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +174,9 @@
 		ECAA61A91C83BA93003D4E17 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisode.swift; sourceTree = "<group>"; };
 		ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeTest.swift; sourceTree = "<group>"; };
+		ECAA61AF1C84E1DA003D4E17 /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
+		ECAA61B11C84E687003D4E17 /* Organizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
+		ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizerTest.swift; sourceTree = "<group>"; };
 		F9B7FF93E8B471405EB896FF /* Pods_CocoaHeadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4BEE1CA988DC81F8EAEB2 /* Pods-CocoaHeadsAppIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppIntegrationTests/Pods-CocoaHeadsAppIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -322,6 +328,8 @@
 				EC21EAFC1C7C09AE00C6937D /* Chapter.swift */,
 				ECAA61A91C83BA93003D4E17 /* Video.swift */,
 				ECAA61AB1C83BF24003D4E17 /* PodcastEpisode.swift */,
+				ECAA61AF1C84E1DA003D4E17 /* JsonModel.swift */,
+				ECAA61B11C84E687003D4E17 /* Organizer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -465,6 +473,7 @@
 				ECAA61A51C837473003D4E17 /* ChapterTest.swift */,
 				ECAA61A71C83B790003D4E17 /* VideoTest.swift */,
 				ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */,
+				ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -858,6 +867,7 @@
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
 				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
 				15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */,
+				ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
 				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
 				ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */,
@@ -870,6 +880,7 @@
 				15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */,
 				EC21EAFD1C7C09AE00C6937D /* Chapter.swift in Sources */,
 				154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */,
+				ECAA61B01C84E1DA003D4E17 /* JsonModel.swift in Sources */,
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
 				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
@@ -893,6 +904,7 @@
 				ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */,
 				EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */,
 				ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */,
+				ECAA61B41C84E6B0003D4E17 /* OrganizerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

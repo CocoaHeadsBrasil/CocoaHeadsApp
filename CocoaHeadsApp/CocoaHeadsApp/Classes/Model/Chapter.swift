@@ -2,45 +2,76 @@ import Foundation
 
 struct Chapter {
     
-    var id: Int?
-    var stateId: Int?
-    var city: String?
-    var email: String?
-    var description: String?
-    var published: Bool?
-    var organizer: String?
-    var organizerEmail: String?
-    var organizerPhone: String?
-    var website: NSURL?
-    var githubURL: NSURL?
-    var twitterURL: NSURL?
-    var facebookURL: NSURL?
-    
-    init(dictionary: [String:AnyObject] = [:]) {
-        id = dictionary["id"] as? Int
-        stateId = dictionary["estado_id"] as? Int
-        city = dictionary["cidade"] as? String
-        email = dictionary["email"] as? String
-        description = dictionary["descricao"] as? String
-        published = dictionary["published"] as? Bool
-        organizer = dictionary["organizador"] as? String
-        organizerEmail = dictionary["organizador_email"] as? String
-        organizerPhone = dictionary["organizador_contato"] as? String
-        
-        if let website = dictionary["website"] as? String {
-            self.website = NSURL(string: website)
-        }
-        
-        if let githubURL = dictionary["github"] as? String {
-            self.githubURL = NSURL(string: githubURL)
-        }
-        
-        if let twitterURL = dictionary["twitter"] as? String {
-            self.twitterURL = NSURL(string: twitterURL)
-        }
-        
-        if let facebookURL = dictionary["facebook"] as? String {
-            self.facebookURL = NSURL(string: facebookURL)
-        }
+    let id: Int
+    let stateId: Int
+    let city: String
+    let email: String
+    let description: String?
+    let published: Bool
+    let organizer: String?
+    let organizerEmail: String?
+    let organizerPhone: String?
+    let website: String?
+    let githubURL: String?
+    let twitterURL: String?
+    let facebookURL: String?
+
+    init(
+        id: Int,
+        stateId: Int,
+        city: String,
+        email: String,
+        description: String? = nil,
+        published: Bool,
+        organizer: String? = nil,
+        organizerEmail: String? = nil,
+        organizerPhone: String? = nil,
+        website: String? = nil,
+        githubURL: String? = nil,
+        twitterURL: String? = nil,
+        facebookURL: String? = nil) {
+            self.id = id;
+            self.stateId = stateId
+            self.city = city
+            self.email = email
+            self.description = description
+            self.published = published
+            self.organizer = organizer
+            self.organizerEmail = organizerEmail
+            self.organizerPhone = organizerPhone
+            self.website = website
+            self.githubURL = githubURL
+            self.twitterURL = twitterURL
+            self.facebookURL = facebookURL
+    }
+}
+
+extension Chapter: JSONParselable {
+    static func withJSON(json: [String : AnyObject]) -> Chapter? {
+        guard let
+            id = int(json, key: "id"),
+            stateId = int(json, key: "estado_id"),
+            city = string(json, key: "cidade"),
+            email = string(json, key: "email"),
+            published = bool(json, key: "published")
+            else {
+                return nil
+            }
+
+        return Chapter(
+            id: id,
+            stateId: stateId,
+            city: city,
+            email: email,
+            description: string(json, key: "descricao"),
+            published: published,
+            organizer: string(json, key: "organizador"),
+            organizerEmail: string(json, key: "organizador_email"),
+            organizerPhone: string(json, key: "organizador_contato"),
+            website: string(json, key: "website"),
+            githubURL: string(json, key: "github"),
+            twitterURL: string(json, key: "twitter"),
+            facebookURL: string(json, key: "facebook")
+        )
     }
 }

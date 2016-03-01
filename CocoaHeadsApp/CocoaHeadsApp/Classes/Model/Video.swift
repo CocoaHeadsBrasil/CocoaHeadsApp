@@ -2,32 +2,74 @@ import Foundation
 
 struct Video {
     
-    var id: Int?
-    var speakerId: Int?
-    var agendaId: Int?
-    var title: String?
-    var description: String?
-    var youtubeId: String?
-    var published: Bool?
-    var tags: [String] = []
-    
-    var youtubeURL: NSURL? {
-        guard let id = youtubeId else { return nil }
-        return NSURL(string: "https://www.youtube.com/watch?v=\(id)")
+    let id: Int
+    let speakerId: Int
+    let agendaId: Int
+    let title: String
+    let description: String
+    let published: Bool
+    let tags: [String]
+    let youtubeId: String
+    var youtubeURL: NSURL! {
+        return NSURL(string: "https://www.youtube.com/watch?v=\(youtubeId)")
     }
+
+    init?(
+        id: Int,
+        speakerId: Int,
+        agendaId: Int,
+        title: String,
+        description: String,
+        youtubeId: String,
+        published: Bool,
+        tags: [String]) {
     
-    init(dictionary: [String:AnyObject] = [:]) {
-        id = dictionary["id"] as? Int
-        speakerId = dictionary["palestrante_id"] as? Int
-        agendaId = dictionary["agenda_id"] as? Int
-        title = dictionary["titulo"] as? String
-        description = dictionary["descricao"] as? String
-        youtubeId = dictionary["youtube"] as? String
-        published = dictionary["published"] as? Bool
+            self.id = id
+            self.speakerId = speakerId
+            self.agendaId = agendaId
+            self.title = title
+            self.description = description
+            self.youtubeId = youtubeId
+            self.published = published
+            self.tags = tags
+    }
+}
+
+extension Video: JSONParselable {
+    static func withJSON(json: [String : AnyObject]) -> Video? {
+        guard let
+            id = int(json, key: "id"),
+            speakerId = int(json, key: "palestrante_id"),
+            agendaId = int(json, key: "agenda_id"),
+            title = string(json, key: "titulo"),
+            description = string(json, key: "descricao"),
+            youtubeId = string(json, key: "youtube"),
+            published = bool(json, key: "published")
+            else {
+                return nil
+            }
+
+        let commaSeparatedTags = string(json, key: "tags")
         
-        if let commaSeparatedTags = dictionary["tags"] as? String {
-            tags = commaSeparatedTags.componentsSeparatedByString(",")
-                .map({ $0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) })
+        func sanitizedTags(rawTags: String?) -> [String] {
+            guard let tags = rawTags else {
+                return []
+            }
+
+            return tags.componentsSeparatedByString(",").map {
+                $0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+            }
         }
+
+        return Video(
+            id: id,
+            speakerId: speakerId,
+            agendaId: agendaId,
+            title: title,
+            description: description,
+            youtubeId: youtubeId,
+            published: published,
+            tags: sanitizedTags(commaSeparatedTags)
+        )
     }
 }
