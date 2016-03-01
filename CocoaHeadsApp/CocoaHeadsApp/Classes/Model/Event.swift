@@ -15,7 +15,7 @@ struct Event {
     let published: Bool
     let meetupURL: NSURL?
 
-    init?(
+    init(
         id: Int,
         name: String,
         description: String,
