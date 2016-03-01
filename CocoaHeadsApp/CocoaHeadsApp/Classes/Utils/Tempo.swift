@@ -29,7 +29,7 @@ class Tempo {
         }
         set {
             self._timeZone = newValue
-            if (self.timeZone != nil) {
+            if self.timeZone != nil {
                 TempoDateFormatter.sharedInstance.dateFormatter.timeZone = self.timeZone
                 self.updateDate()
                 self.updateComponents()
@@ -43,7 +43,7 @@ class Tempo {
         }
         set {
             self._locale = newValue
-            if (self.locale != nil) {
+            if self.locale != nil {
                 TempoDateFormatter.sharedInstance.dateFormatter.locale = self.locale
                 self.updateDate()
                 self.updateComponents()
@@ -122,20 +122,13 @@ class Tempo {
         var dateFormatter: NSDateFormatter!
         var calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         
-        class var sharedInstance: TempoDateFormatter {
-            struct Static {
-                static var instance: TempoDateFormatter?
-                static var token: dispatch_once_t = 0
-            }
-            
-            dispatch_once(&Static.token) {
-                Static.instance = TempoDateFormatter()
-                Static.instance?.dateFormatter = NSDateFormatter()
-                Static.instance?.dateFormatter.locale = NSLocale.autoupdatingCurrentLocale()
-                Static.instance?.dateFormatter.timeZone = NSTimeZone.defaultTimeZone()
-            }
-            return Static.instance!
-        }
+        private(set) static var sharedInstance: TempoDateFormatter = {
+            let instance = TempoDateFormatter()
+            instance.dateFormatter = NSDateFormatter()
+            instance.dateFormatter.locale = NSLocale.autoupdatingCurrentLocale()
+            instance.dateFormatter.timeZone = NSTimeZone.defaultTimeZone()
+            return instance
+        }()
     }
     
     private func updateDate() {
@@ -260,9 +253,10 @@ class Tempo {
     }
     
     /**
-     Get the Tempo date to a string format easy to read.
-     
-     :param: format The format, you want to display, by default, it's : YYYY-MM-DD HH:mm.
+    Get the Tempo date to a string format easy to read.
+ 
+    - parameter format: The format, you want to display, by default, it's : YYYY-MM-DD HH:mm.
+    - returns: Formatted date String
      */
     func format(format: String = "YYYY-MM-DD HH:mm") -> String? {
         return self.format([format])
@@ -271,15 +265,15 @@ class Tempo {
     /**
      Get the Tempo date to a string format easy to read.
      
-     :param: formats It's a list of format, user it, if you don't know which format is your date.
+     - parameter formats: It's a list of format, user it, if you don't know which format is your date.
+     - returns: Formatted date String
      */
     func format(formats: [String]) -> String! {
         for currentFormat in formats {
             TempoDateFormatter.sharedInstance.dateFormatter.dateFormat = currentFormat
             
             let dateString = TempoDateFormatter.sharedInstance.dateFormatter.stringFromDate(_date)
-            let dateConvert = TempoDateFormatter.sharedInstance.dateFormatter.dateFromString(dateString)
-            if (dateConvert != nil) {
+            if let _ = TempoDateFormatter.sharedInstance.dateFormatter.dateFromString(dateString) {
                 return dateString
             }
         }
@@ -288,6 +282,7 @@ class Tempo {
     
     /**
      Get the Tempo date to the Unix Timestamp format.
+     - returns: Unix Timestamp date
      */
     func formatUnixTimestamp() -> Double? {
         if let returnString = self.format("X") {
@@ -298,6 +293,7 @@ class Tempo {
     
     /**
      Get the current month name of the current year.
+     - returns: Month name
      */
     func monthOfTheYear() -> String? {
         return self.format("MMMM")
@@ -305,6 +301,7 @@ class Tempo {
     
     /**
      Get the current day name of the current week.
+     - returns: Day of the week
      */
     func dayOfTheWeek() -> String? {
         return self.format("EEEE")
@@ -313,7 +310,8 @@ class Tempo {
     /**
      Know if a tempo is after an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if the current value is after the specified tempo
      */
     func isAfter(tempo: Tempo) -> Bool? {
         return self > tempo
@@ -322,7 +320,8 @@ class Tempo {
     /**
      Know if a tempo is before an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if the current value is before the specified tempo
      */
     func isBefore(tempo: Tempo) -> Bool? {
         return self < tempo
@@ -331,7 +330,8 @@ class Tempo {
     /**
      Know if a tempo is the same to an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if the current value and tempo represents the same date
      */
     func isSame(tempo: Tempo) -> Bool {
         return self == tempo
@@ -341,8 +341,9 @@ class Tempo {
      Know if a tempo is between to tempos.
      tempoLeft > your tempo > tempoRight
      
-     :param: tempoLeft The tempo object, you want to compare in the left interval.
-     :param: tempoRight The tempo object, you want to compare in the right interval.
+     - parameter tempoLeft: The tempo object, you want to compare in the left interval.
+     - parameter tempoRight: The tempo object, you want to compare in the right interval.
+     - returns: true if the current value is between tempoLeft and tempoRight
      */
     func isBetween(tempoLeft: Tempo, tempoRight: Tempo) -> Bool {
         if isSame(tempoLeft) || isSame(tempoRight) {
@@ -354,7 +355,8 @@ class Tempo {
     /**
      Know if a tempo is in the same day of an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if tempo is in the current day
      */
     func isToday(tempo: Tempo) -> Bool {
         return (self.diffDay(tempo) == 0 ? true : false)
@@ -363,7 +365,8 @@ class Tempo {
     /**
      Know if a tempo is in the same month of an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if tempo is in the current month
      */
     func isThisMonth(tempo: Tempo) -> Bool {
         return (self.diffMonth(tempo) == 0 ? true : false)
@@ -372,7 +375,8 @@ class Tempo {
     /**
      Know if a tempo is in the same year of an another tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: true if tempo is in the current year
      */
     func isThisYear(tempo: Tempo) -> Bool {
         return (self.diffYear(tempo) == 0 ? true : false)
@@ -380,6 +384,7 @@ class Tempo {
     
     /**
      Debug representation of a tempo, can be usefull in a development.
+     - returns: A String representation of the current date
      */
     func representation() -> String {
         return "years:\(self.years) months:\(self.months) days:\(self.days) hours:\(self.hours) minutes:\(self.minutes) seconds:\(self.seconds)"
@@ -390,7 +395,8 @@ extension Tempo {
     /**
      Get the difference of days between two tempos.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: The number of weeks between the dates
      */
     func diffDay(tempo: Tempo) -> Int {
         return TempoDateFormatter.sharedInstance.calendar!.components(NSCalendarUnit.Day,
@@ -400,7 +406,8 @@ extension Tempo {
     /**
      Get the difference of weeks between two tempos.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: The number of full weeks between the dates
      */
     func diffWeek(tempo: Tempo) -> Int {
         return TempoDateFormatter.sharedInstance.calendar!.components(NSCalendarUnit.WeekOfYear,
@@ -410,7 +417,8 @@ extension Tempo {
     /**
      Get the difference of month between two tempos.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: The number of full months between the dates
      */
     func diffMonth(tempo: Tempo) -> Int {
         return TempoDateFormatter.sharedInstance.calendar!.components(NSCalendarUnit.Month,
@@ -420,7 +428,8 @@ extension Tempo {
     /**
      Get the difference of year between two tempos.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: The number of full years between the dates
      */
     func diffYear(tempo: Tempo) -> Int {
         return TempoDateFormatter.sharedInstance.calendar!.components(NSCalendarUnit.Year,
@@ -433,8 +442,7 @@ extension Tempo {
         var now: NSDate!
         if tempo != nil {
             now = tempo?.date
-        }
-        else {
+        } else {
             now = NSDate()
         }
         let deltaSeconds = fabs(_date.timeIntervalSinceDate(now))
@@ -442,20 +450,15 @@ extension Tempo {
         
         if deltaSeconds < 60 {
             return "\(Int(deltaSeconds))s"
-        }
-        else if deltaMinutes < 60 {
+        } else if deltaMinutes < 60 {
             return "\(Int(deltaMinutes))m"
-        }
-        else if deltaMinutes < (24 * 60) {
+        } else if deltaMinutes < (24 * 60) {
             return "\(Int(floor(deltaMinutes / 60)))h"
-        }
-        else if deltaMinutes < (24 * 60 * 7) {
+        } else if deltaMinutes < (24 * 60 * 7) {
             return "\(Int(floor(deltaMinutes / (60 * 24))))d"
-        }
-        else if deltaMinutes < (24 * 60 * 31) {
+        } else if deltaMinutes < (24 * 60 * 31) {
             return "\(Int(floor(deltaMinutes / (60 * 24 * 7))))se"
-        }
-        else if deltaMinutes < (24 * 60 * 365.25) {
+        } else if deltaMinutes < (24 * 60 * 365.25) {
             return "\(Int(floor(deltaMinutes / (60 * 24 * 30))))me"
         }
         return "\(Int(floor(deltaMinutes / (60 * 24 * 365))))an"
@@ -465,8 +468,7 @@ extension Tempo {
         var now: NSDate!
         if tempo != nil {
             now = tempo?.date
-        }
-        else {
+        } else {
             now = NSDate()
         }
         let deltaSeconds = fabs(_date.timeIntervalSinceDate(now))
@@ -474,29 +476,21 @@ extension Tempo {
         
         if deltaSeconds < 5 {
             return "Agora"
-        }
-        else if deltaSeconds < 60 {
+        } else if deltaSeconds < 60 {
             return "\(Int(deltaSeconds)) segundos atrás"
-        }
-        else if deltaSeconds < 120 {
+        } else if deltaSeconds < 120 {
             return  "Um minuto atrás"
-        }
-        else if deltaMinutes < 60 {
+        } else if deltaMinutes < 60 {
             return "\(Int(deltaMinutes)) minutos atrás"
-        }
-        else if deltaMinutes < 120 {
+        } else if deltaMinutes < 120 {
             return "Uma hora atrás"
-        }
-        else if deltaMinutes < (24 * 60) {
+        } else if deltaMinutes < (24 * 60) {
             return "\(Int(floor(deltaMinutes / 60))) horas atrás"
-        }
-        else if deltaMinutes < (24 * 60 * 2) {
+        } else if deltaMinutes < (24 * 60 * 2) {
             return "Ontem"
-        }
-        else if let dateByDescription = self.format("dd/MM/YYYY") {
+        } else if let dateByDescription = self.format("dd/MM/YYYY") {
             return dateByDescription
-        }
-        else  {
+        } else {
             return "\(Int(floor(deltaMinutes / (60 * 24)))) dias atrás"
         }
     }
@@ -505,48 +499,41 @@ extension Tempo {
         var now: Tempo!
         if tempo != nil {
             now = Tempo(date: tempo!.date!)
-        }
-        else {
+        } else {
             now = Tempo()
         }
         if self.isToday(now) {
             if self.days == now.days {
                 if self.hours < 12 && now.hours > 12 {
                     return "Esta manha"
-                }
-                else if self.hours >= 12 && self.hours < 18 && now.hours >= 18 {
+                } else if self.hours >= 12 && self.hours < 18 && now.hours >= 18 {
                     return "Esta tarde"
                 }
                 return "Hoje"
             }
-        }
-        else if self.isThisMonth(now) {
+        } else if self.isThisMonth(now) {
             if self.days == now.days - 1 {
                 return "Ontem"
             }
             let diffWeek = self.diffWeek(now)
             if diffWeek == 0 {
                 return "Esta semana"
-            }
-            else if diffWeek == 1 {
+            } else if diffWeek == 1 {
                 return "Semana passada"
             }
-        }
-        else if self.isThisYear(now) {
+        } else if self.isThisYear(now) {
             let diffMonth = self.diffMonth(now)
             logger.verbose("diff month : \(diffMonth))")
             if diffMonth == 0 {
                 return "Este mês"
-            }
-            else if diffMonth == 1 {
+            } else if diffMonth == 1 {
                 return "Mês passado"
             }
         }
         let diffYear = self.diffYear(now)
         if diffYear == 0 {
             return "Este ano"
-        }
-        else if diffYear == 1 {
+        } else if diffYear == 1 {
             return "Ano passado"
         }
         return self.timeAgo(nil)
@@ -554,6 +541,7 @@ extension Tempo {
     
     /**
      Get the time ago, with a simple version for the current time.
+     - returns: Time difference in a readable format
      */
     func timeAgoSimpleNow() -> String {
         return self.timeAgoSimple(nil)
@@ -562,7 +550,8 @@ extension Tempo {
     /**
      Get the time ago, with a simple version for a tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: Time difference in a readable format
      */
     func timeAgoSimple(tempo: Tempo) -> String {
         return self.timeAgoSimple(tempo)
@@ -570,6 +559,7 @@ extension Tempo {
     
     /**
      Get the time ago, for the current time.
+     - returns: Time difference in a readable format
      */
     func timeAgoNow() -> String {
         return self.timeAgo(nil)
@@ -578,7 +568,8 @@ extension Tempo {
     /**
      Get the time ago, for a tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: Time difference in a readable format
      */
     func timeAgo(tempo: Tempo) -> String {
         return self.timeAgo(tempo)
@@ -586,6 +577,7 @@ extension Tempo {
     
     /**
      Get the time ago, with a more readeble version for the current time.
+     - returns: Time difference in a readable format
      */
     func dateTimeUntilNow() -> String {
         return self.dateTimeUntil(nil)
@@ -594,14 +586,15 @@ extension Tempo {
     /**
      Get the time ago, with a more readable version for a tempo.
      
-     :param: tempo The tempo object, you want to compare.
+     - parameter tempo: The tempo object, you want to compare.
+     - returns: Time difference in a readable format
      */
     func dateTimeUntil(tempo: Tempo) -> String {
         return self.dateTimeUntil(tempo)
     }
 }
 
-func >(left: Tempo, right: Tempo) -> Bool? {
+func > (left: Tempo, right: Tempo) -> Bool? {
     if left.years != right.years {
         return left.years > right.years
     }
@@ -623,7 +616,7 @@ func >(left: Tempo, right: Tempo) -> Bool? {
     return nil
 }
 
-func <(left: Tempo, right: Tempo) -> Bool? {
+func < (left: Tempo, right: Tempo) -> Bool? {
     if left.years != right.years {
         return left.years < right.years
     }
@@ -645,13 +638,13 @@ func <(left: Tempo, right: Tempo) -> Bool? {
     return nil
 }
 
-func ==(left: Tempo, right: Tempo) -> Bool {
+func == (left: Tempo, right: Tempo) -> Bool {
     return left.years == right.years && left.months == right.months &&
         left.days == right.days && left.hours == right.hours &&
         left.minutes == right.minutes && left.seconds == right.seconds
 }
 
-func +(left: Tempo, right: Tempo) -> Tempo {
+func + (left: Tempo, right: Tempo) -> Tempo {
     return Tempo(buildClosure: { (newTemp) -> () in
         newTemp.years = left.years + right.years
         newTemp.months = left.months + right.months
@@ -661,7 +654,7 @@ func +(left: Tempo, right: Tempo) -> Tempo {
     })
 }
 
-func -(left: Tempo, right: Tempo) -> Tempo {
+func - (left: Tempo, right: Tempo) -> Tempo {
     return Tempo(buildClosure: { (newTemp) -> () in
         newTemp.years = left.years - right.years
         newTemp.months = left.months - right.months
