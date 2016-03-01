@@ -18,6 +18,10 @@ opt_in_rules:
   - todo
   - nesting
 
+cyclomatic_complexity:
+  - 15
+  - 20
+
 variable_name:
   excluded:
     - id
