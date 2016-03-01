@@ -14,7 +14,7 @@ struct Video {
         return NSURL(string: "https://www.youtube.com/watch?v=\(youtubeId)")
     }
 
-    init?(
+    init(
         id: Int,
         speakerId: Int,
         agendaId: Int,

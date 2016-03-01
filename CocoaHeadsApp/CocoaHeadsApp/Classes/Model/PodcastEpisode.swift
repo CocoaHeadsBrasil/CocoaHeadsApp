@@ -9,7 +9,7 @@ struct PodcastEpisode {
     let soundcloudURL: NSURL?
     let tags: [String]
 
-    init?(
+    init(
         id: Int,
         title: String,
         description: String,
