@@ -18,7 +18,7 @@ class MeetupListCollectionDelegate: NSObject, UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(CGRectGetWidth(collectionView.frame), 200)
+        return CGSize(width: collectionView.frame.width, height: 200)
     }
     
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
