@@ -43,11 +43,9 @@ class APIConsumer<Target:TargetType>: NSObject {
                 let parsedResponse = parser.parsedResponse()
                 if let validResponse = parsedResponse.response {
                     success(validResponse)
-                }
-                else if let error = parsedResponse.error {
+                } else if let error = parsedResponse.error {
                     failure(error)
-                }
-                else {
+                } else {
                     failure(APIErrors.UndefinedBehavior(data))
                 }
             }

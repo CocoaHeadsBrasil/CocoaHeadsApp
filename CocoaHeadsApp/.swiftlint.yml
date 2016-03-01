@@ -5,8 +5,22 @@ disabled_rules:
   - colon
   - comma
 
+opt_in_rules:
+  - empty_count
+  - force_cast
+  - force_try
+  - leading_whitespace
+  - function_body_length
+  - function_parameter_count
+  - legacy_constant
+  - operator_whitespace
+  - return_arrow_whitespace
+  - todo
+  - nesting
+
 variable_name:
   excluded:
+    - id
     - URLEscapedString
     - MeetupAPIProvider
     - MeetupAPIConsumer
@@ -15,6 +29,3 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
   - CocoaHeadsApp/R.generated.swift
-
-opt_in_rules:
-  - empty_counts

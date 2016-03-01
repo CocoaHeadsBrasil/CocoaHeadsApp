@@ -32,8 +32,7 @@ public class ObjectParser<T: Unboxable>: NSObject {
         do {
             let object :T = try UnboxOrThrow(jsonData)
             return (object, error: nil)
-        }
-        catch (let error) {
+        } catch (let error) {
             return (nil, error: error)
         }
     }

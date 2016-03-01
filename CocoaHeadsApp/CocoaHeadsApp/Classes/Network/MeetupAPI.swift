@@ -82,8 +82,7 @@ extension MeetupAPI :TargetType {
                 let data  = try NSJSONSerialization.dataWithJSONObject(["":""], options: NSJSONWritingOptions.PrettyPrinted)
                 return data
             }
-        }
-        catch {
+        } catch {
             return NSData()
         }
     }

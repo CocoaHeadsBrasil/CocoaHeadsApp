@@ -10,10 +10,10 @@ import UIKit
 
 class MeetupListCollectionDelegate: NSObject, UICollectionViewDelegateFlowLayout {
 
-    let viewModel :MeetupListViewModel
+    let viewModel:MeetupListViewModel
     
-    init(viewModel vm :MeetupListViewModel) {
-        viewModel = vm
+    init(viewModel:MeetupListViewModel) {
+        self.viewModel = viewModel
         super.init()
     }
     
