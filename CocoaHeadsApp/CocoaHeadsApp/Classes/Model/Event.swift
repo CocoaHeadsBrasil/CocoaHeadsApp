@@ -3,44 +3,77 @@ import CoreLocation
 
 struct Event {
     
-    var id: Int?
-    var name: String?
-    var description: String?
-    var chapter: Chapter?
-    var venue: String?
-    var date: NSDate?
-    var address: String?
-    var location: CLLocationCoordinate2D?
-    var passbook: String?
-    var published: Bool?
-    var meetupURL: NSURL?
+    let id: Int
+    let name: String
+    let description: String
+    let chapterId: Int
+    let venue: String
+    let date: NSDate
+    let address: String
+    let location: CLLocationCoordinate2D?
+    let passbook: String?
+    let published: Bool
+    let meetupURL: String?
 
-    init(dictionary: NSDictionary) {
-        id = dictionary["id"] as? Int
-        name = dictionary["nome"] as? String
-        description = dictionary["descricao"] as? String
+    init?(
+        id: Int,
+        name: String,
+        description: String,
+        chapterId: Int,
+        venue: String,
+        date: NSDate,
+        address: String,
+        location: CLLocationCoordinate2D? = nil,
+        passbook: String? = nil,
+        published: Bool,
+        meetupURL: String?) {
+
+            self.id = id
+            self.name = name
+            self.description = description
+            self.chapterId = chapterId
+            self.venue = venue
+            self.date = date
+            self.address = address
+            self.location = location
+            self.passbook = passbook
+            self.published = published
+            self.meetupURL = meetupURL
+    }
+}
+
+extension Event: JSONParselable {
+    static func withJSON(json: [String : AnyObject]) -> Event? {
+        guard let
+            id = int(json, key: "id"),
+            name = string(json, key: "nome"),
+            description = string(json, key: "descricao"),
+            date = nsdate(json, key: "data"),
+            venue = string(json, key: "local"),
+            address = string(json, key: "endereco"),
+            published = bool(json, key: "published"),
+            chapterId = int(json, key: "cidade_id")
+            else {
+                return nil
+            }
         
-        chapter = Chapter()
-        chapter?.id = dictionary["cidade_id"] as? Int
-        
-        if let date = dictionary["data"] as? String {
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-            self.date = formatter.dateFromString(date)
+        var location: CLLocationCoordinate2D? = nil
+        if let latitude = double(json, key: "latitude"), let longitude = double(json, key: "longitude") {
+            location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         }
         
-        venue = dictionary["local"] as? String
-        address = dictionary["endereco"] as? String
-        
-        if let latitude = dictionary["latitude"] as? String, let longitude = dictionary["longitude"] as? String {
-                location = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
-        }
-        
-        passbook = dictionary["passbook"] as? String
-        published = dictionary["published"] as? Bool
-        
-        if let url = dictionary["meetup"] as? String {
-            meetupURL = NSURL(string: url)
-        }
+        return Event(
+            id: id,
+            name: name,
+            description: description,
+            chapterId: chapterId,
+            venue: venue,
+            date: date,
+            address: address,
+            location: location,
+            passbook: string(json, key: "passbook"),
+            published: published,
+            meetupURL: string(json, key: "meetup")
+        )
     }
 }

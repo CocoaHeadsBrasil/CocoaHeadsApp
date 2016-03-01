@@ -2,26 +2,57 @@ import Foundation
 
 struct PodcastEpisode {
 
-    var id: Int?
-    var title: String?
-    var description: String?
-    var soundcloudId: String?
-    var soundcloudURL: NSURL?
-    var tags: [String] = []
+    let id: Int
+    let title: String
+    let description: String
+    let soundcloudId: String?
+    let soundcloudURL: String?
+    let tags: [String]
+
+    init?(
+        id: Int,
+        title: String,
+        description: String,
+        soundcloudId: String?,
+        soundcloudURL: String?,
+        tags: [String]) {
     
-    init(dictionary: [String:AnyObject] = [:]) {
-        id = dictionary["id"] as? Int
-        title = dictionary["title"] as? String
-        description = dictionary["description"] as? String
-        soundcloudId = dictionary["soundcloud_id"] as? String
+            self.id = id
+            self.title = title
+            self.description = description
+            self.soundcloudId = soundcloudId
+            self.soundcloudURL = soundcloudURL
+            self.tags = tags
+    }
+}
+
+extension PodcastEpisode: JSONParselable {
+    static func withJSON(json: [String : AnyObject]) -> PodcastEpisode? {
+        guard let
+            id = int(json, key: "id"),
+            title = string(json, key: "title"),
+            description = string(json, key: "description")
+            else {
+                return nil
+            }
+
+        let spaceSeparatedTags = string(json, key: "tags")
         
-        if let soundcloudURL = dictionary["soundcloud_url"] as? String {
-            self.soundcloudURL = NSURL(string: soundcloudURL)
+        func sanitizedTags(rawTags: String?) -> [String] {
+            guard let tags = rawTags else {
+                return []
+            }
+
+            return tags.componentsSeparatedByString(" ")
         }
         
-        if let spaceSeparatedTags = dictionary["tags"] as? String {
-            tags = spaceSeparatedTags.componentsSeparatedByString(" ")
-                .map({ $0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) })
-        }
+        return PodcastEpisode(
+            id: id,
+            title: title,
+            description: description,
+            soundcloudId: string(json, key: "soundcloud_id"),
+            soundcloudURL: string(json, key: "soundcloud_url"),
+            tags: sanitizedTags(spaceSeparatedTags)
+        )
     }
 }
