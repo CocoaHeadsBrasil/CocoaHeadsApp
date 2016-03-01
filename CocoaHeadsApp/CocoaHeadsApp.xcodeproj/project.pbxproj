@@ -40,9 +40,11 @@
 		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
-		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; };
-		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
-		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; };
+		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		78DE6D181C85DD3E0000A183 /* Tempo+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE6D171C85DD3E0000A183 /* Tempo+Methods.swift */; };
+		78DE6D1A1C85DDBA0000A183 /* TempoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE6D191C85DDBA0000A183 /* TempoDateFormatter.swift */; };
+		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
 		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
@@ -134,6 +136,8 @@
 		43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444893C482EB230FB9AA250 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		78DE6D171C85DD3E0000A183 /* Tempo+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tempo+Methods.swift"; sourceTree = "<group>"; };
+		78DE6D191C85DDBA0000A183 /* TempoDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoDateFormatter.swift; sourceTree = "<group>"; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				15079B691BED7F2A00E12A68 /* Tempo.swift */,
+				78DE6D171C85DD3E0000A183 /* Tempo+Methods.swift */,
+				78DE6D191C85DDBA0000A183 /* TempoDateFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -877,6 +883,7 @@
 				EC21EAFB1C7C03A300C6937D /* Event.swift in Sources */,
 				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
+				78DE6D1A1C85DDBA0000A183 /* TempoDateFormatter.swift in Sources */,
 				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
 				ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
@@ -894,6 +901,7 @@
 				ECAA61B01C84E1DA003D4E17 /* JsonModel.swift in Sources */,
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
 				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
+				78DE6D181C85DD3E0000A183 /* Tempo+Methods.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
 				15079B401BED750E00E12A68 /* R.generated.swift in Sources */,
