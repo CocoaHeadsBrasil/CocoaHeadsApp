@@ -6,6 +6,8 @@ git:
   submodules: false
 before_install:
   - git submodule update --init --recursive
+  - brew update
+  - brew upgrade
   - brew install swiftlint
   - bundle install
 podfile: CocoaHeadsApp/Podfile

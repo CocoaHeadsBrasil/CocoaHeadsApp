@@ -500,13 +500,13 @@
 			buildConfigurationList = 8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsApp" */;
 			buildPhases = (
 				260B698C60B3A9A5CD1C0049 /* Check Pods Manifest.lock */,
+				78076B931C84BA6D000BDB92 /* Lint */,
 				15079B231BED71FD00E12A68 /* Generate R.Generated file */,
 				8CF97AEF1BE3C5E3009C5591 /* Sources */,
 				8CF97AF01BE3C5E3009C5591 /* Frameworks */,
 				8CF97AF11BE3C5E3009C5591 /* Resources */,
 				0B9A5DE5C48BE0D376C97223 /* Copy Pods Resources */,
 				344E7FC69A967DE8F8ABE229 /* Embed Pods Frameworks */,
-				78076B931C84BA6D000BDB92 /* Lint */,
 			);
 			buildRules = (
 			);
