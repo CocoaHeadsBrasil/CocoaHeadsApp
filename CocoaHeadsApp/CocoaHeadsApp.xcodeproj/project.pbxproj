@@ -40,11 +40,11 @@
 		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
-		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; };
+		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
 		78DE6D181C85DD3E0000A183 /* Tempo+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE6D171C85DD3E0000A183 /* Tempo+Methods.swift */; };
 		78DE6D1A1C85DDBA0000A183 /* TempoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE6D191C85DDBA0000A183 /* TempoDateFormatter.swift */; };
-		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
 		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
