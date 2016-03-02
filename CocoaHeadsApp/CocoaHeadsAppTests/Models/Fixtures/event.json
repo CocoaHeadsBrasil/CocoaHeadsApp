@@ -1,0 +1,18 @@
+{
+    "id": 125,
+    "cidade_id": 21,
+    "data": "2016-03-03T19:00:00.000Z",
+    "local": "SENAI SC 401",
+    "endereco": "Rod. SC 401, 3730",
+    "latitude": -27.548005,
+    "longitude": -48.497775,
+    "passbook": "",
+    "published": true,
+    "descricao": "<p>Ol&aacute; pessoal est&aacute; na hora do primeiro CocoaHeads Floripa de 2016!</p>",
+    "created_at": "2016-02-17T12:07:08.967Z",
+    "updated_at": "2016-02-17T12:07:08.967Z",
+    "foto_id": null,
+    "nome": "4º Cocoaheads Florianópolis",
+    "meetup": "http://www.meetup.com/CocoaHeads-Florianopolis/events/228917154/",
+    "total": 0
+}
