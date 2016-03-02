@@ -27,7 +27,7 @@ extension String {
      Escapes the current string, making it safe to use to create an url
      */
     var URLEscapedString: String {
-        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet()) ?? ""
     }
     
 }
