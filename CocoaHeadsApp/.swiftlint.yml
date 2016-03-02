@@ -32,4 +32,7 @@ variable_name:
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
+  - CocoaHeadsAppIntegrationTests
+  - CocoaHeadsAppTests
+  - CocoaHeadsAppUITests
   - CocoaHeadsApp/R.generated.swift
