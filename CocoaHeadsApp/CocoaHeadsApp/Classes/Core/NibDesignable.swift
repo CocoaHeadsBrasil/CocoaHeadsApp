@@ -68,6 +68,9 @@ public class NibDesignable: UIView {
      - returns: Name of a single view nib file.
      */
     public func nibName() -> String {
-        return self.dynamicType.description().componentsSeparatedByString(".").last!
+        guard let name = self.dynamicType.description().componentsSeparatedByString(".").last else {
+            fatalError("Invalid module name")
+        }
+        return name
     }
 }

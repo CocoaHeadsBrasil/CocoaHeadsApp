@@ -1,22 +1,27 @@
-disabled_rules:
-  - trailing_newline
-  - trailing_whitespace
-  - line_length
-  - colon
-  - comma
-
-opt_in_rules:
+whitelist_rules:
   - empty_count
   - force_cast
   - force_try
+  - force_unwrapping
+  - legacy_constructor
+  - variable_name
+  - cyclomatic_complexity
   - leading_whitespace
   - function_body_length
-  - function_parameter_count
   - legacy_constant
   - operator_whitespace
   - return_arrow_whitespace
   - todo
   - nesting
+  - type_body_length
+  - file_length
+  - control_statement
+  - type_name
+  - closing_brace
+  - conditional_binding_cascade
+  - opening_brace
+  - statement_position
+  - valid_docs
 
 cyclomatic_complexity:
   - 15
@@ -32,7 +37,8 @@ variable_name:
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
-  - CocoaHeadsAppIntegrationTests
-  - CocoaHeadsAppTests
+  - CocoaHeadsApp/Classes/Legacy
   - CocoaHeadsAppUITests
+  - CocoaHeadsAppTests
+  - CocoaHeadsAppIntegrationTests
   - CocoaHeadsApp/R.generated.swift

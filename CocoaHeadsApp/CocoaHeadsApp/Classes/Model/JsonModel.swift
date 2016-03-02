@@ -42,12 +42,12 @@ extension JSONParselable {
     }
 }
 
-func flatten<A>(x: A??) -> A? {
-    if let y = x { return y }
+func flatten<A>(element: A??) -> A? {
+    if let flattenElement = element { return flattenElement }
     return nil
 }
 
 infix operator >>>= {}
-func >>>= <A, B> (optional: A?, f: A -> B?) -> B? {
-    return flatten(optional.map(f))
+func >>>= <A, B> (optional: A?, map: A -> B?) -> B? {
+    return flatten(optional.map(map))
 }
