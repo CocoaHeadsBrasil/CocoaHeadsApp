@@ -1,0 +1,16 @@
+{
+    "id": 11,
+    "palestrante_id": 8,
+    "agenda_id": 76,
+    "titulo": "Apresentação do 2º CocoaHeads BNU na íntegra",
+    "descricao": "<p>No dia 26 de maio &agrave;s 19h, foi a vez do 2&ordm; CocoaHeads BNU, realizado no audit&oacute;rio do SENAI Blumenau.</p>",
+    "youtube": "K966T0HdED8",
+    "published": true,
+    "tags": "SpriteKit, Auto-layout, Hibrido, Nativo, Push, Parse, Notifications, Notificações, Jogos, VFL",
+    "created_at": "2015-05-29T21:38:07.224Z",
+    "updated_at": "2015-05-29T21:38:07.224Z",
+    "source": "",
+    "podcast_stream_url": "",
+    "podcast_duration": "",
+    "podcast_counter": 0
+}
