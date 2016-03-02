@@ -56,7 +56,7 @@ public class NibDesignable: UIView {
         let nib = UINib(nibName: self.nibName(), bundle: bundle)
         
         guard let view = nib.instantiateWithOwner(self, options: nil).first as? UIView  else {
-            fatalError("You're trying to load a NibDesignable withou the respective nib file")
+            fatalError("You're trying to load a NibDesignable without the respective nib file")
         }
         
         return view
