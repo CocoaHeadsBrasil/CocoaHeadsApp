@@ -695,7 +695,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT\"/R.swift/rswift \"$SRCROOT\"/CocoaHeadsApp";
+			shellScript = "\"${PODS_ROOT}\"/R.swift/rswift \"${SRCROOT}\"/CocoaHeadsApp";
 		};
 		177FC8543473654EB49D3C33 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
