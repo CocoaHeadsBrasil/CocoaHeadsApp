@@ -17,3 +17,4 @@ script: xctool -workspace CocoaHeadsApp/CocoaHeadsApp.xcworkspace -sdk iphonesim
 osx_image: xcode7.2
 notifications:
   email: false
+  slack: iosdevbr:jdozLqf7LLjEeho9PB3uRL6S
