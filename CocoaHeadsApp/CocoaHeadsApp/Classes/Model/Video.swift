@@ -1,7 +1,6 @@
 import Foundation
 
 struct Video {
-    
     let id: Int
     let speakerId: Int
     let agendaId: Int
@@ -12,26 +11,6 @@ struct Video {
     let youtubeId: String
     var youtubeURL: NSURL! {
         return NSURL(string: "https://www.youtube.com/watch?v=\(youtubeId)")
-    }
-
-    init(
-        id: Int,
-        speakerId: Int,
-        agendaId: Int,
-        title: String,
-        description: String,
-        youtubeId: String,
-        published: Bool,
-        tags: [String]) {
-    
-            self.id = id
-            self.speakerId = speakerId
-            self.agendaId = agendaId
-            self.title = title
-            self.description = description
-            self.youtubeId = youtubeId
-            self.published = published
-            self.tags = tags
     }
 }
 
@@ -67,9 +46,9 @@ extension Video: JSONParselable {
             agendaId: agendaId,
             title: title,
             description: description,
-            youtubeId: youtubeId,
             published: published,
-            tags: sanitizedTags(commaSeparatedTags)
+            tags: sanitizedTags(commaSeparatedTags),
+            youtubeId: youtubeId
         )
     }
 }
