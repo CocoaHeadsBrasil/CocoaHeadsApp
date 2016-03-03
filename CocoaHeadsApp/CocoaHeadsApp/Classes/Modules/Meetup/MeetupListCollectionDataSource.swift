@@ -12,8 +12,8 @@ class MeetupListCollectionDataSource: NSObject, UICollectionViewDataSource {
 
     let viewModel :MeetupListViewModel
     
-    init(viewModel vm :MeetupListViewModel) {
-        viewModel = vm
+    init(viewModel :MeetupListViewModel) {
+        self.viewModel = viewModel
         super.init()
     }
     

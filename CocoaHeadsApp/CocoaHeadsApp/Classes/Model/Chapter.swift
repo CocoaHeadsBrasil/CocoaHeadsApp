@@ -30,7 +30,7 @@ struct Chapter {
         githubURL: NSURL? = nil,
         twitterURL: NSURL? = nil,
         facebookURL: NSURL? = nil) {
-            self.id = id;
+            self.id = id
             self.stateId = stateId
             self.city = city
             self.email = email

@@ -31,7 +31,9 @@ extension MeetupAPI :TargetType {
     /**
      API base url
      */
-    public var baseURL: NSURL { return NSURL(string:"https://api.meetup.com/2")! }
+    public var baseURL: NSURL {
+        return NSURL(string:"https://api.meetup.com/2") ?? NSURL()
+    }
    
     /**
      Path for each endpoint
@@ -82,8 +84,7 @@ extension MeetupAPI :TargetType {
                 let data  = try NSJSONSerialization.dataWithJSONObject(["":""], options: NSJSONWritingOptions.PrettyPrinted)
                 return data
             }
-        }
-        catch {
+        } catch {
             return NSData()
         }
     }

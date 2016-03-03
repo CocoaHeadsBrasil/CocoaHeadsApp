@@ -4,8 +4,11 @@ branches:
   - master
 git:
   submodules: false
-before_install: 
+before_install:
   - git submodule update --init --recursive
+  - brew update
+  - brew upgrade
+  - brew install swiftlint
   - bundle install
 podfile: CocoaHeadsApp/Podfile
 xcode_workspace: CocoaHeadsApp/CocoaHeadsApp.xcworkspace

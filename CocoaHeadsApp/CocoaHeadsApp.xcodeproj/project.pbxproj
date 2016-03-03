@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0FD4B3AC72BC727A4B3320BB /* Pods_CocoaHeadsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */; };
 		15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2D1BED72FC00E12A68 /* Dynamic.swift */; };
-		15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B2F1BED731E00E12A68 /* Array+Extensions.swift */; };
 		15079B321BED736100E12A68 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B311BED736100E12A68 /* NibDesignable.swift */; };
 		15079B341BED739000E12A68 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B331BED739000E12A68 /* String+Extensions.swift */; };
 		15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B351BED740800E12A68 /* MeetupListViewController.swift */; };
@@ -32,7 +31,6 @@
 		15079B641BED7D8E00E12A68 /* MeetupListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B631BED7D8E00E12A68 /* MeetupListResponse.swift */; };
 		15079B661BED7DC700E12A68 /* MeetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B651BED7DC700E12A68 /* MeetupModel.swift */; };
 		15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */; };
-		15079B6A1BED7F2A00E12A68 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B691BED7F2A00E12A68 /* Tempo.swift */; };
 		15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6B1BED7F5200E12A68 /* VenueModel.swift */; };
 		15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B6D1BED809E00E12A68 /* GroupModel.swift */; };
 		15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */; };
@@ -43,6 +41,9 @@
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
 		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; };
 		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
+		78AD0B611C877A7300999C17 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B5E1C877A7300999C17 /* Tempo.swift */; };
+		78AD0B621C877A7300999C17 /* Tempo+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B5F1C877A7300999C17 /* Tempo+Methods.swift */; };
+		78AD0B631C877A7300999C17 /* TempoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B601C877A7300999C17 /* TempoDateFormatter.swift */; };
 		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
@@ -100,7 +101,6 @@
 /* Begin PBXFileReference section */
 		1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15079B2D1BED72FC00E12A68 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		15079B2F1BED731E00E12A68 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		15079B311BED736100E12A68 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		15079B331BED739000E12A68 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		15079B351BED740800E12A68 /* MeetupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 		15079B631BED7D8E00E12A68 /* MeetupListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListResponse.swift; sourceTree = "<group>"; };
 		15079B651BED7DC700E12A68 /* MeetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupModel.swift; sourceTree = "<group>"; };
 		15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+Extensions.swift"; sourceTree = "<group>"; };
-		15079B691BED7F2A00E12A68 /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tempo.swift; sourceTree = "<group>"; };
 		15079B6B1BED7F5200E12A68 /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
 		15079B6D1BED809E00E12A68 /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		15079B701BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +135,9 @@
 		43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444893C482EB230FB9AA250 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		78AD0B5E1C877A7300999C17 /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tempo.swift; path = Legacy/Tempo.swift; sourceTree = "<group>"; };
+		78AD0B5F1C877A7300999C17 /* Tempo+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Tempo+Methods.swift"; path = "Legacy/Tempo+Methods.swift"; sourceTree = "<group>"; };
+		78AD0B601C877A7300999C17 /* TempoDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TempoDateFormatter.swift; path = Legacy/TempoDateFormatter.swift; sourceTree = "<group>"; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -221,13 +223,13 @@
 		15079B241BED728200E12A68 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				78AD0B5D1C877A6A00999C17 /* Legacy */,
 				15079B5F1BED790A00E12A68 /* Model */,
 				15079B601BED790A00E12A68 /* Network */,
 				15079B251BED728200E12A68 /* App */,
 				15079B261BED728200E12A68 /* Core */,
 				15079B271BED728200E12A68 /* Extensions */,
 				15079B281BED728200E12A68 /* Modules */,
-				15079B2C1BED728200E12A68 /* Utils */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -256,7 +258,6 @@
 		15079B271BED728200E12A68 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15079B2F1BED731E00E12A68 /* Array+Extensions.swift */,
 				15079B331BED739000E12A68 /* String+Extensions.swift */,
 				15079B671BED7F1200E12A68 /* Unbox+Extensions.swift */,
 			);
@@ -307,14 +308,6 @@
 				15079B4F1BED761B00E12A68 /* VideosListView.xib */,
 			);
 			path = Videos;
-			sourceTree = "<group>";
-		};
-		15079B2C1BED728200E12A68 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				15079B691BED7F2A00E12A68 /* Tempo.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		15079B5F1BED790A00E12A68 /* Model */ = {
@@ -385,6 +378,16 @@
 				FCA4BEE1CA988DC81F8EAEB2 /* Pods-CocoaHeadsAppIntegrationTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		78AD0B5D1C877A6A00999C17 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				78AD0B5E1C877A7300999C17 /* Tempo.swift */,
+				78AD0B5F1C877A7300999C17 /* Tempo+Methods.swift */,
+				78AD0B601C877A7300999C17 /* TempoDateFormatter.swift */,
+			);
+			name = Legacy;
 			sourceTree = "<group>";
 		};
 		8CF97AEA1BE3C5E3009C5591 = {
@@ -497,6 +500,7 @@
 			buildConfigurationList = 8CF97B1D1BE3C5E4009C5591 /* Build configuration list for PBXNativeTarget "CocoaHeadsApp" */;
 			buildPhases = (
 				260B698C60B3A9A5CD1C0049 /* Check Pods Manifest.lock */,
+				78076B931C84BA6D000BDB92 /* Lint */,
 				15079B231BED71FD00E12A68 /* Generate R.Generated file */,
 				8CF97AEF1BE3C5E3009C5591 /* Sources */,
 				8CF97AF01BE3C5E3009C5591 /* Frameworks */,
@@ -802,6 +806,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		78076B931C84BA6D000BDB92 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    echo \"Run lint on $(pwd)\"\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		88849CF0929B43B6F095A88A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -855,22 +873,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				15079B711BED8E5C00E12A68 /* MeetupListCollectionViewCell.swift in Sources */,
+				78AD0B621C877A7300999C17 /* Tempo+Methods.swift in Sources */,
 				15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */,
 				15079B4C1BED760B00E12A68 /* VideosListView.swift in Sources */,
 				8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */,
 				15079B341BED739000E12A68 /* String+Extensions.swift in Sources */,
-				15079B6A1BED7F2A00E12A68 /* Tempo.swift in Sources */,
 				15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */,
 				15079B321BED736100E12A68 /* NibDesignable.swift in Sources */,
 				EC21EAFB1C7C03A300C6937D /* Event.swift in Sources */,
 				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
 				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
-				15079B301BED731E00E12A68 /* Array+Extensions.swift in Sources */,
 				ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
 				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
 				ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */,
+				78AD0B611C877A7300999C17 /* Tempo.swift in Sources */,
 				15079B3C1BED746C00E12A68 /* MeetupListViewModel.swift in Sources */,
 				15079B5C1BED77EC00E12A68 /* APIConsumer.swift in Sources */,
 				15079B361BED740800E12A68 /* MeetupListViewController.swift in Sources */,
@@ -882,6 +900,7 @@
 				154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */,
 				ECAA61B01C84E1DA003D4E17 /* JsonModel.swift in Sources */,
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,
+				78AD0B631C877A7300999C17 /* TempoDateFormatter.swift in Sources */,
 				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
