@@ -1,29 +1,12 @@
 import Foundation
 
 struct PodcastEpisode {
-
     let id: Int
     let title: String
     let description: String
     let soundcloudId: String?
     let soundcloudURL: NSURL?
     let tags: [String]
-
-    init(
-        id: Int,
-        title: String,
-        description: String,
-        soundcloudId: String?,
-        soundcloudURL: NSURL?,
-        tags: [String]) {
-    
-            self.id = id
-            self.title = title
-            self.description = description
-            self.soundcloudId = soundcloudId
-            self.soundcloudURL = soundcloudURL
-            self.tags = tags
-    }
 }
 
 extension PodcastEpisode: JSONParselable {
