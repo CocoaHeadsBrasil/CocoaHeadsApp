@@ -12,9 +12,10 @@ extension String {
 
     /**
      Allows to create a string representation of a NSData
+     - parameter data: Data that will be converted to String
+     - parameter encoding: Encoding used to parse the data
      */
-    init?(data : NSData?, encoding : NSStringEncoding)
-    {
+    init?(data : NSData?, encoding : NSStringEncoding = NSUTF8StringEncoding) {
         guard let data = data else {
             self.init()
             return
@@ -23,10 +24,10 @@ extension String {
     }
     
     /**
-     escapes the current string, making it safe to use to create an url
+     Escapes the current string, making it safe to use to create an url
      */
     var URLEscapedString: String {
-        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet()) ?? ""
     }
     
 }

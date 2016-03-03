@@ -54,7 +54,12 @@ public class NibDesignable: UIView {
     public func loadNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: self.nibName(), bundle: bundle)
-        return nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        
+        guard let view = nib.instantiateWithOwner(self, options: nil).first as? UIView  else {
+            fatalError("You're trying to load a NibDesignable without the respective nib file")
+        }
+        
+        return view
     }
     
     /**
@@ -63,6 +68,9 @@ public class NibDesignable: UIView {
      - returns: Name of a single view nib file.
      */
     public func nibName() -> String {
-        return self.dynamicType.description().componentsSeparatedByString(".").last!
+        guard let name = self.dynamicType.description().componentsSeparatedByString(".").last else {
+            fatalError("Invalid module name")
+        }
+        return name
     }
 }

@@ -26,7 +26,7 @@ class MeetupModel: Unboxable {
     let meetId :String
     let status :String
     let group :GroupModel
-    let venue :VenueModel? //TODO needs authenticated request to be sent
+    let venue :VenueModel?
     let eventDate :NSDate
     let eventDateTempo :Tempo
     

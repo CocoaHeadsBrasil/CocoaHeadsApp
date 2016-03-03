@@ -1,0 +1,36 @@
+disabled_rules:
+  - trailing_newline
+  - trailing_whitespace
+  - line_length
+  - function_parameter_count
+  - colon
+  - comma
+
+opt_in_rules:
+  - empty_count
+  - force_cast
+  - force_try
+  - leading_whitespace
+  - function_body_length
+  - function_parameter_count
+  - legacy_constant
+  - operator_whitespace
+  - return_arrow_whitespace
+  - todo
+  - nesting
+
+variable_name:
+  excluded:
+    - id
+    - URLEscapedString
+    - MeetupAPIProvider
+    - MeetupAPIConsumer
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - CocoaHeadsApp/Classes/Legacy
+  - CocoaHeadsAppUITests
+  - CocoaHeadsAppTests
+  - CocoaHeadsAppIntegrationTests
+  - CocoaHeadsApp/R.generated.swift

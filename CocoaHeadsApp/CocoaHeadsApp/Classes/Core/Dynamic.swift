@@ -24,8 +24,8 @@ class Dynamic<ValueType> {
         }
     }
     
-    init(_ v: ValueType) {
-        value = v
+    init(_ value: ValueType) {
+        self.value = value
     }
     
     func iterateThroughHandlers() {
@@ -56,8 +56,8 @@ class Dynamic<ValueType> {
 
 protocol Arrayable {
     typealias Element
-    mutating func append(el :Element)
-    mutating func insert(el :Element, atIndex :Int)
+    mutating func append(element :Element)
+    mutating func insert(element :Element, atIndex :Int)
     mutating func removeAtIndex(index :Int) -> Element
     mutating func appendContentsOf(array :Array<Element>)
 }
@@ -68,13 +68,13 @@ extension Array :Arrayable {
 
 extension Dynamic where ValueType : Arrayable {
     
-    func addElement(el :ValueType.Element) {
-        self.value.append(el)
+    func addElement(element :ValueType.Element) {
+        self.value.append(element)
         self.iterateThroughHandlers()
     }
     
-    func insertElementAtIndex(el :ValueType.Element, index :Int) {
-        self.value.insert(el, atIndex: index)
+    func insertElementAtIndex(element :ValueType.Element, index :Int) {
+        self.value.insert(element, atIndex: index)
         self.iterateThroughHandlers()
     }
     

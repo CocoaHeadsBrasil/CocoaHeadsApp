@@ -96,7 +96,7 @@ class APIConsumerTests: XCTestCase {
             defer {
                 expectation.fulfill()
             }
-            switch(error) {
+            switch error {
             case APIErrors.BadAPIResponse(let statusCode, let errorMessage):
                 XCTAssertEqual(statusCode, 404)
                 XCTAssertEqual(errorMessage, "{\"errors\":[{\"code\": \"group_error\",\"message\": \"Invalid group urlname\"}]}")
