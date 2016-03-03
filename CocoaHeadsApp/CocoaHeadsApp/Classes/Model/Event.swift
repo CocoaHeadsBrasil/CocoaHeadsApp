@@ -2,7 +2,6 @@ import Foundation
 import CoreLocation
 
 struct Event {
-    
     let id: Int
     let name: String
     let description: String
@@ -14,32 +13,6 @@ struct Event {
     let passbook: String?
     let published: Bool
     let meetupURL: NSURL?
-
-    init(
-        id: Int,
-        name: String,
-        description: String,
-        chapterId: Int,
-        venue: String,
-        date: NSDate,
-        address: String,
-        location: CLLocationCoordinate2D? = nil,
-        passbook: String? = nil,
-        published: Bool,
-        meetupURL: NSURL?) {
-
-            self.id = id
-            self.name = name
-            self.description = description
-            self.chapterId = chapterId
-            self.venue = venue
-            self.date = date
-            self.address = address
-            self.location = location
-            self.passbook = passbook
-            self.published = published
-            self.meetupURL = meetupURL
-    }
 }
 
 extension Event: JSONParselable {

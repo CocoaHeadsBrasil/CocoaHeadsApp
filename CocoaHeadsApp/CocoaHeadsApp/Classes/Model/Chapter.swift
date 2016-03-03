@@ -1,7 +1,6 @@
 import Foundation
 
 struct Chapter {
-    
     let id: Int
     let stateId: Int
     let city: String
@@ -15,35 +14,6 @@ struct Chapter {
     let githubURL: NSURL?
     let twitterURL: NSURL?
     let facebookURL: NSURL?
-
-    init(
-        id: Int,
-        stateId: Int,
-        city: String,
-        email: String,
-        description: String? = nil,
-        published: Bool,
-        organizer: String? = nil,
-        organizerEmail: String? = nil,
-        organizerPhone: String? = nil,
-        website: NSURL? = nil,
-        githubURL: NSURL? = nil,
-        twitterURL: NSURL? = nil,
-        facebookURL: NSURL? = nil) {
-            self.id = id
-            self.stateId = stateId
-            self.city = city
-            self.email = email
-            self.description = description
-            self.published = published
-            self.organizer = organizer
-            self.organizerEmail = organizerEmail
-            self.organizerPhone = organizerPhone
-            self.website = website
-            self.githubURL = githubURL
-            self.twitterURL = twitterURL
-            self.facebookURL = facebookURL
-    }
 }
 
 extension Chapter: JSONParselable {
