@@ -10,17 +10,17 @@ import UIKit
 
 class EventListView: NibDesignable {
 
-    let viewModel = EventListViewModel()
-    var dataSource :EventListTableDataSource!
-    var delegate :EventListTableDelegate!
+    let viewModel = EventsListViewModel()
+    var dataSource :EventsListTableDataSource!
+    var delegate :EventsListTableDelegate!
     
     @IBOutlet weak var listEventsTableView :UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.listEventsView.registerNib(R.nib.eventListTableViewCell)
-        self.dataSource = EventListTableDataSource(viewModel: self.viewModel)
-        self.delegate = EventListTableDelegate(viewModel: self.viewModel)
+        self.dataSource = EventsListTableDataSource(viewModel: self.viewModel)
+        self.delegate = EventsListTableDelegate(viewModel: self.viewModel)
         self.listEventsTableView.dataSource = self.dataSource
         self.listEventsTableView.delegate = self.delegate
         viewModel.items.bind(self) {

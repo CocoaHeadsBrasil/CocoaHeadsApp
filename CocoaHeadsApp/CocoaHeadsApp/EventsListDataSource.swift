@@ -10,20 +10,20 @@ import UIKit
 
 class EventsListTableDataSource: NSObject, UITableViewDataSource {
 
-    let viewModel :EventListViewModel
+    let viewModel :EventsListViewModel
     
-    init(viewModel : EventListViewModel) {
+    init(viewModel : EventsListViewModel) {
         self.viewModel = viewModel
         super.init()
     }
     
     // MARK: - Table view data source
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.items.value.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let reuseIdentifier = R.nib.eventListTableViewCell.identifier
         let cell = tableView.dequeueReusableCellWithIdentifier(String(EventsTableViewCell), forIndexPath: indexPath) as! EventsTableViewCell
