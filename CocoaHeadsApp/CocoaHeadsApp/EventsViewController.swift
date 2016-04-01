@@ -8,41 +8,18 @@
 
 import UIKit
 
+@IBDesignable
 class EventsViewController: UITableViewController {
-
-    //private let events = Events.events
-    private let eventsDetailSegue = "eventsDetailSegue"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    @IBOutlet weak var nibView: EventListView!
+
+    private let eventsDetailSegue = "eventsDetailSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CocoaHeads BR"
         
-        tableView.registerNib(UINib(nibName: String(EventsTableViewCell), bundle: nil), forCellReuseIdentifier: String(EventsTableViewCell))
-        tableView.rowHeight = UITableViewAutomaticDimension
     }
-
-    // MARK: - Table view data source
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(EventsTableViewCell), forIndexPath: indexPath) as! EventsTableViewCell
-        
-        //cell.configure(withEvents: events[indexPath.row])
-        
-        return cell
-    }
-
-
 
 }
 
