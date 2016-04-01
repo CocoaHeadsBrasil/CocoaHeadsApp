@@ -16,6 +16,20 @@ class EventsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         eventTitleLabel.textColor = .cocoaHeadsTitleColor()
+        
+    }
+    
+    let event = Dynamic<Events?>(nil)
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        self.event.bind(self) { event in
+            self.eventTitleLabel.text = event?.name ?? "Indisponível"
+        }
     }
     
     func configure(withEvents events: Events, selectionEnabled: Bool = true, accessoryEnabled: Bool = true) {
@@ -31,5 +45,10 @@ class EventsTableViewCell: UITableViewCell {
         }
     
     
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.event.value = nil
     }
 }
