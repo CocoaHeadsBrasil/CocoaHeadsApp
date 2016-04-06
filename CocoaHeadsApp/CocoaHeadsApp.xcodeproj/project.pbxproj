@@ -55,6 +55,11 @@
 		AD99AE071C729783004BF12A /* APIConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99AE061C729783004BF12A /* APIConsumerTests.swift */; };
 		AD99AE0A1C729B03004BF12A /* MeetupResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE091C729B03004BF12A /* MeetupResponse.json */; };
 		AD99AE0C1C72A16E004BF12A /* MeetupErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE0B1C72A16E004BF12A /* MeetupErrorResponse.json */; };
+		EA14DDA01CA5F7C5001FBF28 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14DD9F1CA5F7C5001FBF28 /* UIColorExtensions.swift */; };
+		EA337E831CAD6A6D00BD48DA /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA337E821CAD6A6D00BD48DA /* EventsListView.swift */; };
+		EA337E851CAD8BD600BD48DA /* EventsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA337E841CAD8BD600BD48DA /* EventsListViewModel.swift */; };
+		EA337E871CAD8C0300BD48DA /* EventsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA337E861CAD8C0300BD48DA /* EventsListDataSource.swift */; };
+		EA337E891CAD8C1500BD48DA /* EventsListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA337E881CAD8C1500BD48DA /* EventsListDelegate.swift */; };
 		EACA1FDC1C9B583E0012B376 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA1FDA1C9B583E0012B376 /* EventsTableViewCell.swift */; };
 		EACA1FDD1C9B583E0012B376 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EACA1FDB1C9B583E0012B376 /* EventsTableViewCell.xib */; };
 		EACA1FE01C9B58670012B376 /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA1FDE1C9B58670012B376 /* EventsDetailViewController.swift */; };
@@ -165,6 +170,11 @@
 		B69A81103677DA392B92C01F /* Pods-CocoaHeadsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FF3008043D3D69F6A32B80 /* Pods-CocoaHeadsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA14DD9F1CA5F7C5001FBF28 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		EA337E821CAD6A6D00BD48DA /* EventsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		EA337E841CAD8BD600BD48DA /* EventsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewModel.swift; sourceTree = "<group>"; };
+		EA337E861CAD8C0300BD48DA /* EventsListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListDataSource.swift; sourceTree = "<group>"; };
+		EA337E881CAD8C1500BD48DA /* EventsListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListDelegate.swift; sourceTree = "<group>"; };
 		EACA1FDA1C9B583E0012B376 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		EACA1FDB1C9B583E0012B376 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		EACA1FDE1C9B58670012B376 /* EventsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailViewController.swift; sourceTree = "<group>"; };
@@ -394,17 +404,17 @@
 		8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXGroup;
 			children = (
+				15079B5F1BED790A00E12A68 /* Model */,
+				EACA1FD21C9B562E0012B376 /* Views */,
+				EA337E811CAD61B300BD48DA /* ViewModel */,
 				15079B271BED728200E12A68 /* Extensions */,
 				78AD0B5D1C877A6A00999C17 /* Legacy */,
 				EACA1FD31C9B56690012B376 /* Storyboards */,
 				15079B601BED790A00E12A68 /* Network */,
 				15079B261BED728200E12A68 /* Core */,
-				EACA1FD21C9B562E0012B376 /* Views */,
-				EACA1FD11C9B561D0012B376 /* Controllers */,
 				EACA1FD01C9B56110012B376 /* Supporting Files */,
 				EACA1FCF1C9B56080012B376 /* Utilities */,
 				EACA1FCE1C9B55F60012B376 /* Assets */,
-				15079B5F1BED790A00E12A68 /* Model */,
 				15079B241BED728200E12A68 /* Classes */,
 			);
 			path = CocoaHeadsApp;
@@ -448,6 +458,24 @@
 			name = "API Response";
 			sourceTree = "<group>";
 		};
+		EA337E811CAD61B300BD48DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15079B4D1BED761400E12A68 /* VideosListViewModel.swift */,
+				EA337E841CAD8BD600BD48DA /* EventsListViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA337E8A1CAD9A3C00BD48DA /* EventsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EACA1FDA1C9B583E0012B376 /* EventsTableViewCell.swift */,
+				EACA1FDB1C9B583E0012B376 /* EventsTableViewCell.xib */,
+			);
+			name = EventsTableViewCell;
+			sourceTree = "<group>";
+		};
 		EACA1FCE1C9B55F60012B376 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +487,7 @@
 		EACA1FCF1C9B56080012B376 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EA14DD9F1CA5F7C5001FBF28 /* UIColorExtensions.swift */,
 				154C46CB1BFAA5EE00A32D09 /* GradientView.swift */,
 			);
 			name = Utilities;
@@ -473,23 +502,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EACA1FD11C9B561D0012B376 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				EACA1FD81C9B574B0012B376 /* Events */,
-				EACA1FD71C9B57400012B376 /* Jobs */,
-				EACA1FD61C9B572A0012B376 /* Videos */,
-				EACA1FD51C9B571C0012B376 /* Podcast */,
-				EACA1FD41C9B57030012B376 /* More */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		EACA1FD21C9B562E0012B376 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EACA1FD41C9B57030012B376 /* More */,
+				EACA1FD51C9B571C0012B376 /* Podcast */,
+				EACA1FD71C9B57400012B376 /* Jobs */,
 				EACA1FE21C9B58D40012B376 /* Videos */,
-				EACA1FD91C9B57700012B376 /* EventsTableViewCell */,
+				EACA1FD91C9B57700012B376 /* Events */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -518,14 +538,6 @@
 			name = Podcast;
 			sourceTree = "<group>";
 		};
-		EACA1FD61C9B572A0012B376 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				15079B491BED75FE00E12A68 /* VideosListViewController.swift */,
-			);
-			name = Videos;
-			sourceTree = "<group>";
-		};
 		EACA1FD71C9B57400012B376 /* Jobs */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,30 +545,25 @@
 			name = Jobs;
 			sourceTree = "<group>";
 		};
-		EACA1FD81C9B574B0012B376 /* Events */ = {
+		EACA1FD91C9B57700012B376 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				EA337E8A1CAD9A3C00BD48DA /* EventsTableViewCell */,
 				EACA1FDF1C9B58670012B376 /* EventsViewController.swift */,
 				EACA1FDE1C9B58670012B376 /* EventsDetailViewController.swift */,
+				EA337E821CAD6A6D00BD48DA /* EventsListView.swift */,
+				EA337E861CAD8C0300BD48DA /* EventsListDataSource.swift */,
+				EA337E881CAD8C1500BD48DA /* EventsListDelegate.swift */,
 			);
 			name = Events;
-			sourceTree = "<group>";
-		};
-		EACA1FD91C9B57700012B376 /* EventsTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				EACA1FDA1C9B583E0012B376 /* EventsTableViewCell.swift */,
-				EACA1FDB1C9B583E0012B376 /* EventsTableViewCell.xib */,
-			);
-			name = EventsTableViewCell;
 			sourceTree = "<group>";
 		};
 		EACA1FE21C9B58D40012B376 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				15079B491BED75FE00E12A68 /* VideosListViewController.swift */,
 				15079B4F1BED761B00E12A68 /* VideosListView.xib */,
 				15079B4B1BED760B00E12A68 /* VideosListView.swift */,
-				15079B4D1BED761400E12A68 /* VideosListViewModel.swift */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -975,13 +982,17 @@
 				15079B341BED739000E12A68 /* String+Extensions.swift in Sources */,
 				15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */,
 				15079B321BED736100E12A68 /* NibDesignable.swift in Sources */,
+				EA337E851CAD8BD600BD48DA /* EventsListViewModel.swift in Sources */,
 				EC21EAFB1C7C03A300C6937D /* Event.swift in Sources */,
 				EACA1FE11C9B58670012B376 /* EventsViewController.swift in Sources */,
 				15079B621BED791900E12A68 /* MeetupAPI.swift in Sources */,
 				15079B4E1BED761400E12A68 /* VideosListViewModel.swift in Sources */,
 				ECAA61AA1C83BA93003D4E17 /* Video.swift in Sources */,
+				EA337E831CAD6A6D00BD48DA /* EventsListView.swift in Sources */,
 				ECAA61B21C84E687003D4E17 /* Organizer.swift in Sources */,
 				15079B541BED764300E12A68 /* SlideListView.swift in Sources */,
+				EA337E891CAD8C1500BD48DA /* EventsListDelegate.swift in Sources */,
+				EA337E871CAD8C0300BD48DA /* EventsListDataSource.swift in Sources */,
 				15079B6E1BED809E00E12A68 /* GroupModel.swift in Sources */,
 				ECAA61AC1C83BF24003D4E17 /* PodcastEpisode.swift in Sources */,
 				78AD0B611C877A7300999C17 /* Tempo.swift in Sources */,
@@ -1001,6 +1012,7 @@
 				15079B751BED8EE300E12A68 /* MeetupListCollectionDataSource.swift in Sources */,
 				15079B3A1BED745200E12A68 /* MeetupListView.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
+				EA14DDA01CA5F7C5001FBF28 /* UIColorExtensions.swift in Sources */,
 				EACA1FDC1C9B583E0012B376 /* EventsTableViewCell.swift in Sources */,
 				15079B401BED750E00E12A68 /* R.generated.swift in Sources */,
 				15079B641BED7D8E00E12A68 /* MeetupListResponse.swift in Sources */,
