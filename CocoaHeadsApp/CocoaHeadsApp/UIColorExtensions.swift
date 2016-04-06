@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DynamicColor
 
 extension UIColor {
 

@@ -18,7 +18,7 @@ class EventListView: NibDesignable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.listEventsView.registerNib(R.nib.eventListTableViewCell)
+        self.listEventsTableView.registerNib(R.nib.eventsTableViewCell)
         self.dataSource = EventsListTableDataSource(viewModel: self.viewModel)
         self.delegate = EventsListTableDelegate(viewModel: self.viewModel)
         self.listEventsTableView.dataSource = self.dataSource
@@ -26,6 +26,6 @@ class EventListView: NibDesignable {
         viewModel.items.bind(self) {
                 items in self.listEventsTableView.reloadData()
         }
-        viewModel.loadMoreItens()
+        //viewModel.loadMoreItens()
     }
 }

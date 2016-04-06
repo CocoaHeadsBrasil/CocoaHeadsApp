@@ -55,7 +55,7 @@ class Dynamic<ValueType> {
 }
 
 protocol Arrayable {
-    typealias Element
+    associatedtype Element
     mutating func append(element :Element)
     mutating func insert(element :Element, atIndex :Int)
     mutating func removeAtIndex(index :Int) -> Element

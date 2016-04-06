@@ -70,10 +70,15 @@ struct R: Rswift.Validatable {
   }
   
   struct nib {
+    static let eventsTableViewCell = _R.nib._EventsTableViewCell()
     static let meetupListCollectionViewCell = _R.nib._MeetupListCollectionViewCell()
     static let meetupListView = _R.nib._MeetupListView()
     static let slideListView = _R.nib._SlideListView()
     static let videosListView = _R.nib._VideosListView()
+    
+    static func eventsTableViewCell(_: Void) -> UINib {
+      return UINib(resource: R.nib.eventsTableViewCell)
+    }
     
     static func meetupListCollectionViewCell(_: Void) -> UINib {
       return UINib(resource: R.nib.meetupListCollectionViewCell)
@@ -94,6 +99,8 @@ struct R: Rswift.Validatable {
   
   struct reuseIdentifier {
     static let displayMeetupCell: ReuseIdentifier<MeetupListCollectionViewCell> = ReuseIdentifier(identifier: "displayMeetupCell")
+    
+    static let displayEventCell: ReuseIdentifier<EventsTableViewCell> = ReuseIdentifier(identifier: "displayEventCell")
   }
   
   struct segue {
@@ -122,6 +129,15 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _EventsTableViewCell: NibResourceType {
+      let bundle = _R.hostingBundle
+      let name = "EventsTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventsTableViewCell? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? EventsTableViewCell
+      }
+    }
+    
     struct _MeetupListCollectionViewCell: NibResourceType, ReuseIdentifierType {
       typealias ReusableType = MeetupListCollectionViewCell
       
