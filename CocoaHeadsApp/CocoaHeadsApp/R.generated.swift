@@ -99,8 +99,6 @@ struct R: Rswift.Validatable {
   
   struct reuseIdentifier {
     static let displayMeetupCell: ReuseIdentifier<MeetupListCollectionViewCell> = ReuseIdentifier(identifier: "displayMeetupCell")
-    
-    static let displayEventCell: ReuseIdentifier<EventsTableViewCell> = ReuseIdentifier(identifier: "displayEventCell")
   }
   
   struct segue {
