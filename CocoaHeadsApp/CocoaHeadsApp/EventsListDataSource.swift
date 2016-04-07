@@ -25,8 +25,8 @@ class EventsListTableDataSource: NSObject, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let reuseIdentifier = R.nib.eventsTableViewCell
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(EventsListTableViewCell), forIndexPath: indexPath)
+        let reuseIdentifier = R.nib.eventsListTableViewCell.name
+        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
         
         guard let eventsCell = cell as? EventsListTableViewCell else {
             return cell

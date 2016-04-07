@@ -19,7 +19,7 @@ class EventsListTableViewCell: UITableViewCell {
         
     }
     
-    let event = Dynamic<Events?>(nil)
+    let event = Dynamic<Event?>(nil)
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -32,7 +32,7 @@ class EventsListTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(withEvents events: Events, selectionEnabled: Bool = true, accessoryEnabled: Bool = true) {
+    func configure(withEvents events: Event, selectionEnabled: Bool = true, accessoryEnabled: Bool = true) {
         
         eventTitleLabel.text = events.name
     
