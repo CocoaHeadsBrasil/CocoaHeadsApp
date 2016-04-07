@@ -99,7 +99,7 @@ struct R: Rswift.Validatable {
   
   struct reuseIdentifier {
     static let displayMeetupCell: ReuseIdentifier<MeetupListCollectionViewCell> = ReuseIdentifier(identifier: "displayMeetupCell")
-    static let displayEventCell: ReuseIdentifier<EventsListTableViewCell> = ReuseIdentifier(identifier: "displayTableCell")
+    static let eventsListTableViewCell: ReuseIdentifier<EventsListTableViewCell> = ReuseIdentifier(identifier: "EventsListTableViewCell")
   }
   
   struct segue {
@@ -128,9 +128,11 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
-    struct _EventsListTableViewCell: NibResourceType {
+    struct _EventsListTableViewCell: NibResourceType, ReuseIdentifierType {
+      typealias ReusableType = EventsListTableViewCell
+      
       let bundle = _R.hostingBundle
-        let identifier = "displayTableCell"
+      let identifier = "EventsListTableViewCell"
       let name = "EventsListTableViewCell"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventsListTableViewCell? {
