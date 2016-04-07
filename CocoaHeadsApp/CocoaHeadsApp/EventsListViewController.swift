@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class EventsViewController: UITableViewController {
+class EventsListViewController: UITableViewController {
     
     @IBOutlet weak var nibView: EventListView!
 
