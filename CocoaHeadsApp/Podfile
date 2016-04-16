@@ -4,6 +4,7 @@ def common_pods
     pod 'Moya', '~> 6.1.3'
     pod 'XCGLogger', '~> 3.2'
     pod 'Nuke', '~> 2.0.1'
+    pod 'CPDAcknowledgements', '~> 1.0'
 end
 
 def common_test_pods
