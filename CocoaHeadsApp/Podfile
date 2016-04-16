@@ -38,6 +38,8 @@ target :CocoaHeadsAppUITests do
 end
 
 post_install do |installer|
+    plugin 'cocoapods-acknowledgements', :settings_bundle => true
+
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['ENABLE_TESTABILITY'] = 'YES'
