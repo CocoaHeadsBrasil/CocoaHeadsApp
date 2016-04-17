@@ -4,6 +4,7 @@ def common_pods
     pod 'Moya', '~> 6.1.3'
     pod 'XCGLogger', '~> 3.2'
     pod 'Nuke', '~> 2.0.1'
+    pod 'CPDAcknowledgements', '~> 1.0'
 end
 
 def common_test_pods
@@ -37,6 +38,8 @@ target :CocoaHeadsAppUITests do
 end
 
 post_install do |installer|
+    plugin 'cocoapods-acknowledgements', :settings_bundle => true
+
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['ENABLE_TESTABILITY'] = 'YES'
