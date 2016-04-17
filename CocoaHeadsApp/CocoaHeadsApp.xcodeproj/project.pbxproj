@@ -39,11 +39,17 @@
 		15079B791BED989300E12A68 /* MeetupListCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */; };
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
+		15AF854914C2D58A9BE33E88 /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */; };
 		19843FD787F18035D4670FBE /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */; };
+		1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D463A331CC2E43500E72A00 /* Settings.bundle */; };
 		2F0CA262FE638D56C6B744FD /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
+		5DEF06532B061883351521C5 /* Pods-CocoaHeadsAppTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1495566C3B1BE6009AA51 /* Pods-CocoaHeadsAppTests-metadata.plist */; };
+		7826679C30631174553FB243 /* Pods-CocoaHeadsAppUITests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB86A2AC8EFB12BE598B6879 /* Pods-CocoaHeadsAppUITests-metadata.plist */; };
 		78AD0B611C877A7300999C17 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B5E1C877A7300999C17 /* Tempo.swift */; };
 		78AD0B621C877A7300999C17 /* Tempo+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B5F1C877A7300999C17 /* Tempo+Methods.swift */; };
 		78AD0B631C877A7300999C17 /* TempoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD0B601C877A7300999C17 /* TempoDateFormatter.swift */; };
+		7FBCB3ADCCA8880232B1DC65 /* Pods-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 409E33248F669A5108645D89 /* Pods-settings-metadata.plist */; };
+		82324C6D82DF5B0B01E4ED09 /* Pods-CocoaHeadsAppTests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB61AFA1235CF40887B58D0 /* Pods-CocoaHeadsAppTests-settings-metadata.plist */; };
 		8468FA1DF96FE1CDCC1D84AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444893C482EB230FB9AA250 /* Pods.framework */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
 		8CF97AF91BE3C5E3009C5591 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */; };
@@ -52,6 +58,9 @@
 		8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */; };
 		8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */; };
 		8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */; };
+		94AEE3E9C46678F8F61C9EE7 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */; };
+		989A804D5439ABCCC1984CF5 /* Pods-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = A242E7696BFE5695F2B7EBA2 /* Pods-metadata.plist */; };
+		9BB17B6DE02443C5BA712E9C /* Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70EC66122C00849A485D7D76 /* Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist */; };
 		AD99ADDF1C728C4B004BF12A /* MeetupAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99ADDE1C728C4B004BF12A /* MeetupAPITests.swift */; };
 		AD99AE071C729783004BF12A /* APIConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99AE061C729783004BF12A /* APIConsumerTests.swift */; };
 		AD99AE0A1C729B03004BF12A /* MeetupResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99AE091C729B03004BF12A /* MeetupResponse.json */; };
@@ -99,6 +108,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppUITests-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-CocoaHeadsAppUITests-settings-metadata.plist"; sourceTree = "<group>"; };
 		1309E79542012AA5C77853C6 /* Pods_CocoaHeadsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15079B2D1BED72FC00E12A68 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		15079B311BED736100E12A68 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
@@ -131,10 +141,14 @@
 		15079B781BED989300E12A68 /* MeetupListCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupListCollectionDelegate.swift; sourceTree = "<group>"; };
 		154C46C81BFAA21B00A32D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		154C46CB1BFAA5EE00A32D09 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		1D463A331CC2E43500E72A00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppIntegrationTests-metadata.plist"; path = "Pods/Pods-CocoaHeadsAppIntegrationTests-metadata.plist"; sourceTree = "<group>"; };
 		38D8C080D4CFA5B942397E16 /* Pods-CocoaHeadsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppUITests/Pods-CocoaHeadsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		409E33248F669A5108645D89 /* Pods-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-settings-metadata.plist"; sourceTree = "<group>"; };
 		43AE4C6316555C005B06BC1B /* Pods_CocoaHeadsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444893C482EB230FB9AA250 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD7BF3B8A32DC48C8CF840D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		70EC66122C00849A485D7D76 /* Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist"; sourceTree = "<group>"; };
 		78AD0B5E1C877A7300999C17 /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tempo.swift; path = Legacy/Tempo.swift; sourceTree = "<group>"; };
 		78AD0B5F1C877A7300999C17 /* Tempo+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Tempo+Methods.swift"; path = "Legacy/Tempo+Methods.swift"; sourceTree = "<group>"; };
 		78AD0B601C877A7300999C17 /* TempoDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TempoDateFormatter.swift; path = Legacy/TempoDateFormatter.swift; sourceTree = "<group>"; };
@@ -151,6 +165,8 @@
 		8CF97B141BE3C5E4009C5591 /* CocoaHeadsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsAppUITests.swift; sourceTree = "<group>"; };
 		8CF97B1A1BE3C5E4009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC1495566C3B1BE6009AA51 /* Pods-CocoaHeadsAppTests-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppTests-metadata.plist"; path = "Pods/Pods-CocoaHeadsAppTests-metadata.plist"; sourceTree = "<group>"; };
+		A242E7696BFE5695F2B7EBA2 /* Pods-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-metadata.plist"; path = "Pods/Pods-metadata.plist"; sourceTree = "<group>"; };
 		A3DE6EB9A409B1510B163C01 /* Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppIntegrationTests/Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A98C87539E365326F87AD4F5 /* Pods-CocoaHeadsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppUITests/Pods-CocoaHeadsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB5FC609E21235B38FE62336 /* Pods_CocoaHeadsAppIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,8 +177,10 @@
 		AD99AE091C729B03004BF12A /* MeetupResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MeetupResponse.json; path = "API Response/MeetupResponse.json"; sourceTree = "<group>"; };
 		AD99AE0B1C72A16E004BF12A /* MeetupErrorResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MeetupErrorResponse.json; path = "API Response/MeetupErrorResponse.json"; sourceTree = "<group>"; };
 		B69A81103677DA392B92C01F /* Pods-CocoaHeadsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEB61AFA1235CF40887B58D0 /* Pods-CocoaHeadsAppTests-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppTests-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-CocoaHeadsAppTests-settings-metadata.plist"; sourceTree = "<group>"; };
 		BF9606316A8444137FB240C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FF3008043D3D69F6A32B80 /* Pods-CocoaHeadsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppTests/Pods-CocoaHeadsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB86A2AC8EFB12BE598B6879 /* Pods-CocoaHeadsAppUITests-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppUITests-metadata.plist"; path = "Pods/Pods-CocoaHeadsAppUITests-metadata.plist"; sourceTree = "<group>"; };
 		EC0772FA1C78E87E00D4A763 /* EventTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTest.swift; sourceTree = "<group>"; };
 		EC0772FD1C78E8E000D4A763 /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
 		EC0772FF1C78E96A00D4A763 /* chapter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chapter.json; sourceTree = "<group>"; };
@@ -365,6 +383,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1D463A2E1CC2E37D00E72A00 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1D463A331CC2E43500E72A00 /* Settings.bundle */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		39070EA067BD58A867EBC51D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +402,14 @@
 				38D8C080D4CFA5B942397E16 /* Pods-CocoaHeadsAppUITests.release.xcconfig */,
 				A3DE6EB9A409B1510B163C01 /* Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig */,
 				FCA4BEE1CA988DC81F8EAEB2 /* Pods-CocoaHeadsAppIntegrationTests.release.xcconfig */,
+				A242E7696BFE5695F2B7EBA2 /* Pods-metadata.plist */,
+				9EC1495566C3B1BE6009AA51 /* Pods-CocoaHeadsAppTests-metadata.plist */,
+				213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */,
+				DB86A2AC8EFB12BE598B6879 /* Pods-CocoaHeadsAppUITests-metadata.plist */,
+				409E33248F669A5108645D89 /* Pods-settings-metadata.plist */,
+				BEB61AFA1235CF40887B58D0 /* Pods-CocoaHeadsAppTests-settings-metadata.plist */,
+				70EC66122C00849A485D7D76 /* Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist */,
+				0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -417,6 +451,7 @@
 		8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D463A2E1CC2E37D00E72A00 /* Settings */,
 				15079B241BED728200E12A68 /* Classes */,
 				8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */,
 				8CF97AF81BE3C5E3009C5591 /* EventsViewController.swift */,
@@ -634,11 +669,14 @@
 			files = (
 				8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */,
 				8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */,
+				1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */,
 				15079B581BED765200E12A68 /* SlideListView.xib in Resources */,
 				15079B501BED761B00E12A68 /* VideosListView.xib in Resources */,
 				15079B731BED8E6400E12A68 /* MeetupListCollectionViewCell.xib in Resources */,
 				15079B3E1BED748200E12A68 /* MeetupListView.xib in Resources */,
 				8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */,
+				989A804D5439ABCCC1984CF5 /* Pods-metadata.plist in Resources */,
+				7FBCB3ADCCA8880232B1DC65 /* Pods-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +688,8 @@
 				EC0773041C78EA7100D4A763 /* video.json in Resources */,
 				EC0772FE1C78E8E000D4A763 /* event.json in Resources */,
 				EC0773001C78E96A00D4A763 /* chapter.json in Resources */,
+				5DEF06532B061883351521C5 /* Pods-CocoaHeadsAppTests-metadata.plist in Resources */,
+				82324C6D82DF5B0B01E4ED09 /* Pods-CocoaHeadsAppTests-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +697,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7826679C30631174553FB243 /* Pods-CocoaHeadsAppUITests-metadata.plist in Resources */,
+				94AEE3E9C46678F8F61C9EE7 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +708,8 @@
 			files = (
 				AD99AE0A1C729B03004BF12A /* MeetupResponse.json in Resources */,
 				AD99AE0C1C72A16E004BF12A /* MeetupErrorResponse.json in Resources */,
+				15AF854914C2D58A9BE33E88 /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist in Resources */,
+				9BB17B6DE02443C5BA712E9C /* Pods-CocoaHeadsAppIntegrationTests-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

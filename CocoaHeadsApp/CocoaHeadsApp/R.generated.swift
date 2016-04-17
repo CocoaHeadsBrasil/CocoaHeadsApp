@@ -11,7 +11,39 @@ struct R: Rswift.Validatable {
   }
   
   struct file {
+    static let podsMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-metadata", pathExtension: "plist")
+    static let podsSettingsMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-settings-metadata", pathExtension: "plist")
+    static let settingsBundle = FileResource(bundle: _R.hostingBundle, name: "Settings", pathExtension: "bundle")
     
+    static func podsMetadataPlist(_: Void) -> NSURL? {
+      let fileResource = R.file.podsMetadataPlist
+      return fileResource.bundle?.URLForResource(fileResource)
+    }
+    
+    static func podsMetadataPlist(_: Void) -> String? {
+      let fileResource = R.file.podsMetadataPlist
+      return fileResource.bundle?.pathForResource(fileResource)
+    }
+    
+    static func podsSettingsMetadataPlist(_: Void) -> NSURL? {
+      let fileResource = R.file.podsSettingsMetadataPlist
+      return fileResource.bundle?.URLForResource(fileResource)
+    }
+    
+    static func podsSettingsMetadataPlist(_: Void) -> String? {
+      let fileResource = R.file.podsSettingsMetadataPlist
+      return fileResource.bundle?.pathForResource(fileResource)
+    }
+    
+    static func settingsBundle(_: Void) -> NSURL? {
+      let fileResource = R.file.settingsBundle
+      return fileResource.bundle?.URLForResource(fileResource)
+    }
+    
+    static func settingsBundle(_: Void) -> String? {
+      let fileResource = R.file.settingsBundle
+      return fileResource.bundle?.pathForResource(fileResource)
+    }
   }
   
   struct font {
