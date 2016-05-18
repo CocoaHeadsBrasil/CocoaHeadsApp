@@ -11,7 +11,10 @@ CocoaHeads é um grupo formado por desenvolvedores (profissionais e iniciantes),
 ### Instalação das Dependências
 
 ```
+gem install bundler
 bundle install
+cd CocoaHeadsApp
+pod install
 ```
 
 
