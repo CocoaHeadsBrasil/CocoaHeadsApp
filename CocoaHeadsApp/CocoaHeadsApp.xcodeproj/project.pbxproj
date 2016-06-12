@@ -39,7 +39,7 @@
 		154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154C46CB1BFAA5EE00A32D09 /* GradientView.swift */; };
 		15AF854914C2D58A9BE33E88 /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */; };
 		1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D463A331CC2E43500E72A00 /* Settings.bundle */; };
-		1D9AB6B61D0CF23C00483EF0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB6B51D0CF23C00483EF0 /* R.generated.swift */; };
+		1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */; };
 		1DC84E0C254388C15E7E5789 /* Pods_CocoaHeadsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4E1251B3DDE60D9C0C4F4 /* Pods_CocoaHeadsAppTests.framework */; };
 		26909F4B81706CBC57364CDB /* Pods_CocoaHeadsAppIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE58A954998C83F2921FA02 /* Pods_CocoaHeadsAppIntegrationTests.framework */; };
 		5DEF06532B061883351521C5 /* Pods-CocoaHeadsAppTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1495566C3B1BE6009AA51 /* Pods-CocoaHeadsAppTests-metadata.plist */; };
@@ -150,7 +150,7 @@
 		154C46C81BFAA21B00A32D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		154C46CB1BFAA5EE00A32D09 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1D463A331CC2E43500E72A00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		1D9AB6B51D0CF23C00483EF0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppIntegrationTests-metadata.plist"; path = "Pods/Pods-CocoaHeadsAppIntegrationTests-metadata.plist"; sourceTree = "<group>"; };
 		3AE58A954998C83F2921FA02 /* Pods_CocoaHeadsAppIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		409E33248F669A5108645D89 /* Pods-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -467,7 +467,7 @@
 		8CF97AF51BE3C5E3009C5591 /* CocoaHeadsApp */ = {
 			isa = PBXGroup;
 			children = (
-				1D9AB6B51D0CF23C00483EF0 /* R.generated.swift */,
+				1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */,
 				1D463A2E1CC2E37D00E72A00 /* Settings */,
 				15079B241BED728200E12A68 /* Classes */,
 				8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */,
@@ -784,7 +784,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/CocoaHeadsApp\"";
 			showEnvVarsInLog = 0;
 		};
 		2DA05FE4A098ADB12F92CE6C /* [CP] Embed Pods Frameworks */ = {
@@ -974,7 +974,7 @@
 				15079B2E1BED72FC00E12A68 /* Dynamic.swift in Sources */,
 				EC21EAFD1C7C09AE00C6937D /* Chapter.swift in Sources */,
 				EC3334031CFCCC4200E737E6 /* EventsListViewModel.swift in Sources */,
-				1D9AB6B61D0CF23C00483EF0 /* R.generated.swift in Sources */,
+				1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */,
 				154C46CC1BFAA5EE00A32D09 /* GradientView.swift in Sources */,
 				ECAA61B01C84E1DA003D4E17 /* JsonModel.swift in Sources */,
 				15079B561BED764B00E12A68 /* SlideListViewModel.swift in Sources */,

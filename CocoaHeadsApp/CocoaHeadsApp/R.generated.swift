@@ -11,17 +11,28 @@ struct R: Rswift.Validatable {
   }
   
   struct file {
-    static let podsMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-metadata", pathExtension: "plist")
+    static let podsCocoaHeadsAppMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-CocoaHeadsApp-metadata", pathExtension: "plist")
+    static let podsCocoaHeadsAppSettingsMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-CocoaHeadsApp-settings-metadata", pathExtension: "plist")
     static let podsSettingsMetadataPlist = FileResource(bundle: _R.hostingBundle, name: "Pods-settings-metadata", pathExtension: "plist")
     static let settingsBundle = FileResource(bundle: _R.hostingBundle, name: "Settings", pathExtension: "bundle")
     
-    static func podsMetadataPlist(_: Void) -> NSURL? {
-      let fileResource = R.file.podsMetadataPlist
+    static func podsCocoaHeadsAppMetadataPlist(_: Void) -> NSURL? {
+      let fileResource = R.file.podsCocoaHeadsAppMetadataPlist
       return fileResource.bundle?.URLForResource(fileResource)
     }
     
-    static func podsMetadataPlist(_: Void) -> String? {
-      let fileResource = R.file.podsMetadataPlist
+    static func podsCocoaHeadsAppMetadataPlist(_: Void) -> String? {
+      let fileResource = R.file.podsCocoaHeadsAppMetadataPlist
+      return fileResource.bundle?.pathForResource(fileResource)
+    }
+    
+    static func podsCocoaHeadsAppSettingsMetadataPlist(_: Void) -> NSURL? {
+      let fileResource = R.file.podsCocoaHeadsAppSettingsMetadataPlist
+      return fileResource.bundle?.URLForResource(fileResource)
+    }
+    
+    static func podsCocoaHeadsAppSettingsMetadataPlist(_: Void) -> String? {
+      let fileResource = R.file.podsCocoaHeadsAppSettingsMetadataPlist
       return fileResource.bundle?.pathForResource(fileResource)
     }
     
