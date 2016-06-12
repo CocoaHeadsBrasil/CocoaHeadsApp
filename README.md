@@ -11,10 +11,7 @@ CocoaHeads é um grupo formado por desenvolvedores (profissionais e iniciantes),
 ### Instalação das Dependências
 
 ```
-gem install bundler
-bundle install
-cd CocoaHeadsApp
-pod install
+./setup.sh
 ```
 
 
@@ -67,7 +64,7 @@ Para acessar o valor atual de enabled, utilize a propriedade value:
 
 ```swift
 if viewModel.enable.value {
-	
+
 }
 ```
 
