@@ -1,3 +1,5 @@
+plugin 'cocoapods-acknowledgements', :settings_bundle => true
+
 def common_pods
     pod 'R.swift', '~> 1.3.0'
     pod 'Unbox', '1.0'
@@ -17,30 +19,38 @@ platform :ios, '8.0'
 use_frameworks!
 inhibit_all_warnings!
 
-xcodeproj 'CocoaHeadsApp.xcodeproj'
+project 'CocoaHeadsApp.xcodeproj'
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
 
-common_pods
+target 'CocoaHeadsApp' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
 
-target :CocoaHeadsAppTests do
-    xcodeproj 'CocoaHeadsApp.xcodeproj'
-    common_pods
-end
+  common_pods
+  # Pods for CocoaHeadsApp
 
-target :CocoaHeadsAppIntegrationTests do
-    xcodeproj 'CocoaHeadsApp.xcodeproj'
-    common_pods
+  target 'CocoaHeadsAppIntegrationTests' do
+    inherit! :search_paths
+    # Pods for testing
     common_test_pods
-end
+  end
 
-target :CocoaHeadsAppUITests do
-    xcodeproj 'CocoaHeadsApp.xcodeproj'
-    common_pods
+  target 'CocoaHeadsAppTests' do
+    inherit! :search_paths
+    # Pods for testing
     common_test_pods
+  end
+
+  target 'CocoaHeadsAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    common_test_pods
+  end
+
 end
 
 post_install do |installer|
-    plugin 'cocoapods-acknowledgements', :settings_bundle => true
-
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['ENABLE_TESTABILITY'] = 'YES'
