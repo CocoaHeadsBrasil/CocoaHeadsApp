@@ -22,5 +22,4 @@ else
 fi
 
 echo "Executing CocoaPods"
-cd CocoaHeadsApp
-pod install
+cd CocoaHeadsApp && pod install && cd ..
