@@ -63,10 +63,15 @@ struct R: Rswift.Validatable {
   
   struct image {
     static let first = ImageResource(bundle: _R.hostingBundle, name: "first")
+    static let launchImage = ImageResource(bundle: _R.hostingBundle, name: "LaunchImage")
     static let second = ImageResource(bundle: _R.hostingBundle, name: "second")
     
     static func first(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.first, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func launchImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.launchImage, compatibleWithTraitCollection: traitCollection)
     }
     
     static func second(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
@@ -118,12 +123,7 @@ struct R: Rswift.Validatable {
   }
   
   struct storyboard {
-    static let launchScreen = _R.storyboard.launchScreen()
     static let main = _R.storyboard.main()
-    
-    static func launchScreen(_: Void) -> UIStoryboard {
-      return UIStoryboard(resource: R.storyboard.launchScreen)
-    }
     
     static func main(_: Void) -> UIStoryboard {
       return UIStoryboard(resource: R.storyboard.main)
@@ -194,13 +194,6 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try main.validate()
-    }
-    
-    struct launchScreen: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = UIViewController
-      
-      let bundle = _R.hostingBundle
-      let name = "LaunchScreen"
     }
     
     struct main: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
