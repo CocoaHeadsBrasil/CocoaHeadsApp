@@ -53,7 +53,6 @@
 		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
 		8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */; };
 		8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */; };
-		8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */; };
 		8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */; };
 		94AEE3E9C46678F8F61C9EE7 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */; };
 		97808B7B943C6EFC450B843B /* Pods-CocoaHeadsApp-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A04FFA261C122EFDA56F58B /* Pods-CocoaHeadsApp-settings-metadata.plist */; };
@@ -168,7 +167,6 @@
 		8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8CF97AFD1BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8CF97B021BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF97B041BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF97B091BE3C5E3009C5591 /* CocoaHeadsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97B0F1BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -482,7 +480,6 @@
 				8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */,
 				8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */,
 				8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */,
-				8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */,
 				8CF97B041BE3C5E3009C5591 /* Info.plist */,
 			);
 			path = CocoaHeadsApp;
@@ -691,7 +688,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF97B031BE3C5E3009C5591 /* LaunchScreen.storyboard in Resources */,
 				8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */,
 				1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */,
 				15079B581BED765200E12A68 /* SlideListView.xib in Resources */,
@@ -1049,14 +1045,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8CF97B011BE3C5E3009C5591 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CF97B021BE3C5E3009C5591 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1148,6 +1136,7 @@
 			baseConfigurationReference = FB1F155822633FD14C865234 /* Pods-CocoaHeadsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1162,6 +1151,7 @@
 			baseConfigurationReference = CFC35D02FEBAFF7532D3C8A3 /* Pods-CocoaHeadsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CocoaHeadsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
