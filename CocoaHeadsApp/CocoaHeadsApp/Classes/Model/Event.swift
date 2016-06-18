@@ -31,7 +31,7 @@ extension Event: JSONParselable {
             }
 
         var location: CLLocationCoordinate2D? = nil
-        if let latitude = double(json, key: "latitude"), let longitude = double(json, key: "longitude") {
+        if let latitude = double(json, key: "latitude"), longitude = double(json, key: "longitude") {
             location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         }
 
