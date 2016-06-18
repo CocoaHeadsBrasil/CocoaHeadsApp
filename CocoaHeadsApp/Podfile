@@ -20,31 +20,24 @@ use_frameworks!
 inhibit_all_warnings!
 
 project 'CocoaHeadsApp.xcodeproj'
-# Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
 
 target 'CocoaHeadsApp' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   common_pods
-  # Pods for CocoaHeadsApp
 
   target 'CocoaHeadsAppIntegrationTests' do
     inherit! :search_paths
-    # Pods for testing
     common_test_pods
   end
 
   target 'CocoaHeadsAppTests' do
     inherit! :search_paths
-    # Pods for testing
     common_test_pods
   end
 
   target 'CocoaHeadsAppUITests' do
     inherit! :search_paths
-    # Pods for testing
     common_test_pods
   end
 
