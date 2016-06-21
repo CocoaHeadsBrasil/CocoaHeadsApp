@@ -1,11 +1,3 @@
-//
-//  MeetupListCollectionViewCell.swift
-//  CocoaHeadsApp
-//
-//  Created by Bruno Bilescky on 06/11/15.
-//  Copyright © 2015 CocoaHeads Brasil. All rights reserved.
-//
-
 import UIKit
 import MapKit
 
@@ -35,8 +27,8 @@ class MeetupListCollectionViewCell: UICollectionViewCell {
             self.meetupPlaceDescriptionLabel.text = meetup?.venue?.address1 ?? "Indisponível"
             self.meetupLongDateLabel.text = meetup?.eventDateTempo.format("dd 'de' MMMM 'de' YYYY")
             self.meetupDateTimeLabel.text = meetup?.eventDateTempo.format("HH:mm")
-            if let latitude = meetup?.venue?.lat,
-                let longitude = meetup?.venue?.lon {
+            
+            if let latitude = meetup?.venue?.lat, longitude = meetup?.venue?.lon {
                     var region = MKCoordinateRegion()
                     region.center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                     region.span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
