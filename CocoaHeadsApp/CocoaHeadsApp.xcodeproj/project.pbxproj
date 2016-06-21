@@ -50,7 +50,6 @@
 		7FBCB3ADCCA8880232B1DC65 /* Pods-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 409E33248F669A5108645D89 /* Pods-settings-metadata.plist */; };
 		82324C6D82DF5B0B01E4ED09 /* Pods-CocoaHeadsAppTests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB61AFA1235CF40887B58D0 /* Pods-CocoaHeadsAppTests-settings-metadata.plist */; };
 		8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */; };
-		8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */; };
 		8CF97AFE1BE3C5E3009C5591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */; };
 		8CF97B001BE3C5E3009C5591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */; };
 		8CF97B191BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF97B181BE3C5E4009C5591 /* CocoaHeadsAppUITests.swift */; };
@@ -164,7 +163,6 @@
 		88DEFEB0766437894BC0F1B4 /* Pods_CocoaHeadsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaHeadsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF31BE3C5E3009C5591 /* CocoaHeadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF97AF61BE3C5E3009C5591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8CF97AFD1BE3C5E3009C5591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF97B041BE3C5E3009C5591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -477,7 +475,6 @@
 				EC3333FA1CFCCC4200E737E6 /* EventsListViewController.swift */,
 				EC3333FB1CFCCC4200E737E6 /* EventsListViewModel.swift */,
 				EC3333FC1CFCCC4200E737E6 /* UIColorExtensions.swift */,
-				8CF97AFA1BE3C5E3009C5591 /* AboutViewController.swift */,
 				8CF97AFC1BE3C5E3009C5591 /* Main.storyboard */,
 				8CF97AFF1BE3C5E3009C5591 /* Assets.xcassets */,
 				8CF97B041BE3C5E3009C5591 /* Info.plist */,
@@ -944,7 +941,6 @@
 				78AD0B621C877A7300999C17 /* Tempo+Methods.swift in Sources */,
 				15079B681BED7F1200E12A68 /* Unbox+Extensions.swift in Sources */,
 				15079B4C1BED760B00E12A68 /* VideosListView.swift in Sources */,
-				8CF97AFB1BE3C5E3009C5591 /* AboutViewController.swift in Sources */,
 				15079B341BED739000E12A68 /* String+Extensions.swift in Sources */,
 				EC3333FE1CFCCC4200E737E6 /* EventsListDelegate.swift in Sources */,
 				15079B6C1BED7F5200E12A68 /* VenueModel.swift in Sources */,
