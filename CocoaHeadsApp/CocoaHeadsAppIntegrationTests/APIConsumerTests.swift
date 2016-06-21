@@ -1,11 +1,3 @@
-//
-//  APIConsumerTests.swift
-//  CocoaHeadsApp
-//
-//  Created by Igor Ferreira on 2/15/16.
-//  Copyright © 2016 CocoaHeads Brasil. All rights reserved.
-//
-
 import XCTest
 import Moya
 import OHHTTPStubs
