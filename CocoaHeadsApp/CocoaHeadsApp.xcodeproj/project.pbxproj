@@ -1281,7 +1281,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.CocoaHeadsApp;
 				PRODUCT_NAME = CocoaHeadsApp;
 			};
 			name = Debug;
@@ -1296,7 +1296,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cocoaheads.CocoaHeads-Apps";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.CocoaHeadsApp;
 				PRODUCT_NAME = CocoaHeadsApp;
 			};
 			name = Release;
