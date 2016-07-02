@@ -13,13 +13,13 @@ class AppCoordinator: ParentCoordinator, CoordinatorDelegate {
         var viewControllers = [UIViewController]()
         
         let meetupCoordinator = MeetupCoordinator(delegate: self)
-        self.childrenCoordinator.append(meetupCoordinator)
+        childrenCoordinator.append(meetupCoordinator)
         
         let meetupStartViewController = meetupCoordinator.start()
         viewControllers.append(meetupStartViewController)
         
         let settingsCoordinator = SettingsCoordinator(delegate: self)
-        self.childrenCoordinator.append(settingsCoordinator)
+        childrenCoordinator.append(settingsCoordinator)
         
         let settingsStartViewController = settingsCoordinator.start()
         viewControllers.append(settingsStartViewController)

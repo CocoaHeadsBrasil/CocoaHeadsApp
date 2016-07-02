@@ -10,7 +10,7 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate {
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.viewModel.select(index: indexPath.row)
+        viewModel.select(index: indexPath.row)
     }
     
 }

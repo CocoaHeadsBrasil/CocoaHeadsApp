@@ -10,8 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        self.appCoordinator = AppCoordinator()
-        self.appCoordinator.start()
+        appCoordinator = AppCoordinator()
+        appCoordinator.start()
         
         logger.setup(.Debug, showLogIdentifier: false, showFunctionName: true, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, showDate: false, writeToFile: nil, fileLogLevel: nil)
         return true

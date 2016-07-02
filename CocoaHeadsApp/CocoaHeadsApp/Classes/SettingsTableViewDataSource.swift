@@ -14,13 +14,13 @@ class SettingsTableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.settings.count
+        return viewModel.settings.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         
-        switch self.viewModel.settings[indexPath.row] {
+        switch viewModel.settings[indexPath.row] {
         case .Acknowledgements:
             cell.textLabel?.text = "Acknowledgements"
             cell.accessoryType = .DisclosureIndicator

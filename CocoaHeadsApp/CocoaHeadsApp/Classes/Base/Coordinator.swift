@@ -19,7 +19,7 @@ protocol ChildrenCoordinator: Coordinator {
 extension ParentCoordinator where Self: CoordinatorDelegate {
     func coordinateDidEnd(coordinator: Coordinator) {
         if let coordinatorIndex = self.childrenCoordinator.indexOf({ $0 === coordinator }) {
-            self.childrenCoordinator.removeAtIndex(coordinatorIndex)
+            childrenCoordinator.removeAtIndex(coordinatorIndex)
         }
     }
 }
