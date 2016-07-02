@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		15AF854914C2D58A9BE33E88 /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */; };
+		1D1580C01D2836560097C3AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1580BF1D2836560097C3AD /* Coordinator.swift */; };
 		1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D463A331CC2E43500E72A00 /* Settings.bundle */; };
 		1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */; };
 		1D9F8EEC1D2051900096B668 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */; };
@@ -128,6 +129,7 @@
 		0E5ED51DB6B80E07A23C129B /* Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHeadsAppIntegrationTests/Pods-CocoaHeadsAppIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppUITests-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-CocoaHeadsAppUITests-settings-metadata.plist"; sourceTree = "<group>"; };
 		154C46C81BFAA21B00A32D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1D1580BF1D2836560097C3AD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1D463A331CC2E43500E72A00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				ECE7C9E61D15D7CD00024B52 /* Utils */,
 				ECE7C9EA1D15D7CD00024B52 /* ViewModels */,
 				ECE7C9EC1D15D7CD00024B52 /* Views */,
+				1D1580BF1D2836560097C3AD /* Coordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1172,6 +1175,7 @@
 				ECE7CA391D15D7CE00024B52 /* EventsListTableViewCell.swift in Sources */,
 				ECE7CA381D15D7CE00024B52 /* EventsListViewModel.swift in Sources */,
 				ECE7CA401D15D7CE00024B52 /* MeetupListCollectionDelegate.swift in Sources */,
+				1D1580C01D2836560097C3AD /* Coordinator.swift in Sources */,
 				1D9F8EF41D206B7B0096B668 /* SettingsViewController.swift in Sources */,
 				ECE7CA291D15D7CE00024B52 /* Chapter.swift in Sources */,
 				ECE7CA3B1D15D7CE00024B52 /* EventsListView.swift in Sources */,

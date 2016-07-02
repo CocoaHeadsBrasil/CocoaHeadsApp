@@ -1,14 +1,8 @@
 import UIKit
 
-class MeetupCoordinator: Coordinator {
+class MeetupCoordinator: BaseCoordinator {
     
-    var delegate: CoordinatorDelegate?
-    
-    init(delegate: CoordinatorDelegate) {
-        self.delegate = delegate
-    }
-    
-    func start() -> UIViewController {
+    override func start() -> UIViewController {
         let listController = MeetupListViewController()
         let navigationController = UINavigationController(rootViewController: listController)
         

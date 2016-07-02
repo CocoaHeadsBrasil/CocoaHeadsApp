@@ -1,16 +1,11 @@
 import UIKit
 import CPDAcknowledgements
 
-class SettingsCoordinator: Coordinator, SettingsViewModelDelegate {
+class SettingsCoordinator: BaseCoordinator, SettingsViewModelDelegate {
  
-    var delegate: CoordinatorDelegate?
     var navigationController: UINavigationController?
     
-    init(delegate: CoordinatorDelegate) {
-        self.delegate = delegate
-    }
-    
-    func start() -> UIViewController {
+    override func start() -> UIViewController {
         let listController = SettingsViewController(delegate: self)
         let navigationController = UINavigationController(rootViewController: listController)
         

@@ -1,19 +1,8 @@
 import UIKit
 
-protocol CoordinatorDelegate {
-    func coordinateDidEnd(coordinator: Coordinator)
-}
-
-protocol Coordinator: class {
-    var delegate: CoordinatorDelegate? {get set}
-    
-    func start() -> UIViewController
-}
-
-class AppCoordinator: Coordinator, CoordinatorDelegate {
+class AppCoordinator: ParentCoordinator, CoordinatorDelegate {
     
     let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-    var delegate: CoordinatorDelegate?
     var childrenCoordinator = [Coordinator]()
     
     func start() -> UIViewController {
@@ -29,8 +18,6 @@ class AppCoordinator: Coordinator, CoordinatorDelegate {
         let meetupStartViewController = meetupCoordinator.start()
         viewControllers.append(meetupStartViewController)
         
-        
-        
         let settingsCoordinator = SettingsCoordinator(delegate: self)
         self.childrenCoordinator.append(settingsCoordinator)
         
@@ -43,11 +30,4 @@ class AppCoordinator: Coordinator, CoordinatorDelegate {
         
         return tabBarController
     }
-    
-    func coordinateDidEnd(coordinator: Coordinator) {
-        if let coordinatorIndex = self.childrenCoordinator.indexOf({ $0 === coordinator }) {
-            self.childrenCoordinator.removeAtIndex(coordinatorIndex)
-        }
-    }
-    
 }

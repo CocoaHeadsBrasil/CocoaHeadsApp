@@ -1,14 +1,8 @@
 import UIKit
 
-class EventsCoordinator: Coordinator {
+class EventsCoordinator: BaseCoordinator {
     
-    var delegate: CoordinatorDelegate?
-    
-    init(delegate: CoordinatorDelegate) {
-        self.delegate = delegate
-    }
-    
-    func start() -> UIViewController {
+    override func start() -> UIViewController {
         let listController = EventsListViewController()
         let navigationController = UINavigationController(rootViewController: listController)
         
