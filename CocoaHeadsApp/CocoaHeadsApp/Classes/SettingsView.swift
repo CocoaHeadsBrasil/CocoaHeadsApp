@@ -20,15 +20,13 @@ class SettingsView: NibDesignable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
         self.dataSource = SettingsTableViewDataSource(viewModel: self.viewModel)
-        self.delegate = SettingsTableViewDelegate(viewModel: self.viewModel)
+        self.dataSource.registerCellsIdentifiers(self.tableView)
         self.tableView.dataSource = self.dataSource
+        
+        self.delegate = SettingsTableViewDelegate(viewModel: self.viewModel)
         self.tableView.delegate = self.delegate
-//        viewModel.items.bind(self) { items in
-//            self.listCollectionView.reloadData()
-//        }
-//        viewModel.loadMoreItens()
     }
     
 }

@@ -10,6 +10,7 @@
 		154C46C91BFAA21B00A32D09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C46C81BFAA21B00A32D09 /* MapKit.framework */; };
 		15AF854914C2D58A9BE33E88 /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213F60C07FE87CEA3B24007C /* Pods-CocoaHeadsAppIntegrationTests-metadata.plist */; };
 		1D1580C01D2836560097C3AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1580BF1D2836560097C3AD /* Coordinator.swift */; };
+		1D1580C21D284A3E0097C3AD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1580C11D284A3E0097C3AD /* UITableView+Extensions.swift */; };
 		1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D463A331CC2E43500E72A00 /* Settings.bundle */; };
 		1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */; };
 		1D9F8EEC1D2051900096B668 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */; };
@@ -130,6 +131,7 @@
 		0EEB2F40A40B6461212C6A09 /* Pods-CocoaHeadsAppUITests-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CocoaHeadsAppUITests-settings-metadata.plist"; path = "CocoaHeadsApp/Settings.bundle/Pods-CocoaHeadsAppUITests-settings-metadata.plist"; sourceTree = "<group>"; };
 		154C46C81BFAA21B00A32D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1D1580BF1D2836560097C3AD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1D1580C11D284A3E0097C3AD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		1D463A331CC2E43500E72A00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */,
 				ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */,
 				ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */,
+				1D1580C11D284A3E0097C3AD /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1155,6 +1158,7 @@
 				ECE7CA321D15D7CE00024B52 /* GradientView.swift in Sources */,
 				ECE7CA3D1D15D7CE00024B52 /* Tempo.swift in Sources */,
 				ECE7CA2A1D15D7CE00024B52 /* GroupModel.swift in Sources */,
+				1D1580C21D284A3E0097C3AD /* UITableView+Extensions.swift in Sources */,
 				ECE7CA4C1D15D7CE00024B52 /* SlideListViewModel.swift in Sources */,
 				1D9F8EF91D206BF10096B668 /* SettingsView.swift in Sources */,
 				ECE7CA2D1D15D7CE00024B52 /* APIConsumer.swift in Sources */,

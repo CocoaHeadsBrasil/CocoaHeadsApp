@@ -9,12 +9,16 @@ class SettingsTableViewDataSource: NSObject, UITableViewDataSource {
         super.init()
     }
     
+    func registerCellsIdentifiers(tableView: UITableView) {
+        tableView.registerCell(UITableViewCell.self)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.settings.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell: UITableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         
         switch self.viewModel.settings[indexPath.row] {
         case .Acknowledgements:
