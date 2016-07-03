@@ -63,11 +63,146 @@ struct R: Rswift.Validatable {
   
   struct image {
     static let first = ImageResource(bundle: _R.hostingBundle, name: "first")
+    static let flagAcre = ImageResource(bundle: _R.hostingBundle, name: "flag-acre")
+    static let flagAlagoas = ImageResource(bundle: _R.hostingBundle, name: "flag-alagoas")
+    static let flagAmapa = ImageResource(bundle: _R.hostingBundle, name: "flag-amapa")
+    static let flagAmazonas = ImageResource(bundle: _R.hostingBundle, name: "flag-amazonas")
+    static let flagBahia = ImageResource(bundle: _R.hostingBundle, name: "flag-bahia")
+    static let flagCeara = ImageResource(bundle: _R.hostingBundle, name: "flag-ceara")
+    static let flagDistritoFederal = ImageResource(bundle: _R.hostingBundle, name: "flag-distrito-federal")
+    static let flagEspiritoSanto = ImageResource(bundle: _R.hostingBundle, name: "flag-espirito-santo")
+    static let flagGoias = ImageResource(bundle: _R.hostingBundle, name: "flag-goias")
+    static let flagMaranhao = ImageResource(bundle: _R.hostingBundle, name: "flag-maranhao")
+    static let flagMatoGrosso = ImageResource(bundle: _R.hostingBundle, name: "flag-mato-grosso")
+    static let flagMatoGrossoDoSul = ImageResource(bundle: _R.hostingBundle, name: "flag-mato-grosso-do-sul")
+    static let flagMinasGerais = ImageResource(bundle: _R.hostingBundle, name: "flag-minas-gerais")
+    static let flagPara = ImageResource(bundle: _R.hostingBundle, name: "flag-para")
+    static let flagParaiba = ImageResource(bundle: _R.hostingBundle, name: "flag-paraiba")
+    static let flagParana = ImageResource(bundle: _R.hostingBundle, name: "flag-parana")
+    static let flagPernambuco = ImageResource(bundle: _R.hostingBundle, name: "flag-pernambuco")
+    static let flagPiaui = ImageResource(bundle: _R.hostingBundle, name: "flag-piaui")
+    static let flagRioDeJaneiro = ImageResource(bundle: _R.hostingBundle, name: "flag-rio-de-janeiro")
+    static let flagRioGrandeDoNorte = ImageResource(bundle: _R.hostingBundle, name: "flag-rio-grande-do-norte")
+    static let flagRioGrandeDoSul = ImageResource(bundle: _R.hostingBundle, name: "flag-rio-grande-do-sul")
+    static let flagRondonia = ImageResource(bundle: _R.hostingBundle, name: "flag-rondonia")
+    static let flagRoraima = ImageResource(bundle: _R.hostingBundle, name: "flag-roraima")
+    static let flagSantaCatarina = ImageResource(bundle: _R.hostingBundle, name: "flag-santa-catarina")
+    static let flagSaoPaulo = ImageResource(bundle: _R.hostingBundle, name: "flag-sao-paulo")
+    static let flagSergipe = ImageResource(bundle: _R.hostingBundle, name: "flag-sergipe")
+    static let flagTocantins = ImageResource(bundle: _R.hostingBundle, name: "flag-tocantins")
     static let launchImage = ImageResource(bundle: _R.hostingBundle, name: "LaunchImage")
     static let second = ImageResource(bundle: _R.hostingBundle, name: "second")
     
     static func first(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.first, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagAcre(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagAcre, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagAlagoas(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagAlagoas, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagAmapa(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagAmapa, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagAmazonas(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagAmazonas, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagBahia(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagBahia, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagCeara(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagCeara, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagDistritoFederal(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagDistritoFederal, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagEspiritoSanto(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagEspiritoSanto, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagGoias(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagGoias, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagMaranhao(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagMaranhao, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagMatoGrosso(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagMatoGrosso, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagMatoGrossoDoSul(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagMatoGrossoDoSul, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagMinasGerais(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagMinasGerais, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagPara(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagPara, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagParaiba(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagParaiba, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagParana(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagParana, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagPernambuco(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagPernambuco, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagPiaui(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagPiaui, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagRioDeJaneiro(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagRioDeJaneiro, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagRioGrandeDoNorte(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagRioGrandeDoNorte, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagRioGrandeDoSul(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagRioGrandeDoSul, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagRondonia(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagRondonia, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagRoraima(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagRoraima, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagSantaCatarina(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagSantaCatarina, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagSaoPaulo(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagSaoPaulo, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagSergipe(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagSergipe, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func flagTocantins(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.flagTocantins, compatibleWithTraitCollection: traitCollection)
     }
     
     static func launchImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
@@ -132,7 +267,7 @@ struct R: Rswift.Validatable {
 }
 
 struct _R: Rswift.Validatable {
-  static let hostingBundle = NSBundle(identifier: "br.com.cocoaheads.CocoaHeads-Apps")
+  static let hostingBundle = NSBundle(identifier: "br.com.cocoaheads.CocoaHeadsApp")
   
   static func validate() throws {
     try storyboard.validate()
