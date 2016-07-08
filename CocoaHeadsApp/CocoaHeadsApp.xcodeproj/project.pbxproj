@@ -13,8 +13,8 @@
 		1D1580C21D284A3E0097C3AD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1580C11D284A3E0097C3AD /* UITableView+Extensions.swift */; };
 		1D463A341CC2E43500E72A00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D463A331CC2E43500E72A00 /* Settings.bundle */; };
 		1D50DE071D2F1D6A00017BC4 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE061D2F1D6A00017BC4 /* AppCoordinatorTests.swift */; };
-		1D50DE091D2F29EF00017BC4 /* MeetupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE081D2F29EF00017BC4 /* MeetupCoordinator.swift */; };
-		1D50DE0B1D2F2C9800017BC4 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE0A1D2F2C9800017BC4 /* SettingCoordinator.swift */; };
+		1D50DE091D2F29EF00017BC4 /* MeetupCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE081D2F29EF00017BC4 /* MeetupCoordinatorTests.swift */; };
+		1D50DE0B1D2F2C9800017BC4 /* SettingCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE0A1D2F2C9800017BC4 /* SettingCoordinatorTests.swift */; };
 		1D50DE0D1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50DE0C1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift */; };
 		1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */; };
 		1D9F8EEC1D2051900096B668 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */; };
@@ -138,8 +138,8 @@
 		1D1580C11D284A3E0097C3AD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		1D463A331CC2E43500E72A00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1D50DE061D2F1D6A00017BC4 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
-		1D50DE081D2F29EF00017BC4 /* MeetupCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupCoordinator.swift; sourceTree = "<group>"; };
-		1D50DE0A1D2F2C9800017BC4 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
+		1D50DE081D2F29EF00017BC4 /* MeetupCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupCoordinatorTests.swift; sourceTree = "<group>"; };
+		1D50DE0A1D2F2C9800017BC4 /* SettingCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCoordinatorTests.swift; sourceTree = "<group>"; };
 		1D50DE0C1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegateMock.swift; sourceTree = "<group>"; };
 		1D9AB6B71D0D02CC00483EF0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1D9F8EEB1D2051900096B668 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -410,8 +410,8 @@
 				AD99ADDE1C728C4B004BF12A /* MeetupAPITests.swift */,
 				EC0772F91C78E84600D4A763 /* Models */,
 				1D50DE061D2F1D6A00017BC4 /* AppCoordinatorTests.swift */,
-				1D50DE081D2F29EF00017BC4 /* MeetupCoordinator.swift */,
-				1D50DE0A1D2F2C9800017BC4 /* SettingCoordinator.swift */,
+				1D50DE081D2F29EF00017BC4 /* MeetupCoordinatorTests.swift */,
+				1D50DE0A1D2F2C9800017BC4 /* SettingCoordinatorTests.swift */,
 				1D50DE0C1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift */,
 			);
 			path = CocoaHeadsAppTests;
@@ -1230,8 +1230,8 @@
 				EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */,
 				ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */,
 				1D50DE0D1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift in Sources */,
-				1D50DE0B1D2F2C9800017BC4 /* SettingCoordinator.swift in Sources */,
-				1D50DE091D2F29EF00017BC4 /* MeetupCoordinator.swift in Sources */,
+				1D50DE0B1D2F2C9800017BC4 /* SettingCoordinatorTests.swift in Sources */,
+				1D50DE091D2F29EF00017BC4 /* MeetupCoordinatorTests.swift in Sources */,
 				ECAA61B41C84E6B0003D4E17 /* OrganizerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
