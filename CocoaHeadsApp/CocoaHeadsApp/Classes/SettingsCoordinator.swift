@@ -4,6 +4,7 @@ import CPDAcknowledgements
 class SettingsCoordinator: BaseCoordinator, SettingsViewModelDelegate {
  
     var navigationController: UINavigationController?
+    var animate = true
     
     override func start() -> UIViewController {
         let listController = SettingsViewController(delegate: self)
@@ -18,7 +19,7 @@ class SettingsCoordinator: BaseCoordinator, SettingsViewModelDelegate {
         switch selectedValue {
         case .Acknowledgements:
             let acknowledgementsViewController = CPDAcknowledgementsViewController()
-            self.navigationController?.pushViewController(acknowledgementsViewController, animated: true)
+            self.navigationController?.pushViewController(acknowledgementsViewController, animated: animate)
         }
     }
 }
