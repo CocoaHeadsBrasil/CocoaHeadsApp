@@ -2,11 +2,6 @@
 import Quick
 import Nimble
 
-class CoordinatorDelegateMock: CoordinatorDelegate {
-    func coordinateDidEnd(coordinator: Coordinator) {
-        
-    }
-}
 
 class MeetupCoordinatorTests: QuickSpec {
     
