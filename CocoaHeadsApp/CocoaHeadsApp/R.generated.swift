@@ -62,6 +62,7 @@ struct R: Rswift.Validatable {
   }
   
   struct image {
+    static let cocoaheadsSad = ImageResource(bundle: _R.hostingBundle, name: "cocoaheads-sad")
     static let first = ImageResource(bundle: _R.hostingBundle, name: "first")
     static let flagAcre = ImageResource(bundle: _R.hostingBundle, name: "flag-acre")
     static let flagAlagoas = ImageResource(bundle: _R.hostingBundle, name: "flag-alagoas")
@@ -90,8 +91,15 @@ struct R: Rswift.Validatable {
     static let flagSaoPaulo = ImageResource(bundle: _R.hostingBundle, name: "flag-sao-paulo")
     static let flagSergipe = ImageResource(bundle: _R.hostingBundle, name: "flag-sergipe")
     static let flagTocantins = ImageResource(bundle: _R.hostingBundle, name: "flag-tocantins")
+    static let icon_checklist = ImageResource(bundle: _R.hostingBundle, name: "icon_checklist")
+    static let icon_clock = ImageResource(bundle: _R.hostingBundle, name: "icon_clock")
+    static let icon_gps = ImageResource(bundle: _R.hostingBundle, name: "icon_gps")
     static let launchImage = ImageResource(bundle: _R.hostingBundle, name: "LaunchImage")
     static let second = ImageResource(bundle: _R.hostingBundle, name: "second")
+    
+    static func cocoaheadsSad(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.cocoaheadsSad, compatibleWithTraitCollection: traitCollection)
+    }
     
     static func first(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.first, compatibleWithTraitCollection: traitCollection)
@@ -203,6 +211,18 @@ struct R: Rswift.Validatable {
     
     static func flagTocantins(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.flagTocantins, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func icon_checklist(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.icon_checklist, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func icon_clock(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.icon_clock, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    static func icon_gps(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.icon_gps, compatibleWithTraitCollection: traitCollection)
     }
     
     static func launchImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
