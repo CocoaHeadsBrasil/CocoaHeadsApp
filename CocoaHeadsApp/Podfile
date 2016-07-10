@@ -13,6 +13,8 @@ end
 def common_test_pods
     pod 'OHHTTPStubs', '~> 4.7.0'
     pod 'OHHTTPStubs/Swift'
+    pod 'Nimble'
+    pod 'Quick'
 end
 
 platform :ios, '8.0'
