@@ -10,4 +10,10 @@ class MeetupListViewController: UIViewController {
         self.title = "CocoaHeads BR"
     }
 
+    
+    override func loadView() {
+        let view = MeetupListView()
+        
+        self.view = view
+    }
 }
