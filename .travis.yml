@@ -15,6 +15,7 @@ before_install:
   - brew upgrade
   - brew install swiftlint
   - bundle install
+  - pod repo update
 
 script:
   - echo $SIMULATOR_ID

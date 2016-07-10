@@ -3,8 +3,6 @@ import UIKit
 @IBDesignable
 class EventsListViewController: UITableViewController {
     
-    @IBOutlet weak var nibView: EventListView!
-
     private let eventsDetailSegue = "eventsDetailSegue"
     
     override func viewDidLoad() {
@@ -13,4 +11,11 @@ class EventsListViewController: UITableViewController {
         
     }
 
+    override func loadView() {
+        let eventListView = EventListView()
+        
+        self.view = eventListView
+    }
+    
 }
+
