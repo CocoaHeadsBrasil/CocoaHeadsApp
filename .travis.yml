@@ -18,6 +18,7 @@ before_install:
   - pod repo update
 
 script:
+  - bundle exec danger
   - echo $SIMULATOR_ID
   - open -b com.apple.iphonesimulator --args -CurrentDeviceUDID $SIMULATOR_ID
   - set -o pipefail
