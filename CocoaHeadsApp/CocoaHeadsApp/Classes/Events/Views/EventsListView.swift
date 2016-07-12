@@ -1,10 +1,13 @@
 import UIKit
+import RxSwift
 
 class EventListView: NibDesignable {
 
     let viewModel = EventsListViewModel()
     var dataSource :EventsListTableDataSource!
     var delegate :EventsListTableDelegate!
+    
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var listEventsTableView :UITableView!
     
@@ -15,9 +18,9 @@ class EventListView: NibDesignable {
         self.delegate = EventsListTableDelegate(viewModel: self.viewModel)
         self.listEventsTableView.dataSource = self.dataSource
         self.listEventsTableView.delegate = self.delegate
-        viewModel.items.bind(self) {
-                items in self.listEventsTableView.reloadData()
-        }
+        viewModel.items.asObservable().subscribeNext { [weak self] (items) in
+            self?.listEventsTableView.reloadData()
+        }.addDisposableTo(self.disposeBag)
         //viewModel.loadMoreItens()
     }
 }

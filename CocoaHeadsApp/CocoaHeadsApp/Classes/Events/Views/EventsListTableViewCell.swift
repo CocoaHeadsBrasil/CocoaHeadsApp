@@ -1,8 +1,11 @@
 import UIKit
+import RxSwift
 
 class EventsListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var eventTitleLabel: UILabel!
+    
+    let disposeBag = DisposeBag()
  
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -11,7 +14,7 @@ class EventsListTableViewCell: UITableViewCell {
         
     }
     
-    let event = Dynamic<Event?>(nil)
+    let event = Variable<Event?>(nil)
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -19,9 +22,9 @@ class EventsListTableViewCell: UITableViewCell {
     }
     
     private func commonInit() {
-        self.event.bind(self) { event in
-            self.eventTitleLabel.text = event?.name ?? "Indisponível"
-        }
+        self.event.asObservable().subscribeNext { [weak self] (event) in
+            self?.eventTitleLabel.text = event?.name ?? "Indisponível"
+        }.addDisposableTo(self.disposeBag)
     }
     
     func configure(withEvents events: Event, selectionEnabled: Bool = true, accessoryEnabled: Bool = true) {
