@@ -48,40 +48,6 @@ Devemos seguir alguns conceitos e princípios para separar a lógica de nossa fu
 4. A classe ViewModel deve conter informações sobre o estado da view, e lógicas que alterem esses estados.
 5. A classe View deve monitorar estes estados para alterar visualmente sua aparência.
 
-##### Dynamics
-Para que a view consiga responder a mudanças de valores das propriedades do ViewModel, ao invés de declarar uma propriedade como:
-
-```swift
-var enabled = true
-```
-
-voce pode utilizar a classe Dynamic, e sua propriedade ficaria assim:
-
-```swift
-let enabled = Dynamic(true)
-```
-
-com isso voce pode adicionar listeners para quando esta propriedade mudar:
-
-```swift
-viewModel.enable.bind(self) { enabled in
-	//your code here
-}
-```
-
-Para acessar o valor atual de enabled, utilize a propriedade value:
-
-```swift
-if viewModel.enable.value {
-
-}
-```
-
-A classe Dynamic possui dois métodos para fazer esse *bind*: **bind** e **bindAndFire**
-
-* **bind** vai apenas escutar por novas mudanças de valores
-* **bindAndFire** vai executar o bloco com o valor atual e escutar por mudanças de valores
-
 ## Quem pode contribuir
 Todos desenvolvedores iOS estão aptos a colaborar com essa iniciativa, basta seguir o workflow de contribuição.
 
