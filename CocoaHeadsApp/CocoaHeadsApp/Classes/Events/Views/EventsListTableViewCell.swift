@@ -11,6 +11,7 @@ class EventsListTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         eventTitleLabel.textColor = .cocoaHeadsTitleColor()
+        commonInit()
         
     }
     
@@ -18,7 +19,6 @@ class EventsListTableViewCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
     }
     
     private func commonInit() {
