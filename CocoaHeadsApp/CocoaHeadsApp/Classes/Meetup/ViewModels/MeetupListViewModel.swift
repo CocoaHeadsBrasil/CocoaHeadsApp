@@ -1,10 +1,11 @@
 import UIKit
+import RxSwift
 
 class MeetupListViewModel: ViewModel {
 
     let numberOfItemsPerRequest  = 25
     var currentPage = 0
-    let items = Dynamic<[MeetupModel]>([])
+    let items = Variable<[MeetupModel]>([])
     
     func loadMoreItens() {
         switch self.currentState.value {
@@ -21,7 +22,7 @@ class MeetupListViewModel: ViewModel {
     
     func handleAPIResponseSuccess(response :MeetupListResponse) {
         logger.debug("Loaded: \(response.results.count) meetups")
-        self.items.appendContentsOf(response.results)
+        self.items.value.appendContentsOf(response.results)
         self.currentPage += 1
         dispatch_async(dispatch_get_main_queue()) {
             let newStatus :ViewModelState = response.meta.totalCount == self.items.value.count ? .Success : .Idle

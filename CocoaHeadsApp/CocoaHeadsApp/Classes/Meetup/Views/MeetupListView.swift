@@ -1,4 +1,5 @@
 import UIKit
+import RxSwift
 
 class MeetupListView: NibDesignable {
 
@@ -6,6 +7,8 @@ class MeetupListView: NibDesignable {
     var dataSource :MeetupListCollectionDataSource!
     var delegate :MeetupListCollectionDelegate!
 
+    let disposeBag = DisposeBag()
+    
     @IBOutlet weak var listCollectionView :UICollectionView!
     
     override func viewDidLoad() {
@@ -15,9 +18,9 @@ class MeetupListView: NibDesignable {
         self.delegate = MeetupListCollectionDelegate(viewModel: self.viewModel)
         self.listCollectionView.dataSource = self.dataSource
         self.listCollectionView.delegate = self.delegate
-        viewModel.items.bind(self) { items in
-            self.listCollectionView.reloadData()
-        }
+        viewModel.items.asObservable().subscribeNext { [weak self] (items) in
+            self?.listCollectionView.reloadData()
+        }.addDisposableTo(self.disposeBag)
         viewModel.loadMoreItens()
     }
     

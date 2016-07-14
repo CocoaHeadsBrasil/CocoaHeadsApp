@@ -1,4 +1,5 @@
 import UIKit
+import RxSwift
 
 /**
  Represents the current state of the viewModel
@@ -18,6 +19,6 @@ enum ViewModelState {
 */
 class ViewModel: NSObject {
 
-    let currentState = Dynamic<ViewModelState>(.Idle)
+    let currentState = Variable<ViewModelState>(.Idle)
     
 }

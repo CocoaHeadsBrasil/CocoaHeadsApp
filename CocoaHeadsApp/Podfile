@@ -8,6 +8,8 @@ def common_pods
     pod 'Nuke', '~> 2.0.1'
     pod 'CPDAcknowledgements', '~> 1.0'
     pod 'DynamicColor', '~> 2.4.0'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 end
 
 def common_test_pods
