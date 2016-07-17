@@ -52,6 +52,9 @@
 		EC0773001C78E96A00D4A763 /* chapter.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0772FF1C78E96A00D4A763 /* chapter.json */; };
 		EC0773021C78E9FA00D4A763 /* podcast_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0773011C78E9FA00D4A763 /* podcast_episode.json */; };
 		EC0773041C78EA7100D4A763 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = EC0773031C78EA7100D4A763 /* video.json */; };
+		EC0CAAFB1D3C15740076E204 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAAFA1D3C15740076E204 /* State.swift */; };
+		EC0CAAFD1D3C19F10076E204 /* State+IconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAAFC1D3C19F10076E204 /* State+IconName.swift */; };
+		EC0CAB021D3C1D190076E204 /* StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAB011D3C1D190076E204 /* StateTests.swift */; };
 		EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */; };
 		ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A51C837473003D4E17 /* ChapterTest.swift */; };
 		ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A71C83B790003D4E17 /* VideoTest.swift */; };
@@ -190,6 +193,9 @@
 		EC0772FF1C78E96A00D4A763 /* chapter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chapter.json; sourceTree = "<group>"; };
 		EC0773011C78E9FA00D4A763 /* podcast_episode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_episode.json; sourceTree = "<group>"; };
 		EC0773031C78EA7100D4A763 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		EC0CAAFA1D3C15740076E204 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		EC0CAAFC1D3C19F10076E204 /* State+IconName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+IconName.swift"; sourceTree = "<group>"; };
+		EC0CAB011D3C1D190076E204 /* StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateTests.swift; sourceTree = "<group>"; };
 		EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestUtils.swift; sourceTree = "<group>"; };
 		ECAA61A51C837473003D4E17 /* ChapterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
 		ECAA61A71C83B790003D4E17 /* VideoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTest.swift; sourceTree = "<group>"; };
@@ -404,6 +410,7 @@
 		8CF97B0C1BE3C5E3009C5591 /* CocoaHeadsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC0CAAFF1D3C1CF40076E204 /* Chapters */,
 				8CF97B0F1BE3C5E3009C5591 /* Info.plist */,
 				AD99ADDE1C728C4B004BF12A /* MeetupAPITests.swift */,
 				EC0772F91C78E84600D4A763 /* Models */,
@@ -468,10 +475,52 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		EC0CAAF61D3C14E00076E204 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CAAF71D3C154F0076E204 /* Controllers */,
+				EC0CAAF81D3C154F0076E204 /* Models */,
+				EC0CAAF91D3C154F0076E204 /* ViewModels */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		EC0CAAF71D3C154F0076E204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC0CAAF81D3C154F0076E204 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CAAFA1D3C15740076E204 /* State.swift */,
+				EC0CAAFC1D3C19F10076E204 /* State+IconName.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC0CAAF91D3C154F0076E204 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC0CAAFF1D3C1CF40076E204 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CAB001D3C1CF40076E204 /* Models */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
 		ECE7C9D91D15D7CD00024B52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				ECE7C9DA1D15D7CD00024B52 /* Base */,
+				EC0CAAF61D3C14E00076E204 /* Chapters */,
 				ECE7C9EE1D15D7CD00024B52 /* Events */,
 				ECE7C9FC1D15D7CD00024B52 /* Legacy */,
 				ECE7CA001D15D7CD00024B52 /* Meetup */,
@@ -1163,6 +1212,8 @@
 				ECE7CA331D15D7CE00024B52 /* EventsListDataSource.swift in Sources */,
 				ECE7CA4D1D15D7CE00024B52 /* SlideListView.swift in Sources */,
 				1D9F8EFD1D206D3B0096B668 /* SettingsCoordinator.swift in Sources */,
+				EC0CAAFD1D3C19F10076E204 /* State+IconName.swift in Sources */,
+				EC0CAAFB1D3C15740076E204 /* State.swift in Sources */,
 				ECE7CA2F1D15D7CE00024B52 /* NibDesignable.swift in Sources */,
 				ECE7CA321D15D7CE00024B52 /* GradientView.swift in Sources */,
 				ECE7CA3D1D15D7CE00024B52 /* Tempo.swift in Sources */,
