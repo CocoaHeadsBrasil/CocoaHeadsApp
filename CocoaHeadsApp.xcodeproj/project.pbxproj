@@ -55,6 +55,7 @@
 		EC0CAAFB1D3C15740076E204 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAAFA1D3C15740076E204 /* State.swift */; };
 		EC0CAAFD1D3C19F10076E204 /* State+IconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAAFC1D3C19F10076E204 /* State+IconName.swift */; };
 		EC0CAB021D3C1D190076E204 /* StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAB011D3C1D190076E204 /* StateTests.swift */; };
+		EC0CAB041D3C816F0076E204 /* State+IconNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */; };
 		EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */; };
 		ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A51C837473003D4E17 /* ChapterTest.swift */; };
 		ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A71C83B790003D4E17 /* VideoTest.swift */; };
@@ -196,6 +197,7 @@
 		EC0CAAFA1D3C15740076E204 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		EC0CAAFC1D3C19F10076E204 /* State+IconName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+IconName.swift"; sourceTree = "<group>"; };
 		EC0CAB011D3C1D190076E204 /* StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateTests.swift; sourceTree = "<group>"; };
+		EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+IconNameTests.swift"; sourceTree = "<group>"; };
 		EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestUtils.swift; sourceTree = "<group>"; };
 		ECAA61A51C837473003D4E17 /* ChapterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
 		ECAA61A71C83B790003D4E17 /* VideoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTest.swift; sourceTree = "<group>"; };
@@ -514,6 +516,15 @@
 				EC0CAB001D3C1CF40076E204 /* Models */,
 			);
 			path = Chapters;
+			sourceTree = "<group>";
+		};
+		EC0CAB001D3C1CF40076E204 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CAB011D3C1D190076E204 /* StateTests.swift */,
+				EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		ECE7C9D91D15D7CD00024B52 /* Classes */ = {
@@ -1272,10 +1283,12 @@
 				ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */,
 				EC0772FB1C78E87E00D4A763 /* EventTest.swift in Sources */,
 				AD99ADDF1C728C4B004BF12A /* MeetupAPITests.swift in Sources */,
+				EC0CAB021D3C1D190076E204 /* StateTests.swift in Sources */,
 				ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */,
 				1D50DE071D2F1D6A00017BC4 /* AppCoordinatorTests.swift in Sources */,
 				EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */,
 				ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */,
+				EC0CAB041D3C816F0076E204 /* State+IconNameTests.swift in Sources */,
 				1D50DE0D1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift in Sources */,
 				1D50DE0B1D2F2C9800017BC4 /* SettingCoordinatorTests.swift in Sources */,
 				1D50DE091D2F29EF00017BC4 /* MeetupCoordinatorTests.swift in Sources */,
