@@ -30,4 +30,15 @@ enum State: String {
     var name: String {
         return self.rawValue
     }
+
+    static func all() -> [State] {
+        return [
+            .AC, .AL, .AP, .AM, .BA,
+            .CE, .DF, .ES, .GO, .MA,
+            .MT, .MS, .MG, .PA, .PB,
+            .PR, .PE, .PI, .RJ, .RN,
+            .RS, .RO, .RR, .SC, .SP,
+            .SE, .TO
+        ]
+    }
 }

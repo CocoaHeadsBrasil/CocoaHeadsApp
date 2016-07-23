@@ -58,6 +58,8 @@
 		EC0CAB041D3C816F0076E204 /* State+IconNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */; };
 		EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */; };
 		EC35FFDC1D43CDA100C2922D /* ChaptersCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35FFDB1D43CDA100C2922D /* ChaptersCoordinatorTests.swift */; };
+		EC35FFE01D441E5A00C2922D /* StatesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35FFDF1D441E5A00C2922D /* StatesListDataSource.swift */; };
+		EC35FFE31D44216F00C2922D /* StatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35FFE21D44216F00C2922D /* StatesListView.swift */; };
 		ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A51C837473003D4E17 /* ChapterTest.swift */; };
 		ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A71C83B790003D4E17 /* VideoTest.swift */; };
 		ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */; };
@@ -203,6 +205,8 @@
 		EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+IconNameTests.swift"; sourceTree = "<group>"; };
 		EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestUtils.swift; sourceTree = "<group>"; };
 		EC35FFDB1D43CDA100C2922D /* ChaptersCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersCoordinatorTests.swift; sourceTree = "<group>"; };
+		EC35FFDF1D441E5A00C2922D /* StatesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListDataSource.swift; sourceTree = "<group>"; };
+		EC35FFE21D44216F00C2922D /* StatesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListView.swift; sourceTree = "<group>"; };
 		ECAA61A51C837473003D4E17 /* ChapterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
 		ECAA61A71C83B790003D4E17 /* VideoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTest.swift; sourceTree = "<group>"; };
 		ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeTest.swift; sourceTree = "<group>"; };
@@ -490,6 +494,7 @@
 				EC0CAAF71D3C154F0076E204 /* Controllers */,
 				EC0CAAF81D3C154F0076E204 /* Models */,
 				EC0CAAF91D3C154F0076E204 /* ViewModels */,
+				EC35FFE11D44213200C2922D /* Views */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				ECAD6BE51D3D8BCB005B5B89 /* StatesListViewController.swift */,
+				EC35FFDF1D441E5A00C2922D /* StatesListDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -542,6 +548,14 @@
 				EC35FFDB1D43CDA100C2922D /* ChaptersCoordinatorTests.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EC35FFE11D44213200C2922D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC35FFE21D44216F00C2922D /* StatesListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ECAD6BE21D3D8B6B005B5B89 /* Coordinators */ = {
@@ -1271,6 +1285,7 @@
 				ECE7CA511D15D7CE00024B52 /* VideosListViewModel.swift in Sources */,
 				ECE7CA311D15D7CE00024B52 /* ViewModel.swift in Sources */,
 				ECE7CA501D15D7CE00024B52 /* Video.swift in Sources */,
+				EC35FFE01D441E5A00C2922D /* StatesListDataSource.swift in Sources */,
 				1DA22AA81D21EDA70061216D /* SettingsTableViewDelegate.swift in Sources */,
 				ECE7CA391D15D7CE00024B52 /* EventsListTableViewCell.swift in Sources */,
 				ECE7CA381D15D7CE00024B52 /* EventsListViewModel.swift in Sources */,
@@ -1280,6 +1295,7 @@
 				1D9F8EF41D206B7B0096B668 /* SettingsViewController.swift in Sources */,
 				ECE7CA291D15D7CE00024B52 /* Chapter.swift in Sources */,
 				ECE7CA3B1D15D7CE00024B52 /* EventsListView.swift in Sources */,
+				EC35FFE31D44216F00C2922D /* StatesListView.swift in Sources */,
 				ECE7CA411D15D7CE00024B52 /* MeetupListViewController.swift in Sources */,
 				ECE7CA2B1D15D7CE00024B52 /* JsonModel.swift in Sources */,
 				ECE7CA3F1D15D7CE00024B52 /* MeetupListCollectionDataSource.swift in Sources */,
