@@ -8,10 +8,12 @@ class ChaptersCoordinator: BaseCoordinator {
         let listController = StatesListViewController()
         let navigationController = UINavigationController(rootViewController: listController)
 
-        let saveButtonItem = UIBarButtonItem()
-        saveButtonItem.title = "Save"
-        saveButtonItem.target = self
-        saveButtonItem.action = #selector(saveAndFinishCoordinator)
+        let saveButtonItem = UIBarButtonItem(
+            title: "Salvar",
+            style: .Done,
+            target: self,
+            action: #selector(saveAndFinishCoordinator)
+        )
         listController.navigationItem.rightBarButtonItem = saveButtonItem
 
         rootViewController = navigationController

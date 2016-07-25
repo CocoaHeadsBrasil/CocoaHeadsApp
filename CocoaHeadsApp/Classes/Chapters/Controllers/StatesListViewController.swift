@@ -4,5 +4,6 @@ class StatesListViewController: UITableViewController {
 
     override func loadView() {
         self.tableView = StatesListView()
+        self.title = "Estados"
     }
 }
