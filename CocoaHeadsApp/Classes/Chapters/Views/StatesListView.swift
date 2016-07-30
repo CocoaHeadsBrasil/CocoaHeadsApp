@@ -5,22 +5,22 @@ class StatesListView: UITableView {
     var statesListDataSource: StatesListDataSource!
     var statesListDelegate: StatesListDelegate!
 
-    init() {
+    init(selectionCallback: (State) -> ()) {
         super.init(frame: .zero, style: .Plain)
-        commonInit()
+
+        registerCell(StatesListTableViewCell)
+
+        var viewModel = StatesListViewModel()
+        viewModel.selectionCallback = selectionCallback
+
+        statesListDataSource = StatesListDataSource(viewModel: viewModel)
+        dataSource = statesListDataSource
+
+        statesListDelegate = StatesListDelegate(viewModel: viewModel)
+        delegate = statesListDelegate
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-
-    private func commonInit() {
-        registerCell(StatesListTableViewCell)
-        statesListDataSource = StatesListDataSource(viewModel: StatesListViewModel())
-        dataSource = statesListDataSource
-
-        statesListDelegate = StatesListDelegate()
-        delegate = statesListDelegate
+        fatalError("init(coder:) has not been implemented")
     }
 }

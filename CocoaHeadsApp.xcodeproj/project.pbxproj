@@ -69,6 +69,7 @@
 		ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A71C83B790003D4E17 /* VideoTest.swift */; };
 		ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */; };
 		ECAA61B41C84E6B0003D4E17 /* OrganizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */; };
+		ECC8BF7E1D4D597A003953DC /* ChaptersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */; };
 		ECE7CA261D15D7CE00024B52 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */; };
 		ECE7CA271D15D7CE00024B52 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */; };
 		ECE7CA281D15D7CE00024B52 /* Unbox+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */; };
@@ -219,6 +220,7 @@
 		ECAA61A71C83B790003D4E17 /* VideoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTest.swift; sourceTree = "<group>"; };
 		ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeTest.swift; sourceTree = "<group>"; };
 		ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizerTest.swift; sourceTree = "<group>"; };
+		ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewController.swift; sourceTree = "<group>"; };
 		ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+Extensions.swift"; sourceTree = "<group>"; };
@@ -546,6 +548,7 @@
 				EC7FFB721D497F68000B1910 /* StatesListDataSource.swift */,
 				EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */,
 				EC7FFB741D497F68000B1910 /* StatesListViewController.swift */,
+				ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1291,6 +1294,7 @@
 				ECE7CA3C1D15D7CE00024B52 /* Tempo+Methods.swift in Sources */,
 				ECE7CA281D15D7CE00024B52 /* Unbox+Extensions.swift in Sources */,
 				ECE7CA441D15D7CE00024B52 /* MeetupListResponse.swift in Sources */,
+				ECC8BF7E1D4D597A003953DC /* ChaptersListViewController.swift in Sources */,
 				ECE7CA511D15D7CE00024B52 /* VideosListViewModel.swift in Sources */,
 				EC7FFB821D497F68000B1910 /* StatesListView.swift in Sources */,
 				ECE7CA311D15D7CE00024B52 /* ViewModel.swift in Sources */,
