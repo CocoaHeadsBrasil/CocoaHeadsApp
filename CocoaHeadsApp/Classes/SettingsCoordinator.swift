@@ -23,5 +23,3 @@ class SettingsCoordinator: BaseCoordinator, SettingsViewModelDelegate {
         }
     }
 }
-
-
