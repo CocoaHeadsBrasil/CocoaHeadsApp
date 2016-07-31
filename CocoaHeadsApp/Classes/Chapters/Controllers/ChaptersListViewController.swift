@@ -4,8 +4,8 @@ class ChaptersListViewController: UITableViewController {
 
     var state: State?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        tableView = ChaptersListView()
         title = state?.name ?? "Capítulos"
     }
 }
