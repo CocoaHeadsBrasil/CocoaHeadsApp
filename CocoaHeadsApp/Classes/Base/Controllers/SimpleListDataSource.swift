@@ -1,10 +1,10 @@
 import UIKit
 
-class ChaptersListDataSource: NSObject, UITableViewDataSource {
+class SimpleListDataSource<T, CellType: UITableViewCell>: NSObject, UITableViewDataSource {
 
-    let viewModel: ChaptersListViewModel
+    let viewModel: SimpleListViewModel<T, CellType>
 
-    init(viewModel: ChaptersListViewModel) {
+    init(viewModel: SimpleListViewModel<T, CellType>) {
         self.viewModel = viewModel
     }
 
@@ -13,9 +13,9 @@ class ChaptersListDataSource: NSObject, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as CellType
         let item = viewModel.items.value[indexPath.row]
-        cell.textLabel?.text = item
+        viewModel.configurationBlock?(cell, item)
         return cell
     }
 }

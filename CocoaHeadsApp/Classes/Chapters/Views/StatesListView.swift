@@ -2,7 +2,7 @@ import UIKit
 
 class StatesListView: UITableView {
 
-    var statesListDataSource: StatesListDataSource!
+    var statesListDataSource: SimpleListDataSource<State, StatesListTableViewCell>!
     var statesListDelegate: StatesListDelegate!
 
     init(selectionCallback: (State) -> ()) {
@@ -10,10 +10,14 @@ class StatesListView: UITableView {
 
         registerCell(StatesListTableViewCell)
 
-        var viewModel = StatesListViewModel()
+        var viewModel = SimpleListViewModel<State, StatesListTableViewCell>()
+        viewModel.items.value = State.all()
         viewModel.selectionCallback = selectionCallback
+        viewModel.configurationBlock = { (cell, state) in
+            cell.state.value = state
+        }
 
-        statesListDataSource = StatesListDataSource(viewModel: viewModel)
+        statesListDataSource = SimpleListDataSource<State, StatesListTableViewCell>(viewModel: viewModel)
         dataSource = statesListDataSource
 
         statesListDelegate = StatesListDelegate(viewModel: viewModel)

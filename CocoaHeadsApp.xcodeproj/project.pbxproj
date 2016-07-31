@@ -58,7 +58,6 @@
 		EC0CAB041D3C816F0076E204 /* State+IconNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */; };
 		EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */; };
 		EC7FFB701D497E41000B1910 /* ChaptersCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB6F1D497E41000B1910 /* ChaptersCoordinatorTests.swift */; };
-		EC7FFB7C1D497F68000B1910 /* StatesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB721D497F68000B1910 /* StatesListDataSource.swift */; };
 		EC7FFB7D1D497F68000B1910 /* StatesListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */; };
 		EC7FFB7E1D497F68000B1910 /* StatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB741D497F68000B1910 /* StatesListViewController.swift */; };
 		EC7FFB7F1D497F68000B1910 /* ChaptersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB761D497F68000B1910 /* ChaptersCoordinator.swift */; };
@@ -70,7 +69,8 @@
 		ECAA61AE1C83BF58003D4E17 /* PodcastEpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */; };
 		ECAA61B41C84E6B0003D4E17 /* OrganizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */; };
 		ECC8BF7E1D4D597A003953DC /* ChaptersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */; };
-		ECC8BF801D4D7C36003953DC /* ChaptersListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF7F1D4D7C36003953DC /* ChaptersListDataSource.swift */; };
+		ECC8BF831D4D7EA6003953DC /* SimpleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */; };
+		ECC8BF851D4D7F04003953DC /* SimpleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF841D4D7F04003953DC /* SimpleListViewModel.swift */; };
 		ECC8BF871D4D8819003953DC /* ChaptersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */; };
 		ECC8BF891D4D8EC8003953DC /* ChaptersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */; };
 		ECC8BF8B1D4D9447003953DC /* ChaptersListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */; };
@@ -214,7 +214,6 @@
 		EC0CAB031D3C816F0076E204 /* State+IconNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+IconNameTests.swift"; sourceTree = "<group>"; };
 		EC21EAFE1C7C19ED00C6937D /* ModelTestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestUtils.swift; sourceTree = "<group>"; };
 		EC7FFB6F1D497E41000B1910 /* ChaptersCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersCoordinatorTests.swift; sourceTree = "<group>"; };
-		EC7FFB721D497F68000B1910 /* StatesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListDataSource.swift; sourceTree = "<group>"; };
 		EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListDelegate.swift; sourceTree = "<group>"; };
 		EC7FFB741D497F68000B1910 /* StatesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListViewController.swift; sourceTree = "<group>"; };
 		EC7FFB761D497F68000B1910 /* ChaptersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersCoordinator.swift; sourceTree = "<group>"; };
@@ -226,7 +225,8 @@
 		ECAA61AD1C83BF58003D4E17 /* PodcastEpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeTest.swift; sourceTree = "<group>"; };
 		ECAA61B31C84E6B0003D4E17 /* OrganizerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizerTest.swift; sourceTree = "<group>"; };
 		ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewController.swift; sourceTree = "<group>"; };
-		ECC8BF7F1D4D7C36003953DC /* ChaptersListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListDataSource.swift; sourceTree = "<group>"; };
+		ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListDataSource.swift; sourceTree = "<group>"; };
+		ECC8BF841D4D7F04003953DC /* SimpleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListViewModel.swift; sourceTree = "<group>"; };
 		ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewModel.swift; sourceTree = "<group>"; };
 		ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListView.swift; sourceTree = "<group>"; };
 		ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListDelegate.swift; sourceTree = "<group>"; };
@@ -556,10 +556,8 @@
 			isa = PBXGroup;
 			children = (
 				EC7FFB741D497F68000B1910 /* StatesListViewController.swift */,
-				EC7FFB721D497F68000B1910 /* StatesListDataSource.swift */,
 				EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */,
 				ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */,
-				ECC8BF7F1D4D7C36003953DC /* ChaptersListDataSource.swift */,
 				ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */,
 			);
 			path = Controllers;
@@ -590,6 +588,14 @@
 				ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ECC8BF811D4D7E9C003953DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		ECE7C9D91D15D7CD00024B52 /* Classes */ = {
@@ -668,6 +674,7 @@
 			isa = PBXGroup;
 			children = (
 				ECE7C9EB1D15D7CD00024B52 /* ViewModel.swift */,
+				ECC8BF841D4D7F04003953DC /* SimpleListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1288,6 +1295,7 @@
 				1D9F8EEC1D2051900096B668 /* AppCoordinator.swift in Sources */,
 				1D9AB6B81D0D02CC00483EF0 /* R.generated.swift in Sources */,
 				ECE7CA331D15D7CE00024B52 /* EventsListDataSource.swift in Sources */,
+				ECC8BF831D4D7EA6003953DC /* SimpleListDataSource.swift in Sources */,
 				ECE7CA4D1D15D7CE00024B52 /* SlideListView.swift in Sources */,
 				1D9F8EFD1D206D3B0096B668 /* SettingsCoordinator.swift in Sources */,
 				EC0CAAFD1D3C19F10076E204 /* State+IconName.swift in Sources */,
@@ -1317,7 +1325,6 @@
 				ECE7CA311D15D7CE00024B52 /* ViewModel.swift in Sources */,
 				ECE7CA501D15D7CE00024B52 /* Video.swift in Sources */,
 				ECC8BF871D4D8819003953DC /* ChaptersListViewModel.swift in Sources */,
-				EC7FFB7C1D497F68000B1910 /* StatesListDataSource.swift in Sources */,
 				1DA22AA81D21EDA70061216D /* SettingsTableViewDelegate.swift in Sources */,
 				ECE7CA391D15D7CE00024B52 /* EventsListTableViewCell.swift in Sources */,
 				ECE7CA381D15D7CE00024B52 /* EventsListViewModel.swift in Sources */,
@@ -1330,6 +1337,7 @@
 				ECE7CA2B1D15D7CE00024B52 /* JsonModel.swift in Sources */,
 				EC7FFB801D497F68000B1910 /* StatesListViewModel.swift in Sources */,
 				EC7FFB7F1D497F68000B1910 /* ChaptersCoordinator.swift in Sources */,
+				ECC8BF851D4D7F04003953DC /* SimpleListViewModel.swift in Sources */,
 				ECE7CA3F1D15D7CE00024B52 /* MeetupListCollectionDataSource.swift in Sources */,
 				EC7FFB7D1D497F68000B1910 /* StatesListDelegate.swift in Sources */,
 				ECE7CA521D15D7CE00024B52 /* VideosListView.swift in Sources */,
@@ -1345,7 +1353,6 @@
 				1DAAA3FE1D207CDD00A51FFF /* SettingsTableViewDataSource.swift in Sources */,
 				8CF97AF71BE3C5E3009C5591 /* AppDelegate.swift in Sources */,
 				ECE7CA461D15D7CE00024B52 /* MeetupListCollectionViewCell.swift in Sources */,
-				ECC8BF801D4D7C36003953DC /* ChaptersListDataSource.swift in Sources */,
 				ECE7CA3E1D15D7CE00024B52 /* TempoDateFormatter.swift in Sources */,
 				EC7FFB811D497F68000B1910 /* StatesListTableViewCell.swift in Sources */,
 				ECE7CA431D15D7CE00024B52 /* MeetupAPI.swift in Sources */,

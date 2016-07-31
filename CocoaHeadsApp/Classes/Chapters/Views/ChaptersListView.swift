@@ -2,7 +2,7 @@ import UIKit
 
 class ChaptersListView: UITableView {
 
-    var chaptersListDataSource: ChaptersListDataSource!
+    var chaptersListDataSource: SimpleListDataSource<String, UITableViewCell>!
     var chaptersListDelegate: ChaptersListDelegate!
 
     init() {
@@ -10,9 +10,13 @@ class ChaptersListView: UITableView {
 
         registerCell(UITableViewCell)
 
-        let viewModel = ChaptersListViewModel()
+        var viewModel = SimpleListViewModel<String, UITableViewCell>()
+        viewModel.items.value = ["Campinas", "São Paulo"]
+        viewModel.configurationBlock = { (cell, chapter) in
+            cell.textLabel?.text = chapter
+        }
 
-        chaptersListDataSource = ChaptersListDataSource(viewModel: viewModel)
+        chaptersListDataSource = SimpleListDataSource<String, UITableViewCell>(viewModel: viewModel)
         dataSource = chaptersListDataSource
 
         chaptersListDelegate = ChaptersListDelegate()

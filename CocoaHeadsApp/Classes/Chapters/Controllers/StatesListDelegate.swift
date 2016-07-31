@@ -2,9 +2,9 @@ import UIKit
 
 class StatesListDelegate: NSObject, UITableViewDelegate {
 
-    let viewModel: StatesListViewModel
+    let viewModel: SimpleListViewModel<State, StatesListTableViewCell>
 
-    init(viewModel: StatesListViewModel) {
+    init(viewModel: SimpleListViewModel<State, StatesListTableViewCell>) {
         self.viewModel = viewModel
     }
 
