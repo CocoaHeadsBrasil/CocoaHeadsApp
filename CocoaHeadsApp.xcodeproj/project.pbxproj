@@ -61,7 +61,6 @@
 		EC7FFB7D1D497F68000B1910 /* StatesListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */; };
 		EC7FFB7E1D497F68000B1910 /* StatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB741D497F68000B1910 /* StatesListViewController.swift */; };
 		EC7FFB7F1D497F68000B1910 /* ChaptersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB761D497F68000B1910 /* ChaptersCoordinator.swift */; };
-		EC7FFB801D497F68000B1910 /* StatesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB781D497F68000B1910 /* StatesListViewModel.swift */; };
 		EC7FFB811D497F68000B1910 /* StatesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB7A1D497F68000B1910 /* StatesListTableViewCell.swift */; };
 		EC7FFB821D497F68000B1910 /* StatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FFB7B1D497F68000B1910 /* StatesListView.swift */; };
 		ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA61A51C837473003D4E17 /* ChapterTest.swift */; };
@@ -71,10 +70,11 @@
 		ECC8BF7E1D4D597A003953DC /* ChaptersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */; };
 		ECC8BF831D4D7EA6003953DC /* SimpleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */; };
 		ECC8BF851D4D7F04003953DC /* SimpleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF841D4D7F04003953DC /* SimpleListViewModel.swift */; };
-		ECC8BF871D4D8819003953DC /* ChaptersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */; };
 		ECC8BF891D4D8EC8003953DC /* ChaptersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */; };
 		ECC8BF8B1D4D9447003953DC /* ChaptersListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */; };
 		ECC8BF8D1D4D9BAC003953DC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8C1D4D9BAC003953DC /* Theme.swift */; };
+		ECC8BF8F1D4DAA39003953DC /* XCTestCase+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8E1D4DAA39003953DC /* XCTestCase+Utilities.swift */; };
+		ECC8BF921D4DB0D1003953DC /* ChaptersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF911D4DB0D1003953DC /* ChaptersListViewControllerTests.swift */; };
 		ECE7CA261D15D7CE00024B52 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */; };
 		ECE7CA271D15D7CE00024B52 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */; };
 		ECE7CA281D15D7CE00024B52 /* Unbox+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */; };
@@ -217,7 +217,6 @@
 		EC7FFB731D497F68000B1910 /* StatesListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListDelegate.swift; sourceTree = "<group>"; };
 		EC7FFB741D497F68000B1910 /* StatesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListViewController.swift; sourceTree = "<group>"; };
 		EC7FFB761D497F68000B1910 /* ChaptersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersCoordinator.swift; sourceTree = "<group>"; };
-		EC7FFB781D497F68000B1910 /* StatesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListViewModel.swift; sourceTree = "<group>"; };
 		EC7FFB7A1D497F68000B1910 /* StatesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListTableViewCell.swift; sourceTree = "<group>"; };
 		EC7FFB7B1D497F68000B1910 /* StatesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListView.swift; sourceTree = "<group>"; };
 		ECAA61A51C837473003D4E17 /* ChapterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
@@ -227,10 +226,11 @@
 		ECC8BF7D1D4D597A003953DC /* ChaptersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewController.swift; sourceTree = "<group>"; };
 		ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListDataSource.swift; sourceTree = "<group>"; };
 		ECC8BF841D4D7F04003953DC /* SimpleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListViewModel.swift; sourceTree = "<group>"; };
-		ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewModel.swift; sourceTree = "<group>"; };
 		ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListView.swift; sourceTree = "<group>"; };
 		ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListDelegate.swift; sourceTree = "<group>"; };
 		ECC8BF8C1D4D9BAC003953DC /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		ECC8BF8E1D4DAA39003953DC /* XCTestCase+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utilities.swift"; sourceTree = "<group>"; };
+		ECC8BF911D4DB0D1003953DC /* ChaptersListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewControllerTests.swift; sourceTree = "<group>"; };
 		ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+Extensions.swift"; sourceTree = "<group>"; };
@@ -448,6 +448,7 @@
 				1D50DE081D2F29EF00017BC4 /* MeetupCoordinatorTests.swift */,
 				1D50DE0A1D2F2C9800017BC4 /* SettingCoordinatorTests.swift */,
 				1D50DE0C1D2F2CE100017BC4 /* CoordinatorDelegateMock.swift */,
+				ECC8BF8E1D4DAA39003953DC /* XCTestCase+Utilities.swift */,
 			);
 			path = CocoaHeadsAppTests;
 			sourceTree = "<group>";
@@ -529,6 +530,7 @@
 		EC0CAAFF1D3C1CF40076E204 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
+				ECC8BF901D4DB0BC003953DC /* Controllers */,
 				EC35FFDA1D43CD7F00C2922D /* Coordinators */,
 				EC0CAB001D3C1CF40076E204 /* Models */,
 			);
@@ -574,8 +576,6 @@
 		EC7FFB771D497F68000B1910 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EC7FFB781D497F68000B1910 /* StatesListViewModel.swift */,
-				ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -594,6 +594,14 @@
 			isa = PBXGroup;
 			children = (
 				ECC8BF821D4D7EA6003953DC /* SimpleListDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECC8BF901D4DB0BC003953DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8BF911D4DB0D1003953DC /* ChaptersListViewControllerTests.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1324,7 +1332,6 @@
 				EC7FFB821D497F68000B1910 /* StatesListView.swift in Sources */,
 				ECE7CA311D15D7CE00024B52 /* ViewModel.swift in Sources */,
 				ECE7CA501D15D7CE00024B52 /* Video.swift in Sources */,
-				ECC8BF871D4D8819003953DC /* ChaptersListViewModel.swift in Sources */,
 				1DA22AA81D21EDA70061216D /* SettingsTableViewDelegate.swift in Sources */,
 				ECE7CA391D15D7CE00024B52 /* EventsListTableViewCell.swift in Sources */,
 				ECE7CA381D15D7CE00024B52 /* EventsListViewModel.swift in Sources */,
@@ -1335,7 +1342,6 @@
 				ECE7CA3B1D15D7CE00024B52 /* EventsListView.swift in Sources */,
 				ECE7CA411D15D7CE00024B52 /* MeetupListViewController.swift in Sources */,
 				ECE7CA2B1D15D7CE00024B52 /* JsonModel.swift in Sources */,
-				EC7FFB801D497F68000B1910 /* StatesListViewModel.swift in Sources */,
 				EC7FFB7F1D497F68000B1910 /* ChaptersCoordinator.swift in Sources */,
 				ECC8BF851D4D7F04003953DC /* SimpleListViewModel.swift in Sources */,
 				ECE7CA3F1D15D7CE00024B52 /* MeetupListCollectionDataSource.swift in Sources */,
@@ -1374,6 +1380,8 @@
 				EC0CAB021D3C1D190076E204 /* StateTests.swift in Sources */,
 				ECAA61A81C83B790003D4E17 /* VideoTest.swift in Sources */,
 				1D50DE071D2F1D6A00017BC4 /* AppCoordinatorTests.swift in Sources */,
+				ECC8BF8F1D4DAA39003953DC /* XCTestCase+Utilities.swift in Sources */,
+				ECC8BF921D4DB0D1003953DC /* ChaptersListViewControllerTests.swift in Sources */,
 				EC21EAFF1C7C19ED00C6937D /* ModelTestUtils.swift in Sources */,
 				ECAA61A61C837473003D4E17 /* ChapterTest.swift in Sources */,
 				EC0CAB041D3C816F0076E204 /* State+IconNameTests.swift in Sources */,
