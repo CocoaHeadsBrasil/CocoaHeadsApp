@@ -245,8 +245,6 @@ struct R: Rswift.Validatable {
     static let meetupListCollectionViewCell = _R.nib._MeetupListCollectionViewCell()
     static let meetupListView = _R.nib._MeetupListView()
     static let settingsView = _R.nib._SettingsView()
-    static let slideListView = _R.nib._SlideListView()
-    static let videosListView = _R.nib._VideosListView()
     
     static func eventsListTableViewCell(_: Void) -> UINib {
       return UINib(resource: R.nib.eventsListTableViewCell)
@@ -262,14 +260,6 @@ struct R: Rswift.Validatable {
     
     static func settingsView(_: Void) -> UINib {
       return UINib(resource: R.nib.settingsView)
-    }
-    
-    static func slideListView(_: Void) -> UINib {
-      return UINib(resource: R.nib.slideListView)
-    }
-    
-    static func videosListView(_: Void) -> UINib {
-      return UINib(resource: R.nib.videosListView)
     }
   }
   
@@ -335,24 +325,6 @@ struct _R: Rswift.Validatable {
     struct _SettingsView: NibResourceType {
       let bundle = _R.hostingBundle
       let name = "SettingsView"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIView? {
-        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
-      }
-    }
-    
-    struct _SlideListView: NibResourceType {
-      let bundle = _R.hostingBundle
-      let name = "SlideListView"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIView? {
-        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
-      }
-    }
-    
-    struct _VideosListView: NibResourceType {
-      let bundle = _R.hostingBundle
-      let name = "VideosListView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIView? {
         return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
