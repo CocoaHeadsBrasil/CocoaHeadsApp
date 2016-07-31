@@ -9,6 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var appCoordinator: AppCoordinator!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        Theme.setup()
         
         appCoordinator = AppCoordinator()
         appCoordinator.start()

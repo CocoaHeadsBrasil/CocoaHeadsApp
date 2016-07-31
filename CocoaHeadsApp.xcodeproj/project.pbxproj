@@ -74,6 +74,7 @@
 		ECC8BF871D4D8819003953DC /* ChaptersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */; };
 		ECC8BF891D4D8EC8003953DC /* ChaptersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */; };
 		ECC8BF8B1D4D9447003953DC /* ChaptersListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */; };
+		ECC8BF8D1D4D9BAC003953DC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8BF8C1D4D9BAC003953DC /* Theme.swift */; };
 		ECE7CA261D15D7CE00024B52 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */; };
 		ECE7CA271D15D7CE00024B52 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */; };
 		ECE7CA281D15D7CE00024B52 /* Unbox+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */; };
@@ -229,6 +230,7 @@
 		ECC8BF861D4D8819003953DC /* ChaptersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListViewModel.swift; sourceTree = "<group>"; };
 		ECC8BF881D4D8EC8003953DC /* ChaptersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListView.swift; sourceTree = "<group>"; };
 		ECC8BF8A1D4D9447003953DC /* ChaptersListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListDelegate.swift; sourceTree = "<group>"; };
+		ECC8BF8C1D4D9BAC003953DC /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		ECE7C9DC1D15D7CD00024B52 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		ECE7C9DD1D15D7CD00024B52 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ECE7C9DE1D15D7CD00024B52 /* Unbox+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+Extensions.swift"; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				ECE7C9EA1D15D7CD00024B52 /* ViewModels */,
 				ECE7C9EC1D15D7CD00024B52 /* Views */,
 				1D1580BF1D2836560097C3AD /* Coordinator.swift */,
+				ECC8BF8C1D4D9BAC003953DC /* Theme.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1308,6 +1311,7 @@
 				ECE7CA281D15D7CE00024B52 /* Unbox+Extensions.swift in Sources */,
 				ECE7CA441D15D7CE00024B52 /* MeetupListResponse.swift in Sources */,
 				ECC8BF7E1D4D597A003953DC /* ChaptersListViewController.swift in Sources */,
+				ECC8BF8D1D4D9BAC003953DC /* Theme.swift in Sources */,
 				ECE7CA511D15D7CE00024B52 /* VideosListViewModel.swift in Sources */,
 				EC7FFB821D497F68000B1910 /* StatesListView.swift in Sources */,
 				ECE7CA311D15D7CE00024B52 /* ViewModel.swift in Sources */,
