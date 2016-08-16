@@ -36,4 +36,5 @@ else
 fi
 
 msg "Executing CocoaPods"
+bundle exec pod repo update
 bundle exec pod install

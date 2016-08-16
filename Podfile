@@ -8,7 +8,7 @@ def common_pods
     pod 'Nuke', '~> 2.0.1'
     pod 'CPDAcknowledgements', '~> 1.0'
     pod 'DynamicColor', '~> 2.4.0'
-    pod 'RxSwift'
+    pod 'RxSwift', '~> 2.6.0'
     pod 'RxCocoa'
 end
 
