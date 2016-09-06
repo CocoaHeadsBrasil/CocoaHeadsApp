@@ -26,7 +26,7 @@ else
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-msg "Instaling/Updating Swiftlint"
+msg "Installing/Updating Swiftlint"
 which -s swiftlint
 if [[ $? != 1 ]] ; then
     msg_ok "swiftlint"
