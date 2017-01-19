@@ -3,38 +3,38 @@
 # Tells the shell script to exit if it encounters an error
 set -e
 
-# -- Log -----------------------------------------------------------------------
-function msg { echo  "\033[0;37m$1\033[0m"; }
-function msg_ok { echo  "➜\033[1;32m $1 ✔\033[0m"; }
-function msg_run { echo  "➜\033[1;35m $1 $ $2\033[0m"; }
+declare -a GEMS=("cocoapods" "cocoapods-acknowledgements" "bundler")
+declare -a BREW_FORMULAES=("swiftlint")
 
-# -- Dependencies --------------------------------------------------------------
-msg "Instaling Bundler!"
-if which ruby &> /dev/null; then
-	msg_run "bundler" "sudo gem install bundler"
-	sudo gem install bundler
-else
-	msg_run "bundler" "gem install bundler"
-	gem install bundler
-fi
+echo "Installing dependencies!"
 
-msg "Installing Homebrew!"
 if which brew &> /dev/null; then
-	msg_ok "homebrew"
+	echo "Homebrew ✔"
 else
-	msg_run "homebrew" "/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)""
+	echo "Installing Homebrew"
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-msg "Installing/Updating Swiftlint"
-which -s swiftlint
-if [[ $? != 1 ]] ; then
-    msg_ok "swiftlint"
-else
-    msg_run "swiftlint" "brew install swiftlint"
-    brew install swiftlint
-fi
+for formulae in "${BREW_FORMULAES[@]}"
+do
+	if brew list | grep -c $formulae &> /dev/null; then
+		echo "$formulae ✔"
+	else
+		echo "Installing $formulae"
+		brew install $formulae
+	fi
+done
 
-msg "Executing CocoaPods"
-bundle exec pod repo update
-bundle exec pod install
+for gem in "${GEMS[@]}"
+do
+	if gem list -i $gem &> /dev/null; then
+		echo "$gem ✔"
+	else
+		echo "Installing $gem"
+		sudo gem install $gem
+	fi
+done
+
+echo "Installing Cocoapods dependencies!"
+pod repo update
+pod install
