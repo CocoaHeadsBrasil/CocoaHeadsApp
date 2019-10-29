@@ -35,6 +35,11 @@ else
     brew install swiftlint
 fi
 
+msg "Installing CocoaPods"
+if ! gem spec pod > /dev/null 2>&1; then
+    sudo bundle install pod
+fi
+
 msg "Executing CocoaPods"
 bundle exec pod repo update
 bundle exec pod install
